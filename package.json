@@ -1,0 +1,17 @@
+{
+  "name": "fb-ai-poster",
+  "version": "1.0.0",
+  "description": "Generates an AI image (OpenAI) and posts it to a Facebook Page, on a schedule via GitHub Actions.",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "form-data": "^4.0.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "_comment": "Edit this list freely. Each day the script picks one automatically (rotates by day-of-year) unless the IMAGE_PROMPT secret/variable is set, in which case that overrides everything.",
+  "prompts": [
+    "A serene sunrise over Philippine rice terraces, warm golden light, photorealistic, cinematic",
+    "A cozy jeepney parked on a quiet Manila street at dawn, soft morning light, photorealistic",
+    "A vibrant Philippine beach at sunset with palm trees, dramatic sky, photorealistic",
+    "A bustling Filipino wet market at sunrise, colorful produce stalls, photorealistic",
+    "A peaceful view of Mayon Volcano at dawn, mist over rice fields, photorealistic"
+  ]
+}
