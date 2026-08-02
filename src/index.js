@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const { generateImage } = require("./generateImage");
 const { postToFacebook } = require("./postToFacebook");
 

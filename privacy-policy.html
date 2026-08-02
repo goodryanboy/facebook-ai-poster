@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Privacy Policy</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #222; }
+  h1 { font-size: 1.8em; }
+  h2 { font-size: 1.2em; margin-top: 1.8em; }
+  .updated { color: #666; font-size: 0.9em; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: August 2, 2026</p>
+
+<p>
+This privacy policy describes how this application ("the App") handles data.
+The App is a personal automation tool that generates images and publishes them
+to a Facebook Page that the developer owns and administers.
+</p>
+
+<h2>What the App does</h2>
+<p>
+The App automatically generates images and posts them to a single Facebook
+Page controlled by the developer. It runs on a fixed schedule with no user
+interaction and does not provide any public-facing login, sign-up, or user
+account system.
+</p>
+
+<h2>Data the App accesses</h2>
+<p>
+The App uses the Facebook Graph API with a Page Access Token to publish
+content on the developer's own Facebook Page. Specifically, it accesses:
+</p>
+<ul>
+  <li>The Page ID and Page Access Token needed to publish posts</li>
+  <li>Standard API response data (e.g. post ID, publish status) returned after
+  a post is created, used only for logging and error-checking</li>
+</ul>
+<p>
+The App does not collect, request, or process personal data from Facebook
+users, Page followers, or any third party. It does not read comments,
+messages, follower lists, or any user-level data. It does not use tracking
+pixels, cookies, or analytics on any external site.
+</p>
+
+<h2>Data storage</h2>
+<p>
+The Page Access Token is stored as an encrypted secret within the developer's
+private automation environment (GitHub Actions secrets) and is not shared
+with, sold to, or accessible by any third party. No other data is stored
+outside of this token and standard application logs used for debugging.
+</p>
+
+<h2>Data sharing</h2>
+<p>
+The App does not share, sell, rent, or transfer any data to third parties.
+All activity is limited to publishing content to the developer's own
+Facebook Page via the official Facebook Graph API.
+</p>
+
+<h2>Data retention and deletion</h2>
+<p>
+No user data is collected, so there is no user data to retain or delete.
+Should the developer choose to discontinue the App, the associated Page
+Access Token will be revoked and deleted from all storage locations.
+</p>
+
+<h2>Changes to this policy</h2>
+<p>
+This policy may be updated periodically to reflect changes in the App's
+functionality. The "Last updated" date above will reflect the most recent
+revision.
+</p>
+
+<h2>Contact</h2>
+<p>
+For questions about this policy, contact: <strong>medrosodelatorre@gmail.com</strong>
+</p>
+
+</body>
+</html>
