@@ -26,13 +26,14 @@ jobs:
 
       - name: Generate image and post to Facebook
         env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_IMAGE_MODEL: ${{ vars.GEMINI_IMAGE_MODEL }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_IMAGE_MODEL: ${{ vars.OPENAI_IMAGE_MODEL }}
           OPENAI_IMAGE_SIZE: ${{ vars.OPENAI_IMAGE_SIZE }}
-          IMAGE_PROMPT: ${{ vars.IMAGE_PROMPT }}
+          IMAGE_PROVIDER: ${{ vars.IMAGE_PROVIDER }}
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           FB_PAGE_ACCESS_TOKEN: ${{ secrets.FB_PAGE_ACCESS_TOKEN }}
-          FB_CAPTION: ${{ vars.FB_CAPTION }}
         run: npm start
 
       - name: Upload generated image as artifact (for debugging)
