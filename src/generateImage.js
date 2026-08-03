@@ -5,26 +5,87 @@ const axios = require("axios");
 const OPENAI_API_URL = "https://api.openai.com/v1/images/generations";
 const GEMINI_API_BASE = "https://generativelanguage.googleapis.com/v1beta/models";
 
+const PH_TIMEZONE = "Asia/Manila";
+const DAY_NAMES = [
+  "sunday",
+  "monday",
+  "tuesday",
+  "wednesday",
+  "thursday",
+  "friday",
+  "saturday",
+];
+
 /**
- * Picks a prompt: uses IMAGE_PROMPT env var if set, otherwise rotates
- * through prompts.json based on the day of the year (so it varies daily
- * but is fully deterministic — no state needs to be stored anywhere).
+ * Gets the current day-of-week name and hour in Philippine time, regardless
+ * of what timezone the machine/runner is actually in (GitHub Actions runs
+ * in UTC).
+ */
+function getPhilippineDayAndHour(date = new Date()) {
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone: PH_TIMEZONE,
+    weekday: "long",
+    hour: "numeric",
+    hour12: false,
+  }).formatToParts(date);
+
+  const weekday = parts.find((p) => p.type === "weekday").value.toLowerCase();
+  // hour can come back as "24" for midnight in some environments; normalize.
+  let hour = parseInt(parts.find((p) => p.type === "hour").value, 10);
+  if (hour === 24) hour = 0;
+
+  return { weekday, hour };
+}
+
+/**
+ * Maps the current PH hour to the nearest scheduled slot: 6am, 12pm, or 6pm.
+ * This lines up with the 3x-daily cron (0 22,4,10 * * * UTC).
+ */
+function resolveSlot(hour) {
+  if (hour < 9) return "6am"; // 0–8h  -> morning run
+  if (hour < 15) return "12pm"; // 9–14h -> midday run
+  return "6pm"; // 15–23h -> evening run
+}
+
+/**
+ * Picks a prompt + caption pair for the current run.
+ * - IMAGE_PROMPT / FB_CAPTION env vars, if set, override everything (useful
+ *   for manual workflow_dispatch runs or one-off posts).
+ * - Otherwise, selects based on the current Philippine day-of-week and
+ *   time-of-day slot from prompts.json's "schedule" structure.
  */
 function pickPrompt() {
-  if (process.env.IMAGE_PROMPT && process.env.IMAGE_PROMPT.trim()) {
-    return process.env.IMAGE_PROMPT.trim();
+  const envPrompt = process.env.IMAGE_PROMPT && process.env.IMAGE_PROMPT.trim();
+  const envCaption = process.env.FB_CAPTION && process.env.FB_CAPTION.trim();
+
+  if (envPrompt) {
+    return { prompt: envPrompt, caption: envCaption || null };
   }
 
   const configPath = path.join(__dirname, "..", "prompts.json");
-  const { prompts } = JSON.parse(fs.readFileSync(configPath, "utf8"));
+  const { schedule } = JSON.parse(fs.readFileSync(configPath, "utf8"));
 
-  if (!prompts || prompts.length === 0) {
-    throw new Error("prompts.json has no prompts defined and IMAGE_PROMPT is not set.");
+  if (!schedule) {
+    throw new Error("prompts.json has no \"schedule\" defined and IMAGE_PROMPT is not set.");
   }
 
-  const startOfYear = new Date(Date.UTC(new Date().getUTCFullYear(), 0, 0));
-  const dayOfYear = Math.floor((Date.now() - startOfYear.getTime()) / 86400000);
-  return prompts[dayOfYear % prompts.length];
+  const { weekday, hour } = getPhilippineDayAndHour();
+  const slot = resolveSlot(hour);
+
+  const dayEntries = schedule[weekday];
+  if (!dayEntries || dayEntries.length === 0) {
+    throw new Error(`No prompts configured for "${weekday}" in prompts.json.`);
+  }
+
+  const entry =
+    dayEntries.find((e) => e.slot === slot) || dayEntries[0]; // fallback to first if slot missing
+
+  console.log(`Selected schedule entry: ${weekday} / ${slot}`);
+
+  return {
+    prompt: entry.prompt,
+    caption: envCaption || entry.caption || null,
+  };
 }
 
 /**
@@ -141,7 +202,7 @@ async function generateWithGemini(prompt, outputDir) {
  */
 async function generateImage({ outputDir = "output" } = {}) {
   const provider = resolveProvider();
-  const prompt = pickPrompt();
+  const { prompt, caption } = pickPrompt();
 
   console.log(`Provider: ${provider}`);
   console.log(`Prompt: ${prompt}`);
@@ -152,7 +213,7 @@ async function generateImage({ outputDir = "output" } = {}) {
       : await generateWithOpenAI(prompt, outputDir);
 
   console.log(`Image saved to ${filePath}`);
-  return { filePath, prompt, provider };
+  return { filePath, prompt, caption, provider };
 }
 
 module.exports = { generateImage, pickPrompt, resolveProvider };

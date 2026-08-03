@@ -1,6 +1,124 @@
 {
-  "_comment": "Edit this list freely. Each day the script picks one automatically (rotates by day-of-year) unless the IMAGE_PROMPT secret/variable is set, in which case that overrides everything.",
-  "prompts": [
-    "Banner, Si Duterte ang Presidente na hindi KORAP"
-  ]
+  "_comment": "Structured by day of week, then by time slot (6am/12pm/6pm PH time) to match the 3x-daily cron schedule. The script auto-selects based on the current Philippine day + time. Set IMAGE_PROMPT / FB_CAPTION env vars to override any single run.",
+  "schedule": {
+    "monday": [
+      {
+        "slot": "6am",
+        "prompt": "Bold graphic banner, patriotic Philippine flag color palette (red, blue, gold, white sunburst), large bold sans-serif headline text 'MONDAY MOTIVATION: DISIPLINA PARA SA BAYAN', a stylized golden medal icon and a rising sun graphic in the background, clean modern poster design, high contrast, social-media-ready 1:1 square banner, subtle DDS red accent stripe along the bottom edge",
+        "caption": "Magandang umaga, mga SOLID! 🇵🇭 Simulan natin ang linggo nang may disiplina at pag-asa. Alalahanin natin — malinis na gobyerno at tunay na paglilingkod, yan ang dapat asahan natin sa bawat pinuno. Tara, gising na! ☀️ #SolidDuterte #DisiplinaParaSaBayan"
+      },
+      {
+        "slot": "12pm",
+        "prompt": "Bold graphic banner, warm midday color palette (deep blue sky gradient into gold), large bold headline text 'PROGRESO, HINDI PANGAKO LANG', icon of a construction hard hat crossed with a road/bridge silhouette representing infrastructure development, Philippine flag ribbon accent in corner, clean modern poster layout, high contrast, square 1:1 format",
+        "caption": "Tanghali na, mga SOLID! 🛠️ Tandaan natin — ang tunay na pagbabago ay nakikita sa mga proyektong natapos, hindi lang sa mga pangako. Build, build, build para sa Pilipinas! 🇵🇭 #ProgresoTayo #SolidDuterte"
+      },
+      {
+        "slot": "6pm",
+        "prompt": "Bold graphic banner, sunset orange-to-deep-red gradient background evoking dusk, large bold headline text 'GABI NA, PERO SOLID PA RIN', silhouette of the Philippine archipelago map filled with a subtle national flag pattern, minimalist star and sun emblem in the corner, clean modern poster design, high contrast typography, square 1:1 format",
+        "caption": "Sa dulo ng araw, iisa pa rin tayo sa paninindigan — SOLID! 🌇 Salamat sa suporta, mga kapatid. Tuloy ang laban para sa disiplina at katapatan sa gobyerno. 🇵🇭✊ #SolidHanggangDulo #TeamDuterte"
+      }
+    ],
+    "tuesday": [
+      {
+        "slot": "6am",
+        "prompt": "Bold graphic banner, crisp morning blue-and-white gradient, large bold headline text 'KAPAYAPAAN AT KAAYUSAN', an icon of a dove combined with a shield symbolizing peace and order, thin gold border frame, Philippine flag colors as accent stripes on the sides, clean modern poster design, square 1:1 format",
+        "caption": "Umaga, mga SOLID! ☮️ Naaalala niyo ba noong mas ligtas maglakad sa gabi? Yun ang epekto ng tunay na disiplina at kaayusan. Ipaglaban natin ito. 🇵🇭 #KapayapaanAtKaayusan #SolidDuterte"
+      },
+      {
+        "slot": "12pm",
+        "prompt": "Bold graphic banner, bright noon yellow-gold color palette, large bold headline text 'TAPANG PARA SA SARILING TERITORYO', a stylized compass rose merging with ocean wave graphics representing West Philippine Sea sovereignty, Philippine flag sun emblem centered, clean modern poster design, high contrast, square 1:1 format",
+        "caption": "Tanghali na! 🌊 Patuloy nating ipinaglalaban ang karapatan at soberanya ng Pilipinas. Walang atrasan sa pagtatanggol sa ating teritoryo. 🇵🇭💪 #TapangParaSaBayan #SolidDuterte"
+      },
+      {
+        "slot": "6pm",
+        "prompt": "Bold graphic banner, evening deep navy-to-purple gradient with warm gold text, large bold headline text 'GABI NG PASASALAMAT', an icon of two hands forming a heart shape over a small map outline of the Philippines, subtle star pattern background, clean modern poster design, square 1:1 format",
+        "caption": "Salamat sa isang mapayapang araw, mga SOLID. 🙏 Patuloy nating pahalagahan ang disiplina at pagkakaisa. Tuloy ang laban bukas! 🇵🇭✨ #SolidDuterte #PasasalamatNgBayan"
+      }
+    ],
+    "wednesday": [
+      {
+        "slot": "6am",
+        "prompt": "Bold graphic banner, fresh mint-and-red morning color palette, large bold headline text 'MALASAKIT SA KALUSUGAN NG BAYAN', an icon of a medical cross combined with a caring hand, Philippine flag ribbon accent, clean modern minimalist poster design, square 1:1 format",
+        "caption": "Magandang umaga! 🏥 Alalahanin natin ang mga programang pangkalusugan na dapat abot-kaya para sa bawat Pilipino. Malasakit dapat, hindi negosyo. 🇵🇭 #MalasakitSaBayan #SolidDuterte"
+      },
+      {
+        "slot": "12pm",
+        "prompt": "Bold graphic banner, vivid midday orange-gold palette, large bold headline text 'EDUKASYON, PUNDASYON NG BANSA', an icon of an open book merging with a graduation cap silhouette, Philippine flag star emblem in the corner, clean modern poster design, high contrast, square 1:1 format",
+        "caption": "Tanghali na, mga SOLID! 📚 Ang edukasyon ang tunay na kayamanan ng bawat Pilipino. Suportahan natin ang mga polisiyang nagpapalakas ng ating paaralan. 🇵🇭 #EdukasyonMuna #SolidDuterte"
+      },
+      {
+        "slot": "6pm",
+        "prompt": "Bold graphic banner, dusk magenta-to-navy gradient, large bold headline text 'DISIPLINA, HINDI DAHAS', an icon of a raised fist gently transitioning into an open hand, minimalist Philippine flag stripe accent, clean modern poster design, square 1:1 format",
+        "caption": "Sa gabi, alalahanin natin — disiplina ang layunin, hindi karahasan. Tuloy ang pagbabago, may respeto at batas. 🇵🇭✊ #DisiplinaHindiDahas #SolidDuterte"
+      }
+    ],
+    "thursday": [
+      {
+        "slot": "6am",
+        "prompt": "Bold graphic banner, crisp early-morning sky-blue gradient, large bold headline text 'MALINIS NA GOBYERNO, TUNAY NA LINGKOD', an icon of a shield with a checkmark symbolizing anti-corruption and accountability, Philippine flag sun emblem centered, clean modern poster design, square 1:1 format",
+        "caption": "Umaga, mga SOLID! 🛡️ Ang tunay na lingkod-bayan ay malinis sa serbisyo, hindi sakim sa kapangyarihan. Tuloy ang bantayan natin. 🇵🇭 #MalinisNaGobyerno #SolidDuterte"
+      },
+      {
+        "slot": "12pm",
+        "prompt": "Bold graphic banner, bright midday gold-and-green palette, large bold headline text 'KABUHAYAN PARA SA MAMAMAYAN', an icon of wheat stalks combined with a small factory silhouette representing agriculture and industry, Philippine flag ribbon accent, clean modern poster design, high contrast, square 1:1 format",
+        "caption": "Tanghali na! 🌾 Trabaho at kabuhayan para sa bawat Pilipino — yan ang dapat unahin ng gobyerno. Suportahan natin ang mga programang nagpapatatag ng ekonomiya. 🇵🇭 #KabuhayanMuna #SolidDuterte"
+      },
+      {
+        "slot": "6pm",
+        "prompt": "Bold graphic banner, warm sunset red-orange gradient, large bold headline text 'GABI NG PAGKAKAISA', an icon of multiple hands joined in a circle forming a subtle star shape, Philippine flag colors woven into the border, clean modern poster design, square 1:1 format",
+        "caption": "Sa bawat gabi, mas lumalakas ang ating pagkakaisa bilang SOLID. 🌟 Magpatuloy tayo sa paninindigan para sa disiplinadong Pilipinas. 🇵🇭 #PagkakaisaNgBayan #SolidDuterte"
+      }
+    ],
+    "friday": [
+      {
+        "slot": "6am",
+        "prompt": "Bold graphic banner, energetic morning red-and-gold palette, large bold headline text 'FRIDAY FEELS: SOLID PA RIN!', a stylized rising sun icon combined with a small Philippine flag waving graphic, playful yet patriotic poster design, clean modern typography, square 1:1 format",
+        "caption": "Huling araw ng trabaho, mga SOLID! 💪 Anuman ang mangyari sa balita ngayong linggo, alam natin kung saan tayo nakatayo. Tuloy ang laban! 🇵🇭 #FridayFeels #SolidDuterte"
+      },
+      {
+        "slot": "12pm",
+        "prompt": "Bold graphic banner, vibrant noon blue-gold gradient, large bold headline text 'KATOTOHANAN LABAN SA KASINUNGALINGAN', an icon of a magnifying glass over a document, symbolizing fact-checking and transparency, Philippine flag star emblem, clean modern poster design, high contrast, square 1:1 format",
+        "caption": "Tanghali na! 🔍 Sa gitna ng maraming kwento sa social media, panatilihin nating malinaw ang katotohanan. Huwag padalos-dalos maniwala. 🇵🇭 #KatotohananMuna #SolidDuterte"
+      },
+      {
+        "slot": "6pm",
+        "prompt": "Bold graphic banner, festive Friday-evening purple-to-gold gradient, large bold headline text 'WEEKEND NA, SOLID PA RIN ANG TAYO', an icon of a star burst combined with a small Philippine flag ribbon, celebratory yet patriotic poster design, clean modern typography, square 1:1 format",
+        "caption": "Weekend na, mga SOLID! 🎉 Magpahinga tayo nang tama, pero huwag kalimutan ang laban para sa disiplina at tunay na paglilingkod. 🇵🇭✨ #WeekendSolid #SolidDuterte"
+      }
+    ],
+    "saturday": [
+      {
+        "slot": "6am",
+        "prompt": "Bold graphic banner, relaxed Saturday-morning teal-and-gold palette, large bold headline text 'SABADONG SOLID', an icon of a coffee cup beside a small Philippine flag, cozy yet patriotic poster design, clean modern typography, square 1:1 format",
+        "caption": "Magandang Sabado, mga SOLID! ☕ Kahit weekend, hindi tayo nakakalimot sa laban para sa disiplinadong Pilipinas. Good morning, fighters! 🇵🇭 #SabadongSolid #SolidDuterte"
+      },
+      {
+        "slot": "12pm",
+        "prompt": "Bold graphic banner, bright Saturday-noon orange-yellow gradient, large bold headline text 'PAMILYANG PILIPINO, UNANG PRIORIDAD', an icon of a simple family silhouette (parents and child) inside a heart shape, Philippine flag ribbon accent, clean modern poster design, square 1:1 format",
+        "caption": "Tanghaling-tapat! 👨‍👩‍👧 Ang pamilyang Pilipino ang puso ng ating bansa. Ipaglaban natin ang mga polisiyang nagpapalakas sa bawat tahanan. 🇵🇭 #PamilyaMuna #SolidDuterte"
+      },
+      {
+        "slot": "6pm",
+        "prompt": "Bold graphic banner, warm Saturday-evening rose-gold gradient, large bold headline text 'GABI NG PAGNINILAY', an icon of a lit candle beside a small map outline of the Philippines, reflective and patriotic poster design, clean modern typography, square 1:1 format",
+        "caption": "Sa katahimikan ng gabi, pagnilayan natin kung anong klaseng bayan ang gusto nating iwan sa susunod na henerasyon. Disiplinado. Malinis. SOLID. 🕯️🇵🇭 #PagninilayNgSolid"
+      }
+    ],
+    "sunday": [
+      {
+        "slot": "6am",
+        "prompt": "Bold graphic banner, peaceful Sunday-morning soft-blue-and-gold palette, large bold headline text 'LINGGO NG PASASALAMAT', an icon of praying hands beside a small sun graphic, serene and patriotic poster design, clean modern typography, square 1:1 format",
+        "caption": "Magandang Linggo, mga SOLID! 🙏 Salamat sa isang linggong puno ng pagpupursigi. Patuloy tayong manalangin para sa disiplinadong Pilipinas. 🇵🇭 #LinggoNgPasasalamat #SolidDuterte"
+      },
+      {
+        "slot": "12pm",
+        "prompt": "Bold graphic banner, bright Sunday-noon gold-and-red palette, large bold headline text 'SAMA-SAMA PARA SA BAYAN', an icon of a large crowd silhouette holding small Philippine flags, unified and patriotic poster design, clean modern typography, square 1:1 format",
+        "caption": "Tanghali na! 🇵🇭 Ang lakas ng SOLID ay nasa bilang natin at sa tibay ng ating paninindigan. Sama-sama tungo sa disiplinadong bayan! #SamaSamaTayo #SolidDuterte"
+      },
+      {
+        "slot": "6pm",
+        "prompt": "Bold graphic banner, calm Sunday-evening indigo-to-gold gradient, large bold headline text 'HANDA PARA SA BAGONG LINGGO', an icon of a sunrise breaking over a stylized Philippine map silhouette, hopeful and patriotic poster design, clean modern typography, square 1:1 format",
+        "caption": "Pagsapit ng gabi, handa na tayo para sa panibagong linggo ng laban. Tuloy ang pagbabantay, tuloy ang paninindigan. Solid hanggang wakas! 🌅🇵🇭 #HandaAngSolid #SolidDuterte"
+      }
+    ]
+  }
 }
