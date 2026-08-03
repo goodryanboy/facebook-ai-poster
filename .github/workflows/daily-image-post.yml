@@ -24,6 +24,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Random delay (spread posting time within a 30-min window)
+        run: sleep $((RANDOM % 1800))
+
       - name: Generate image and post to Facebook
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
