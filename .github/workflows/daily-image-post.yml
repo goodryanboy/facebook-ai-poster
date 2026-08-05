@@ -27,7 +27,7 @@ jobs:
         run: npm install
 
       - name: Random delay (spread posting time within a 30-min window)
-        run: sleep $((RANDOM % 1800))
+        run: sleep $((RANDOM % 100))
 
       - name: Generate image and post to Facebook
         env:
