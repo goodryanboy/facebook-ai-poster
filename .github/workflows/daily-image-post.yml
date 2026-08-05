@@ -5,7 +5,7 @@ on:
     # 21:00 UTC = 05:00 PH | 03:00 UTC = 11:00 PH | 09:00 UTC = 17:00 PH
     # Shifted 1hr earlier than target posting time to offset GitHub's typical
     # scheduled-workflow delay, so actual posts land closer to 6am/12pm/6pm PH.
-    - cron: "0 21,15,9 * * *"
+    - cron: "0 21,3,9 * * *"
   workflow_dispatch: {} # lets you trigger it manually from the Actions tab
 
 jobs:
