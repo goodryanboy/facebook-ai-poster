@@ -1,5 +1,5 @@
 {
-  "_comment": "Multi-page + per-page config. Keys under \"pages\" are Facebook Pages. Do NOT put pageId/tokens here — use secrets FB_PAGE_IDS and FB_PAGE_TOKENS. pages.dds = image posts; pages.bbm = BBM text; pages.sarah = Sarah Duterte text. Config keys: postType (image|text), imageProvider, imageModel, imageSize, published, link, slots.",
+  "_comment": "Multi-page + per-page config. Keys under \"pages\" are Facebook Pages. Do NOT put pageId/tokens here — use secrets FB_PAGE_IDS and FB_PAGE_TOKENS. pages.dds = Digong image posts; pages.duterte = Digong/DDS text engagement; pages.bbm = BBM text; pages.sarah = Sarah Duterte text. Config keys: postType (image|text), imageProvider, imageModel, imageSize, published, link, slots.",
   "pages": {
     "dds": {
       "schedule": {
@@ -337,6 +337,112 @@
           {
             "slot": "6pm",
             "caption": "Huling tanong: handa ka bang lumaban para kay Sarah Duterte? Comment \"laban\"."
+          }
+        ]
+      }
+    },
+    "phnews": {
+      "config": {
+        "postType": "text",
+        "published": true
+      },
+      "schedule": {
+        "monday": [
+          {
+            "slot": "6am",
+            "caption": "DDS check: ilang taon ka nang solid kay Digong? Mag-comment ng number."
+          },
+          {
+            "slot": "12pm",
+            "caption": "Anong Davao habit or style ni Mayor Duterte ang gusto mong makita sa buong Pilipinas?"
+          },
+          {
+            "slot": "6pm",
+            "caption": "Kung may timeline ng buhay ni Digong, anong chapter ang pinaka-proud ka? Sabihin."
+          }
+        ],
+        "tuesday": [
+          {
+            "slot": "6am",
+            "caption": "One word lang: paano mo idedescribe si Rodrigo Duterte bilang lider?"
+          },
+          {
+            "slot": "12pm",
+            "caption": "Sino ang unang nagpakilala sa'yo kay Digong — pamilya, kaibigan, o social media?"
+          },
+          {
+            "slot": "6pm",
+            "caption": "Kung may DDS reunion, anong slogan ang isisigaw mo unang-una?"
+          }
+        ],
+        "wednesday": [
+          {
+            "slot": "6am",
+            "caption": "Disiplina, tapang, o malasakit — alin ang pinaka-Duterte para sa'yo? Pili at bakit."
+          },
+          {
+            "slot": "12pm",
+            "caption": "Anong lugar o project sa Davao ang naiisip mo agad kapag nabanggit si Digong?"
+          },
+          {
+            "slot": "6pm",
+            "caption": "True DDS ka ba kapag tahimik ang balita, o kapag mainit lang? Be honest."
+          }
+        ],
+        "thursday": [
+          {
+            "slot": "6am",
+            "caption": "Kung may podcast si Digong ngayon, anong unang tanong mo sa kanya?"
+          },
+          {
+            "slot": "12pm",
+            "caption": "Ibahagi ang paborito mong \"Digong moment\" na hindi quote poster — kwento mo."
+          },
+          {
+            "slot": "6pm",
+            "caption": "DDS pride: anong sabi ng pamilya mo kapag nalaman nilang solid ka kay Duterte?"
+          }
+        ],
+        "friday": [
+          {
+            "slot": "6am",
+            "caption": "Friday roll call: nandito pa ba ang tunay na DDS? Mag-comment ng \"DDS FOREVER\"."
+          },
+          {
+            "slot": "12pm",
+            "caption": "Anong aral mula kay Digong ang ginagamit mo pa rin sa pang-araw-araw?"
+          },
+          {
+            "slot": "6pm",
+            "caption": "Kung may bagong henerasyon, paano mo ie-explain kung bakit mahalaga si Duterte?"
+          }
+        ],
+        "saturday": [
+          {
+            "slot": "6am",
+            "caption": "Weekend nostalgia: anong campaign o rally ni Digong ang hindi mo makakalimutan?"
+          },
+          {
+            "slot": "12pm",
+            "caption": "Red shirt, blue shirt, o simple lang — anong look ang \"DDS mode\" mo?"
+          },
+          {
+            "slot": "6pm",
+            "caption": "Kung may DDS handbook, anong rule number one ang isusulat mo tungkol kay Digong?"
+          }
+        ],
+        "sunday": [
+          {
+            "slot": "6am",
+            "caption": "Magandang Linggo, DDS family. Anong dasal mo ngayon para kay Digong at sa bayan?"
+          },
+          {
+            "slot": "12pm",
+            "caption": "Tag 2 kaibigan na pure Duterte supporter. Sabihin bakit sila legit DDS."
+          },
+          {
+            "slot": "6pm",
+            "caption": "Closing: kung may message ka kay Digong ngayong gabi, anong 1 sentence mo?"
           }
         ]
       }
