@@ -1,124 +1,350 @@
 {
-  "_comment": "Updated prompts to match the attached image style: large crowd of supporters holding a big banner featuring Duterte’s face (varying expressions/poses) + long quote text. AI Generated label kept. Captions remain natural.",
-  "schedule": {
-    "monday": [
-      {
-        "slot": "6am",
-        "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters outdoors in a sunny plaza, many wearing red and blue shirts, holding Philippine flags, smiling and raising fists. In the center, a group of people hold a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s, short gray hair) with a serious determined expression and raised right hand, flanked by Philippine flags. Large bold text on the banner reading: \"YOUR CONCERN IS HUMAN RIGHTS, MINE IS HUMAN LIVES\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, natural daylight, lively political rally atmosphere, 1:1 square format, 8k quality.",
-        "caption": "Umaga mga SOLID. Yung sinabi ni Digong: “Your concern is human rights, mine is human lives.” Diretso. Walang paligoy. Sino pa ang nami-miss ang ganyang lider? Comment niyo."
+  "_comment": "Multi-page + per-page config. Keys under \"pages\" are Facebook Pages. Do NOT put pageId/tokens here — use secrets FB_PAGE_IDS and FB_PAGE_TOKENS. pages.dds = image posts; pages.bbm = BBM text; pages.sarah = Sarah Duterte text. Config keys: postType (image|text), imageProvider, imageModel, imageSize, published, link, slots.",
+  "pages": {
+    "dds": {
+      "schedule": {
+        "monday": [
+          {
+            "slot": "6am",
+            "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters outdoors in a sunny plaza, many wearing red and blue shirts, holding Philippine flags, smiling and raising fists. In the center, a group of people hold a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s, short gray hair) with a serious determined expression and raised right hand, flanked by Philippine flags. Large bold text on the banner reading: \"YOUR CONCERN IS HUMAN RIGHTS, MINE IS HUMAN LIVES\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, natural daylight, lively political rally atmosphere, 1:1 square format, 8k quality.",
+            "caption": "Umaga mga SOLID. Yung sinabi ni Digong: “Your concern is human rights, mine is human lives.” Diretso. Walang paligoy. Sino pa ang nami-miss ang ganyang lider? Comment niyo."
+          },
+          {
+            "slot": "12pm",
+            "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters outdoors under bright midday sun, many wearing campaign shirts, waving Philippine flags and cheering. In the center, supporters hold a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a confident proud smile and chin slightly raised, Philippine flags on both sides. Large bold text on the banner reading: \"I WILL CHANGE THIS COUNTRY EVEN IF IT COSTS ME MY LIFE\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, natural daylight, energetic rally atmosphere, 1:1 square format, 8k quality.",
+            "caption": "Tanghali na. “I will change this country even if it costs me my life.” Yan ang sinabi ni Digong. Hindi biro. Sino pa ang naniniwala? Sabihin niyo."
+          },
+          {
+            "slot": "6pm",
+            "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters outdoors during late afternoon golden hour, many holding flags and smiling. In the center, a group holds a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a firm intense stare and arms crossed, Philippine flags flanking him. Large bold text on the banner reading: \"I DO NOT CARE IF I BURN IN HELL AS LONG AS THE PEOPLE I SERVE LIVE IN PARADISE\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, warm evening light, passionate rally atmosphere, 1:1 square format, 8k quality.",
+            "caption": "Gabi na. “I do not care if I burn in hell as long as the people I serve live in paradise.” Yan ang puso ni Digong. Sino pa ang nami-miss? Comment niyo."
+          }
+        ],
+        "tuesday": [
+          {
+            "slot": "6am",
+            "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters in a sunny outdoor plaza, wearing red shirts and waving flags. In the center, people hold a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a calm but firm expression looking slightly to the side, Philippine flags on both sides. Large bold text on the banner reading: \"YOU DESTROY MY COUNTRY, I WILL KILL YOU\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, natural morning light, lively rally, 1:1 square format, 8k quality.",
+            "caption": "Umaga. “You destroy my country, I will kill you.” Diretso kay Digong. Para sa next generation. Agree ba kayo? Sabihin niyo."
+          },
+          {
+            "slot": "12pm",
+            "prompt": "Photorealistic wide shot of a large enthusiastic crowd of Filipino supporters under bright noon sun, many raising hands and holding flags. In the center, supporters hold a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a strong determined stare and one hand raised, Philippine flags flanking him. Large bold text on the banner reading: \"IF YOU DESTROY OUR YOUNG CHILDREN, I WILL KILL YOU\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, bright daylight, energetic atmosphere, 1:1 square format, 8k quality.",
+            "caption": "Tanghali. “If you destroy our young children, I will kill you.” Yan ang proteksyon ni Digong. Sino pa ang naniniwala? Comment niyo."
+          },
+          {
+            "slot": "6pm",
+            "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters outdoors in soft evening light, holding flags and smiling. In the center, a group holds a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a warm but serious expression and slight nod, Philippine flags on both sides. Large bold text on the banner reading: \"I WILL FIGHT FOR THE PEOPLE UNTIL MY LAST BREATH\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, warm light, passionate rally, 1:1 square format, 8k quality.",
+            "caption": "Gabi na. “I will fight for the people until my last breath.” Hindi salita lang kay Digong. Sino pa ang nandito pa rin? Comment niyo."
+          }
+        ],
+        "wednesday": [
+          {
+            "slot": "6am",
+            "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters in a sunny plaza, many wearing blue and red shirts, waving Philippine flags. In the center, people hold a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a caring but firm expression and slight smile, Philippine flags flanking him. Large bold text on the banner reading: \"I WILL NOT ALLOW THIS COUNTRY TO BE DESTROYED BY DRUGS\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, natural morning light, lively atmosphere, 1:1 square format, 8k quality.",
+            "caption": "Magandang umaga. “I will not allow this country to be destroyed by drugs.” Yan ang Digong. Miss niyo pa ba yung takot ng mga kriminal? Sabihin niyo."
+          },
+          {
+            "slot": "12pm",
+            "prompt": "Photorealistic wide shot of a large cheering crowd of Filipino supporters under bright midday sun, holding flags high. In the center, supporters hold a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a proud confident smile and chin up, Philippine flags on both sides. Large bold text on the banner reading: \"CHANGE IS COMING AND IT WILL BE REAL\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, bright daylight, energetic rally, 1:1 square format, 8k quality.",
+            "caption": "Tanghali na. “Change is coming and it will be real.” Tapos totoo nga. Sino pa ang nami-miss ang change na yun? Comment niyo."
+          },
+          {
+            "slot": "6pm",
+            "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters outdoors during dusk, many holding flags. In the center, a group holds a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with an intense but controlled expression and clenched jaw, Philippine flags flanking him. Large bold text on the banner reading: \"I AM READY TO SERVE EVEN IF IT COSTS ME EVERYTHING\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, soft evening light, determined atmosphere, 1:1 square format, 8k quality.",
+            "caption": "Gabi na mga SOLID. “I am ready to serve even if it costs me everything.” Yan ang Digong. Sino pa ang naniniwala hanggang ngayon? Sabihin niyo."
+          }
+        ],
+        "thursday": [
+          {
+            "slot": "6am",
+            "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters in a bright outdoor plaza, waving flags and smiling. In the center, people hold a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a resolute serious stare and arms crossed, Philippine flags on both sides. Large bold text on the banner reading: \"I AM THE PRESIDENT AND I WILL DO WHAT IS RIGHT\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, natural morning light, strong rally atmosphere, 1:1 square format, 8k quality.",
+            "caption": "Umaga. “I am the President and I will do what is right.” Walang takot si Digong. Sino pa ang nami-miss? Comment niyo."
+          },
+          {
+            "slot": "12pm",
+            "prompt": "Photorealistic wide shot of a large enthusiastic crowd of Filipino supporters under noon sun, many raising fists and flags. In the center, supporters hold a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with an encouraging slight smile and one hand open in gesture, Philippine flags flanking him. Large bold text on the banner reading: \"BUILD BUILD BUILD FOR THE FILIPINO PEOPLE\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, bright daylight, positive energy, 1:1 square format, 8k quality.",
+            "caption": "Tanghali. “Build Build Build for the Filipino people.” May actual na proyekto. Ano ang naalala niyo? Sabihin niyo."
+          },
+          {
+            "slot": "6pm",
+            "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters outdoors in warm evening light, holding flags and smiling. In the center, a group holds a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a warm unifying expression and slight smile, Philippine flags on both sides. Large bold text on the banner reading: \"SOLID HANGGANG DULO PARA SA BAYAN\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, golden hour light, united atmosphere, 1:1 square format, 8k quality.",
+            "caption": "Gabi na. Solid hanggang dulo para sa bayan. Sino pa ang solid pa rin? I-react o comment niyo."
+          }
+        ],
+        "friday": [
+          {
+            "slot": "6am",
+            "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters in a sunny plaza, many wearing red shirts and waving flags. In the center, people hold a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a cheerful confident smile and raised chin, Philippine flags flanking him. Large bold text on the banner reading: \"I WILL NEVER ABANDON THE FILIPINO PEOPLE\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, natural morning light, hopeful atmosphere, 1:1 square format, 8k quality.",
+            "caption": "Friday na. “I will never abandon the Filipino people.” Yan ang pangako ni Digong. Nandito pa ba kayo? Comment niyo."
+          },
+          {
+            "slot": "12pm",
+            "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters under bright noon sun, cheering and holding flags. In the center, supporters hold a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a serious determined expression and pointing slightly forward, Philippine flags on both sides. Large bold text on the banner reading: \"FORGET THE LAWS ON HUMAN RIGHTS IF IT MEANS SAVING LIVES\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, bright daylight, intense atmosphere, 1:1 square format, 8k quality.",
+            "caption": "Tanghali. “Forget the laws on human rights if it means saving lives.” Diretso kay Digong. Agree ba kayo? Sabihin niyo."
+          },
+          {
+            "slot": "6pm",
+            "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters outdoors in soft evening light, holding flags high. In the center, a group holds a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a relaxed proud smile and open posture, Philippine flags flanking him. Large bold text on the banner reading: \"DIGONG FOREVER IN THE HEARTS OF THE PEOPLE\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, warm light, celebratory atmosphere, 1:1 square format, 8k quality.",
+            "caption": "Weekend na. Digong forever in the hearts of the people. Sino pa ang nandito pa rin? Comment o i-react."
+          }
+        ],
+        "saturday": [
+          {
+            "slot": "6am",
+            "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters in a bright outdoor plaza, smiling and waving flags. In the center, people hold a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a friendly morning smile and relaxed posture, Philippine flags on both sides. Large bold text on the banner reading: \"I SERVED THE PEOPLE WITH ALL MY HEART\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, natural morning light, warm atmosphere, 1:1 square format, 8k quality.",
+            "caption": "Magandang Sabado. “I served the people with all my heart.” Yan ang Digong. Sino pa ang naniniwala? Comment niyo."
+          },
+          {
+            "slot": "12pm",
+            "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters under noon sun, many raising hands. In the center, supporters hold a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a warm fatherly smile and slight nod, Philippine flags flanking him. Large bold text on the banner reading: \"THE NEXT GENERATION MUST BE PROTECTED AT ALL COSTS\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, bright daylight, caring atmosphere, 1:1 square format, 8k quality.",
+            "caption": "Tanghaling-tapat. “The next generation must be protected at all costs.” Yan ang focus ni Digong. Agree ba kayo? Sabihin niyo."
+          },
+          {
+            "slot": "6pm",
+            "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters outdoors in soft evening light, holding flags. In the center, a group holds a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a thoughtful reflective expression looking slightly upward, Philippine flags on both sides. Large bold text on the banner reading: \"NEVER FORGET WHAT WE FOUGHT FOR\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, warm evening light, reflective atmosphere, 1:1 square format, 8k quality.",
+            "caption": "Gabi na. Never forget what we fought for. Ano ang pinaka-naaalala niyo kay Digong? Sabihin niyo."
+          }
+        ],
+        "sunday": [
+          {
+            "slot": "6am",
+            "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters in a sunny plaza, many smiling and holding flags. In the center, people hold a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a serene grateful expression and slight smile, Philippine flags flanking him. Large bold text on the banner reading: \"SALAMAT SA MGA TAONG NANATILING SOLID\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, natural morning light, thankful atmosphere, 1:1 square format, 8k quality.",
+            "caption": "Magandang Linggo. Salamat sa mga taong nanatiling solid. Sino pa ang nandito? Comment niyo."
+          },
+          {
+            "slot": "12pm",
+            "prompt": "Photorealistic wide shot of a large united crowd of Filipino supporters under bright noon sun, waving flags high. In the center, supporters hold a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a proud unifying smile and open posture, Philippine flags on both sides. Large bold text on the banner reading: \"SAMA-SAMA TAYO PARA SA DISIPLINADONG BAYAN\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, bright daylight, united energy, 1:1 square format, 8k quality.",
+            "caption": "Tanghali. Sama-sama tayo para sa disiplinadong bayan. Sino pa ang kasama? I-react o tag someone."
+          },
+          {
+            "slot": "6pm",
+            "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters outdoors in soft evening light, holding flags and looking determined. In the center, a group holds a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a hopeful determined expression and slight smile looking forward, Philippine flags flanking him. Large bold text on the banner reading: \"HANDA PA RIN TAYONG LUMABAN PARA KAY DIGONG\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, warm evening light, resolute atmosphere, 1:1 square format, 8k quality.",
+            "caption": "Gabi na. Handa pa rin tayong lumaban para kay Digong. Sino pa ang handa? Comment o i-react."
+          }
+        ]
       },
-      {
-        "slot": "12pm",
-        "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters outdoors under bright midday sun, many wearing campaign shirts, waving Philippine flags and cheering. In the center, supporters hold a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a confident proud smile and chin slightly raised, Philippine flags on both sides. Large bold text on the banner reading: \"I WILL CHANGE THIS COUNTRY EVEN IF IT COSTS ME MY LIFE\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, natural daylight, energetic rally atmosphere, 1:1 square format, 8k quality.",
-        "caption": "Tanghali na. “I will change this country even if it costs me my life.” Yan ang sinabi ni Digong. Hindi biro. Sino pa ang naniniwala? Sabihin niyo."
-      },
-      {
-        "slot": "6pm",
-        "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters outdoors during late afternoon golden hour, many holding flags and smiling. In the center, a group holds a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a firm intense stare and arms crossed, Philippine flags flanking him. Large bold text on the banner reading: \"I DO NOT CARE IF I BURN IN HELL AS LONG AS THE PEOPLE I SERVE LIVE IN PARADISE\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, warm evening light, passionate rally atmosphere, 1:1 square format, 8k quality.",
-        "caption": "Gabi na. “I do not care if I burn in hell as long as the people I serve live in paradise.” Yan ang puso ni Digong. Sino pa ang nami-miss? Comment niyo."
+      "config": {
+        "postType": "image",
+        "imageProvider": "auto",
+        "published": true
       }
-    ],
-    "tuesday": [
-      {
-        "slot": "6am",
-        "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters in a sunny outdoor plaza, wearing red shirts and waving flags. In the center, people hold a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a calm but firm expression looking slightly to the side, Philippine flags on both sides. Large bold text on the banner reading: \"YOU DESTROY MY COUNTRY, I WILL KILL YOU\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, natural morning light, lively rally, 1:1 square format, 8k quality.",
-        "caption": "Umaga. “You destroy my country, I will kill you.” Diretso kay Digong. Para sa next generation. Agree ba kayo? Sabihin niyo."
+    },
+    "bbm": {
+      "config": {
+        "postType": "text",
+        "published": true
       },
-      {
-        "slot": "12pm",
-        "prompt": "Photorealistic wide shot of a large enthusiastic crowd of Filipino supporters under bright noon sun, many raising hands and holding flags. In the center, supporters hold a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a strong determined stare and one hand raised, Philippine flags flanking him. Large bold text on the banner reading: \"IF YOU DESTROY OUR YOUNG CHILDREN, I WILL KILL YOU\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, bright daylight, energetic atmosphere, 1:1 square format, 8k quality.",
-        "caption": "Tanghali. “If you destroy our young children, I will kill you.” Yan ang proteksyon ni Digong. Sino pa ang naniniwala? Comment niyo."
-      },
-      {
-        "slot": "6pm",
-        "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters outdoors in soft evening light, holding flags and smiling. In the center, a group holds a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a warm but serious expression and slight nod, Philippine flags on both sides. Large bold text on the banner reading: \"I WILL FIGHT FOR THE PEOPLE UNTIL MY LAST BREATH\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, warm light, passionate rally, 1:1 square format, 8k quality.",
-        "caption": "Gabi na. “I will fight for the people until my last breath.” Hindi salita lang kay Digong. Sino pa ang nandito pa rin? Comment niyo."
+      "schedule": {
+        "monday": [
+          {
+            "slot": "6am",
+            "caption": "Kung ikaw ay masusunod, payag ka ba ma-extend si BBM? Comment niyo, mga SOLID."
+          },
+          {
+            "slot": "12pm",
+            "caption": "Bakit mo mahal si BBM? Sabihin sa comment ang rason mo."
+          },
+          {
+            "slot": "6pm",
+            "caption": "Sino pa ang solid kay Bongbong Marcos hanggang ngayon? I-react o comment."
+          }
+        ],
+        "tuesday": [
+          {
+            "slot": "6am",
+            "caption": "Ano ang pinaka-naaalala mo kay BBM bilang Presidente? Sabihin niyo."
+          },
+          {
+            "slot": "12pm",
+            "caption": "Kung may election ulit bukas, iboboto mo pa ba si BBM? Oo o hindi — bakit?"
+          },
+          {
+            "slot": "6pm",
+            "caption": "BBM supporters, anong message mo sa mga bashers? Diretso lang, comment niyo."
+          }
+        ],
+        "wednesday": [
+          {
+            "slot": "6am",
+            "caption": "Mas gusto mo ba si Bongbong Marcos kaysa sa mga kritiko niya? Bakit?"
+          },
+          {
+            "slot": "12pm",
+            "caption": "Anong proyekto o programa ni BBM ang pinaka-appreciate mo? Sabihin niyo."
+          },
+          {
+            "slot": "6pm",
+            "caption": "Solid ka ba kay BBM kapag mainit ang issue, o sa mabuti lang? Honest answer."
+          }
+        ],
+        "thursday": [
+          {
+            "slot": "6am",
+            "caption": "Kung makakausap mo si BBM ng isang minuto, anong sasabihin mo?"
+          },
+          {
+            "slot": "12pm",
+            "caption": "Bakit dapat maniwala ang Pilipino kay Bongbong Marcos? Comment your take."
+          },
+          {
+            "slot": "6pm",
+            "caption": "BBM o walang BBM — sino ang mas panalo para sa bayan? Defend your answer."
+          }
+        ],
+        "friday": [
+          {
+            "slot": "6am",
+            "caption": "Friday na. Sino pa ang proud supporter ni BBM? Mag-comment ng \"SOLID BBM\"."
+          },
+          {
+            "slot": "12pm",
+            "caption": "Ano ang pinakamalaking change na gusto mo makita sa ilalim ni BBM?"
+          },
+          {
+            "slot": "6pm",
+            "caption": "Kung may bash kay Bongbong Marcos sa feed mo, paano ka sumasagot? Share tips."
+          }
+        ],
+        "saturday": [
+          {
+            "slot": "6am",
+            "caption": "Weekend check: nandito pa ba ang mga BBM supporters? Comment \"nandito\"."
+          },
+          {
+            "slot": "12pm",
+            "caption": "Anong trait ni BBM ang pinaka-gusto mo bilang lider? Sabihin niyo."
+          },
+          {
+            "slot": "6pm",
+            "caption": "Isa lang tanong: worth it ba ang tiwala mo kay Bongbong Marcos? Oo/Hindi + bakit."
+          }
+        ],
+        "sunday": [
+          {
+            "slot": "6am",
+            "caption": "Magandang Linggo, mga SOLID. Panatilihin ang panalangin at support kay BBM."
+          },
+          {
+            "slot": "12pm",
+            "caption": "Tag someone na pure BBM supporter. Sabihin bakit sila solid kay Bongbong Marcos."
+          },
+          {
+            "slot": "6pm",
+            "caption": "Huling tanong ngayong linggo: handa ka bang manindigan para kay BBM? Comment \"handa\"."
+          }
+        ]
       }
-    ],
-    "wednesday": [
-      {
-        "slot": "6am",
-        "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters in a sunny plaza, many wearing blue and red shirts, waving Philippine flags. In the center, people hold a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a caring but firm expression and slight smile, Philippine flags flanking him. Large bold text on the banner reading: \"I WILL NOT ALLOW THIS COUNTRY TO BE DESTROYED BY DRUGS\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, natural morning light, lively atmosphere, 1:1 square format, 8k quality.",
-        "caption": "Magandang umaga. “I will not allow this country to be destroyed by drugs.” Yan ang Digong. Miss niyo pa ba yung takot ng mga kriminal? Sabihin niyo."
+    },
+    "sarah": {
+      "config": {
+        "postType": "text",
+        "published": true
       },
-      {
-        "slot": "12pm",
-        "prompt": "Photorealistic wide shot of a large cheering crowd of Filipino supporters under bright midday sun, holding flags high. In the center, supporters hold a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a proud confident smile and chin up, Philippine flags on both sides. Large bold text on the banner reading: \"CHANGE IS COMING AND IT WILL BE REAL\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, bright daylight, energetic rally, 1:1 square format, 8k quality.",
-        "caption": "Tanghali na. “Change is coming and it will be real.” Tapos totoo nga. Sino pa ang nami-miss ang change na yun? Comment niyo."
-      },
-      {
-        "slot": "6pm",
-        "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters outdoors during dusk, many holding flags. In the center, a group holds a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with an intense but controlled expression and clenched jaw, Philippine flags flanking him. Large bold text on the banner reading: \"I AM READY TO SERVE EVEN IF IT COSTS ME EVERYTHING\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, soft evening light, determined atmosphere, 1:1 square format, 8k quality.",
-        "caption": "Gabi na mga SOLID. “I am ready to serve even if it costs me everything.” Yan ang Digong. Sino pa ang naniniwala hanggang ngayon? Sabihin niyo."
+      "schedule": {
+        "monday": [
+          {
+            "slot": "6am",
+            "caption": "Sino pa ang solid kay Sarah Duterte hanggang ngayon? Comment \"SOLID SARAH\"."
+          },
+          {
+            "slot": "12pm",
+            "caption": "Bakit mo sinusuportahan si Sarah Duterte? Sabihin ang rason mo sa comment."
+          },
+          {
+            "slot": "6pm",
+            "caption": "Kung ikaw ang masusunod, anong position ang gusto mo para kay Sarah Duterte?"
+          }
+        ],
+        "tuesday": [
+          {
+            "slot": "6am",
+            "caption": "Ano ang pinaka-naaalala mo kay Sarah Duterte bilang Vice President?"
+          },
+          {
+            "slot": "12pm",
+            "caption": "Sarah Duterte supporters, anong message mo sa mga bashers? Diretso lang."
+          },
+          {
+            "slot": "6pm",
+            "caption": "Handa ka bang manindigan para kay Sarah Duterte? Comment \"handa\"."
+          }
+        ],
+        "wednesday": [
+          {
+            "slot": "6am",
+            "caption": "Anong trait ni Sarah Duterte ang pinaka-gusto mo bilang lider?"
+          },
+          {
+            "slot": "12pm",
+            "caption": "Kung may election ulit, iboboto mo ba ulit si Sarah Duterte? Oo/Hindi + bakit."
+          },
+          {
+            "slot": "6pm",
+            "caption": "Solid ka ba kay Sarah Duterte kapag mainit ang issue? Honest answer."
+          }
+        ],
+        "thursday": [
+          {
+            "slot": "6am",
+            "caption": "Kung makakausap mo si Sarah Duterte ng 1 minuto, anong sasabihin mo?"
+          },
+          {
+            "slot": "12pm",
+            "caption": "Bakit importante si Sarah Duterte para sa next generation? Comment niyo."
+          },
+          {
+            "slot": "6pm",
+            "caption": "Sarah Duterte o walang Sarah — sino ang panalo para sa bayan? Defend."
+          }
+        ],
+        "friday": [
+          {
+            "slot": "6am",
+            "caption": "Friday na. Proud supporter ka ba ni Sarah Duterte? Mag-comment ng \"PROUD\"."
+          },
+          {
+            "slot": "12pm",
+            "caption": "Anong change ang gusto mong makita kasama si Sarah Duterte? Sabihin niyo."
+          },
+          {
+            "slot": "6pm",
+            "caption": "Kung may bash kay Sarah Duterte sa feed mo, paano ka sumasagot? Share tips."
+          }
+        ],
+        "saturday": [
+          {
+            "slot": "6am",
+            "caption": "Weekend check: nandito pa ba ang mga Sarah Duterte supporters? \"nandito\"."
+          },
+          {
+            "slot": "12pm",
+            "caption": "Ano ang pinakamalakas na point bakit dapat maniwala kay Sarah Duterte?"
+          },
+          {
+            "slot": "6pm",
+            "caption": "Worth it ba ang tiwala mo kay Sarah Duterte? Oo o Hindi — bakit?"
+          }
+        ],
+        "sunday": [
+          {
+            "slot": "6am",
+            "caption": "Magandang Linggo, mga SOLID. Support at panalangin para kay Sarah Duterte."
+          },
+          {
+            "slot": "12pm",
+            "caption": "Tag a pure Sarah Duterte supporter. Sabihin bakit sila solid hanggang dulo."
+          },
+          {
+            "slot": "6pm",
+            "caption": "Huling tanong: handa ka bang lumaban para kay Sarah Duterte? Comment \"laban\"."
+          }
+        ]
       }
-    ],
-    "thursday": [
-      {
-        "slot": "6am",
-        "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters in a bright outdoor plaza, waving flags and smiling. In the center, people hold a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a resolute serious stare and arms crossed, Philippine flags on both sides. Large bold text on the banner reading: \"I AM THE PRESIDENT AND I WILL DO WHAT IS RIGHT\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, natural morning light, strong rally atmosphere, 1:1 square format, 8k quality.",
-        "caption": "Umaga. “I am the President and I will do what is right.” Walang takot si Digong. Sino pa ang nami-miss? Comment niyo."
-      },
-      {
-        "slot": "12pm",
-        "prompt": "Photorealistic wide shot of a large enthusiastic crowd of Filipino supporters under noon sun, many raising fists and flags. In the center, supporters hold a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with an encouraging slight smile and one hand open in gesture, Philippine flags flanking him. Large bold text on the banner reading: \"BUILD BUILD BUILD FOR THE FILIPINO PEOPLE\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, bright daylight, positive energy, 1:1 square format, 8k quality.",
-        "caption": "Tanghali. “Build Build Build for the Filipino people.” May actual na proyekto. Ano ang naalala niyo? Sabihin niyo."
-      },
-      {
-        "slot": "6pm",
-        "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters outdoors in warm evening light, holding flags and smiling. In the center, a group holds a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a warm unifying expression and slight smile, Philippine flags on both sides. Large bold text on the banner reading: \"SOLID HANGGANG DULO PARA SA BAYAN\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, golden hour light, united atmosphere, 1:1 square format, 8k quality.",
-        "caption": "Gabi na. Solid hanggang dulo para sa bayan. Sino pa ang solid pa rin? I-react o comment niyo."
-      }
-    ],
-    "friday": [
-      {
-        "slot": "6am",
-        "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters in a sunny plaza, many wearing red shirts and waving flags. In the center, people hold a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a cheerful confident smile and raised chin, Philippine flags flanking him. Large bold text on the banner reading: \"I WILL NEVER ABANDON THE FILIPINO PEOPLE\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, natural morning light, hopeful atmosphere, 1:1 square format, 8k quality.",
-        "caption": "Friday na. “I will never abandon the Filipino people.” Yan ang pangako ni Digong. Nandito pa ba kayo? Comment niyo."
-      },
-      {
-        "slot": "12pm",
-        "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters under bright noon sun, cheering and holding flags. In the center, supporters hold a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a serious determined expression and pointing slightly forward, Philippine flags on both sides. Large bold text on the banner reading: \"FORGET THE LAWS ON HUMAN RIGHTS IF IT MEANS SAVING LIVES\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, bright daylight, intense atmosphere, 1:1 square format, 8k quality.",
-        "caption": "Tanghali. “Forget the laws on human rights if it means saving lives.” Diretso kay Digong. Agree ba kayo? Sabihin niyo."
-      },
-      {
-        "slot": "6pm",
-        "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters outdoors in soft evening light, holding flags high. In the center, a group holds a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a relaxed proud smile and open posture, Philippine flags flanking him. Large bold text on the banner reading: \"DIGONG FOREVER IN THE HEARTS OF THE PEOPLE\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, warm light, celebratory atmosphere, 1:1 square format, 8k quality.",
-        "caption": "Weekend na. Digong forever in the hearts of the people. Sino pa ang nandito pa rin? Comment o i-react."
-      }
-    ],
-    "saturday": [
-      {
-        "slot": "6am",
-        "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters in a bright outdoor plaza, smiling and waving flags. In the center, people hold a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a friendly morning smile and relaxed posture, Philippine flags on both sides. Large bold text on the banner reading: \"I SERVED THE PEOPLE WITH ALL MY HEART\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, natural morning light, warm atmosphere, 1:1 square format, 8k quality.",
-        "caption": "Magandang Sabado. “I served the people with all my heart.” Yan ang Digong. Sino pa ang naniniwala? Comment niyo."
-      },
-      {
-        "slot": "12pm",
-        "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters under noon sun, many raising hands. In the center, supporters hold a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a warm fatherly smile and slight nod, Philippine flags flanking him. Large bold text on the banner reading: \"THE NEXT GENERATION MUST BE PROTECTED AT ALL COSTS\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, bright daylight, caring atmosphere, 1:1 square format, 8k quality.",
-        "caption": "Tanghaling-tapat. “The next generation must be protected at all costs.” Yan ang focus ni Digong. Agree ba kayo? Sabihin niyo."
-      },
-      {
-        "slot": "6pm",
-        "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters outdoors in soft evening light, holding flags. In the center, a group holds a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a thoughtful reflective expression looking slightly upward, Philippine flags on both sides. Large bold text on the banner reading: \"NEVER FORGET WHAT WE FOUGHT FOR\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, warm evening light, reflective atmosphere, 1:1 square format, 8k quality.",
-        "caption": "Gabi na. Never forget what we fought for. Ano ang pinaka-naaalala niyo kay Digong? Sabihin niyo."
-      }
-    ],
-    "sunday": [
-      {
-        "slot": "6am",
-        "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters in a sunny plaza, many smiling and holding flags. In the center, people hold a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a serene grateful expression and slight smile, Philippine flags flanking him. Large bold text on the banner reading: \"SALAMAT SA MGA TAONG NANATILING SOLID\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, natural morning light, thankful atmosphere, 1:1 square format, 8k quality.",
-        "caption": "Magandang Linggo. Salamat sa mga taong nanatiling solid. Sino pa ang nandito? Comment niyo."
-      },
-      {
-        "slot": "12pm",
-        "prompt": "Photorealistic wide shot of a large united crowd of Filipino supporters under bright noon sun, waving flags high. In the center, supporters hold a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a proud unifying smile and open posture, Philippine flags on both sides. Large bold text on the banner reading: \"SAMA-SAMA TAYO PARA SA DISIPLINADONG BAYAN\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, bright daylight, united energy, 1:1 square format, 8k quality.",
-        "caption": "Tanghali. Sama-sama tayo para sa disiplinadong bayan. Sino pa ang kasama? I-react o tag someone."
-      },
-      {
-        "slot": "6pm",
-        "prompt": "Photorealistic wide shot of a large crowd of Filipino supporters outdoors in soft evening light, holding flags and looking determined. In the center, a group holds a large white banner with wooden poles. On the banner is a realistic portrait of Rodrigo Duterte (late 70s) with a hopeful determined expression and slight smile looking forward, Philippine flags flanking him. Large bold text on the banner reading: \"HANDA PA RIN TAYONG LUMABAN PARA KAY DIGONG\". Small clean text \"AI Generated\" in the top-right corner of the image. Ultra detailed, sharp focus, warm evening light, resolute atmosphere, 1:1 square format, 8k quality.",
-        "caption": "Gabi na. Handa pa rin tayong lumaban para kay Digong. Sino pa ang handa? Comment o i-react."
-      }
-    ]
+    }
+  },
+  "defaults": {
+    "postType": "text",
+    "imageProvider": "auto",
+    "published": true
   }
 }

@@ -1,20 +1,12 @@
 const fs = require("fs");
 const path = require("path");
 const axios = require("axios");
+const { configForEntry } = require("./pageConfig");
 
 const OPENAI_API_URL = "https://api.openai.com/v1/images/generations";
 const GEMINI_API_BASE = "https://generativelanguage.googleapis.com/v1beta/models";
 
 const PH_TIMEZONE = "Asia/Manila";
-const DAY_NAMES = [
-  "sunday",
-  "monday",
-  "tuesday",
-  "wednesday",
-  "thursday",
-  "friday",
-  "saturday",
-];
 
 /**
  * Gets the current day-of-week name and hour in Philippine time, regardless
@@ -39,7 +31,6 @@ function getPhilippineDayAndHour(date = new Date()) {
 
 /**
  * Maps the current PH hour to the nearest scheduled slot: 6am, 12pm, or 6pm.
- * This lines up with the 3x-daily cron (0 22,4,10 * * * UTC).
  */
 function resolveSlot(hour) {
   if (hour < 9) return "6am"; // 0–8h  -> morning run
@@ -48,76 +39,182 @@ function resolveSlot(hour) {
 }
 
 /**
- * Picks a prompt + caption pair for the current run.
- * - IMAGE_PROMPT / FB_CAPTION env vars, if set, override everything (useful
- *   for manual workflow_dispatch runs or one-off posts).
- * - Otherwise, selects based on the current Philippine day-of-week and
- *   time-of-day slot from prompts.json's "schedule" structure.
+ * Picks schedule entry + prompt/caption for one page.
+ * Caption comes only from the schedule entry (or falls back to prompt later).
+ * Returns { entry, prompt, caption, weekday, slot, config }.
+ *
+ * @param {{ key?: string, schedule?: object, config?: object, rawConfig?: object, fileDefaults?: object }} page
  */
-function pickPrompt() {
+function pickPrompt(page = {}) {
   const envPrompt = process.env.IMAGE_PROMPT && process.env.IMAGE_PROMPT.trim();
-  const envCaption = process.env.FB_CAPTION && process.env.FB_CAPTION.trim();
+  const pageLabel = page.key || "default";
 
   if (envPrompt) {
-    return { prompt: envPrompt, caption: envCaption || null };
+    const config = page.config || configForEntry(page, null);
+    return {
+      entry: null,
+      prompt: envPrompt,
+      // IMAGE_PROMPT override: post message uses the prompt text itself
+      caption: null,
+      weekday: null,
+      slot: null,
+      config,
+    };
   }
 
-  const configPath = path.join(__dirname, "..", "prompts.json");
-  const { schedule } = JSON.parse(fs.readFileSync(configPath, "utf8"));
-
+  const schedule = page.schedule;
   if (!schedule) {
-    throw new Error("prompts.json has no \"schedule\" defined and IMAGE_PROMPT is not set.");
+    throw new Error(
+      `Page "${pageLabel}" has no schedule and IMAGE_PROMPT is not set.`
+    );
   }
 
   const { weekday, hour } = getPhilippineDayAndHour();
-  const slot = resolveSlot(hour);
+  let slot = resolveSlot(hour);
+
+  // Page config may restrict which slots are active
+  const pageConfig = page.config || {};
+  if (Array.isArray(pageConfig.slots) && pageConfig.slots.length > 0) {
+    if (!pageConfig.slots.includes(slot)) {
+      // Prefer the nearest configured slot for this time window, else first
+      const preferred = pageConfig.slots.find((s) => s === slot);
+      slot = preferred || pageConfig.slots[0];
+      console.log(
+        `[${pageLabel}] Slot restricted by config.slots → using "${slot}"`
+      );
+    }
+  }
 
   const dayEntries = schedule[weekday];
   if (!dayEntries || dayEntries.length === 0) {
-    throw new Error(`No prompts configured for "${weekday}" in prompts.json.`);
+    throw new Error(
+      `Page "${pageLabel}" has no prompts configured for "${weekday}".`
+    );
   }
 
   const entry =
     dayEntries.find((e) => e.slot === slot) || dayEntries[0]; // fallback to first if slot missing
 
-  console.log(`Selected schedule entry: ${weekday} / ${slot}`);
+  // Merge page config + optional per-slot entry.config
+  const config = configForEntry(page, entry);
+
+  // If slots filter is set and the resolved entry's slot isn't allowed, skip-friendly error
+  if (Array.isArray(config.slots) && config.slots.length > 0) {
+    if (!config.slots.includes(entry.slot)) {
+      const alt = dayEntries.find((e) => config.slots.includes(e.slot));
+      if (!alt) {
+        throw new Error(
+          `Page "${pageLabel}": no schedule entry for ${weekday} matching config.slots=${JSON.stringify(config.slots)}.`
+        );
+      }
+      // Use alternate entry and re-resolve config
+      return finalizePick(pageLabel, weekday, alt, page);
+    }
+  }
+
+  console.log(`[${pageLabel}] Selected schedule entry: ${weekday} / ${entry.slot}`);
+
+  return finalizePick(pageLabel, weekday, entry, page);
+}
+
+function finalizePick(pageLabel, weekday, entry, page) {
+  const config = configForEntry(page, entry);
+  const prompt = entry.prompt != null ? String(entry.prompt) : null;
+  // Caption from schedule only (index falls back to prompt if missing)
+  const caption = entry.caption != null ? String(entry.caption) : null;
+
+  // Validate content against post type
+  if (config.postType === "image" && !prompt && !(process.env.IMAGE_PROMPT || "").trim()) {
+    throw new Error(
+      `Page "${pageLabel}" (${weekday}/${entry.slot}): postType is "image" but schedule entry has no "prompt".`
+    );
+  }
+  if (config.postType === "text" && !caption && !prompt) {
+    throw new Error(
+      `Page "${pageLabel}" (${weekday}/${entry.slot}): postType is "text" but entry has neither "caption" nor "prompt".`
+    );
+  }
 
   return {
-    prompt: entry.prompt,
-    caption: envCaption || entry.caption || null,
+    entry,
+    prompt,
+    caption,
+    weekday,
+    slot: entry.slot,
+    config,
   };
 }
 
 /**
- * Decides which provider to use.
- * - IMAGE_PROVIDER env var wins if set ("openai" or "gemini").
- * - Otherwise: prefers Gemini if GEMINI_API_KEY is set, else OpenAI if
- *   OPENAI_API_KEY is set.
- * - Errors if neither key is present.
+ * Resolves image provider from page config (+ env keys available).
+ * config.imageProvider: "auto" | "gemini" | "openai"
  */
-function resolveProvider() {
-  const forced = (process.env.IMAGE_PROVIDER || "").trim().toLowerCase();
-  if (forced === "openai" || forced === "gemini") return forced;
-  if (forced) {
-    throw new Error(`Unknown IMAGE_PROVIDER "${forced}". Use "openai" or "gemini".`);
+function resolveProvider(config = {}) {
+  const forced = (config.imageProvider || "auto").toLowerCase();
+
+  if (forced === "openai" || forced === "gemini") {
+    if (forced === "openai" && !process.env.OPENAI_API_KEY) {
+      throw new Error('imageProvider is "openai" but OPENAI_API_KEY is not set.');
+    }
+    if (forced === "gemini" && !process.env.GEMINI_API_KEY) {
+      throw new Error('imageProvider is "gemini" but GEMINI_API_KEY is not set.');
+    }
+    return forced;
   }
 
+  if (forced !== "auto") {
+    throw new Error(
+      `Unknown imageProvider "${forced}". Use "auto", "gemini", or "openai".`
+    );
+  }
+
+  // auto: prefer gemini if key present (same as historical behavior)
   if (process.env.GEMINI_API_KEY) return "gemini";
   if (process.env.OPENAI_API_KEY) return "openai";
 
   throw new Error(
-    "No image provider configured. Set GEMINI_API_KEY or OPENAI_API_KEY (or both — set IMAGE_PROVIDER to force one)."
+    "No image provider configured. Set GEMINI_API_KEY or OPENAI_API_KEY (or set config.imageProvider)."
   );
 }
 
-async function generateWithOpenAI(prompt, outputDir) {
+function safeFilePart(name) {
+  return String(name || "page").replace(/[^a-zA-Z0-9_-]/g, "_");
+}
+
+function resolveOpenAiModel(config) {
+  return (
+    config.imageModel ||
+    config._envOpenAiModel ||
+    process.env.OPENAI_IMAGE_MODEL ||
+    "gpt-image-1"
+  );
+}
+
+function resolveOpenAiSize(config) {
+  return (
+    config.imageSize ||
+    process.env.OPENAI_IMAGE_SIZE ||
+    "1024x1024"
+  );
+}
+
+function resolveGeminiModel(config) {
+  return (
+    config.imageModel ||
+    config._envGeminiModel ||
+    process.env.GEMINI_IMAGE_MODEL ||
+    "gemini-3.1-flash-image"
+  );
+}
+
+async function generateWithOpenAI(prompt, outputDir, pageKey, config = {}) {
   const apiKey = process.env.OPENAI_API_KEY;
   if (!apiKey) throw new Error("Missing OPENAI_API_KEY environment variable.");
 
-  const model = process.env.OPENAI_IMAGE_MODEL || "gpt-image-1";
-  const size = process.env.OPENAI_IMAGE_SIZE || "1024x1024";
+  const model = resolveOpenAiModel(config);
+  const size = resolveOpenAiSize(config);
 
-  console.log(`[OpenAI] Generating image with model "${model}"`);
+  console.log(`[OpenAI] Generating image with model "${model}" size=${size}`);
 
   const response = await axios.post(
     OPENAI_API_URL,
@@ -135,7 +232,10 @@ async function generateWithOpenAI(prompt, outputDir) {
   if (!imageData) throw new Error("OpenAI response did not contain image data.");
 
   fs.mkdirSync(outputDir, { recursive: true });
-  const filePath = path.join(outputDir, `generated-${Date.now()}.png`);
+  const filePath = path.join(
+    outputDir,
+    `generated-${safeFilePart(pageKey)}-${Date.now()}.png`
+  );
 
   if (imageData.b64_json) {
     fs.writeFileSync(filePath, Buffer.from(imageData.b64_json, "base64"));
@@ -149,27 +249,31 @@ async function generateWithOpenAI(prompt, outputDir) {
   return filePath;
 }
 
-async function generateWithGemini(prompt, outputDir) {
+async function generateWithGemini(prompt, outputDir, pageKey, config = {}) {
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) throw new Error("Missing GEMINI_API_KEY environment variable.");
 
-  const model = process.env.GEMINI_IMAGE_MODEL || "gemini-3.1-flash-image";
+  const model = resolveGeminiModel(config);
   const url = `${GEMINI_API_BASE}/${model}:generateContent?key=${apiKey}`;
+  const aspectRatio = config.geminiAspectRatio || "ASPECT_RATIO_ONE_BY_ONE";
+  const imageSize = config.geminiImageSize || "IMAGE_SIZE_FIVE_TWELVE";
 
-  console.log(`[Gemini] Generating image with model "${model}"`);
+  console.log(
+    `[Gemini] Generating image with model "${model}" aspect=${aspectRatio} size=${imageSize}`
+  );
 
   const response = await axios.post(
     url,
     {
       contents: [{ parts: [{ text: prompt }] }],
-      generationConfig: { 
+      generationConfig: {
         responseModalities: ["TEXT", "IMAGE"],
-        "responseFormat": {
-          "image": {
-            "aspectRatio": "ASPECT_RATIO_ONE_BY_ONE",
-            "imageSize": "IMAGE_SIZE_FIVE_TWELVE"
-          }
-        }
+        responseFormat: {
+          image: {
+            aspectRatio,
+            imageSize,
+          },
+        },
       },
     },
     {
@@ -189,31 +293,76 @@ async function generateWithGemini(prompt, outputDir) {
   const ext = mimeType.includes("png") ? "png" : mimeType.includes("jpeg") ? "jpg" : "png";
 
   fs.mkdirSync(outputDir, { recursive: true });
-  const filePath = path.join(outputDir, `generated-${Date.now()}.${ext}`);
+  const filePath = path.join(
+    outputDir,
+    `generated-${safeFilePart(pageKey)}-${Date.now()}.${ext}`
+  );
   fs.writeFileSync(filePath, Buffer.from(imagePart.inlineData.data, "base64"));
 
   return filePath;
 }
 
 /**
- * Generates an image and saves it to disk. Auto-selects between OpenAI and
- * Gemini based on which API key(s) are available (see resolveProvider()).
- * Returns the local file path and the prompt used.
+ * Generates an image for one page and saves it to disk.
+ * Skips generation when resolved config.postType is "text".
+ *
+ * @param {{ outputDir?: string, page?: object }} opts
  */
-async function generateImage({ outputDir = "output" } = {}) {
-  const provider = resolveProvider();
-  const { prompt, caption } = pickPrompt();
+async function generateImage({ outputDir = "output", page = {} } = {}) {
+  const picked = pickPrompt(page);
+  const { prompt, caption, config } = picked;
+  const pageKey = page.key || "default";
 
-  console.log(`Provider: ${provider}`);
-  console.log(`Prompt: ${prompt}`);
+  console.log(`[${pageKey}] Config: ${JSON.stringify(publicConfig(config))}`);
+
+  if (config.postType === "text") {
+    console.log(`[${pageKey}] postType=text → skipping image generation`);
+    return {
+      filePath: null,
+      prompt,
+      caption,
+      provider: null,
+      pageKey,
+      config,
+      slot: picked.slot,
+      weekday: picked.weekday,
+    };
+  }
+
+  const provider = resolveProvider(config);
+  console.log(`[${pageKey}] Provider: ${provider}`);
+  console.log(`[${pageKey}] Prompt: ${prompt}`);
 
   const filePath =
     provider === "gemini"
-      ? await generateWithGemini(prompt, outputDir)
-      : await generateWithOpenAI(prompt, outputDir);
+      ? await generateWithGemini(prompt, outputDir, pageKey, config)
+      : await generateWithOpenAI(prompt, outputDir, pageKey, config);
 
-  console.log(`Image saved to ${filePath}`);
-  return { filePath, prompt, caption, provider };
+  console.log(`[${pageKey}] Image saved to ${filePath}`);
+  return {
+    filePath,
+    prompt,
+    caption,
+    provider,
+    pageKey,
+    config,
+    slot: picked.slot,
+    weekday: picked.weekday,
+  };
 }
 
-module.exports = { generateImage, pickPrompt, resolveProvider };
+/** Strip internal/env helper fields from logged config. */
+function publicConfig(config) {
+  const out = { ...config };
+  delete out._envOpenAiModel;
+  delete out._envGeminiModel;
+  return out;
+}
+
+module.exports = {
+  generateImage,
+  pickPrompt,
+  resolveProvider,
+  getPhilippineDayAndHour,
+  resolveSlot,
+};

@@ -11,7 +11,8 @@ on:
 jobs:
   post-image:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    # Multi-page runs generate one image per page; allow headroom.
+    timeout-minutes: 30
 
     steps:
       - name: Checkout repository
@@ -29,7 +30,7 @@ jobs:
       - name: Random delay (spread posting time within a 30-min window)
         run: sleep $((RANDOM % 100))
 
-      - name: Generate image and post to Facebook
+      - name: Generate images and post to Facebook page(s)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_IMAGE_MODEL: ${{ vars.GEMINI_IMAGE_MODEL }}
@@ -37,11 +38,17 @@ jobs:
           OPENAI_IMAGE_MODEL: ${{ vars.OPENAI_IMAGE_MODEL }}
           OPENAI_IMAGE_SIZE: ${{ vars.OPENAI_IMAGE_SIZE }}
           IMAGE_PROVIDER: ${{ vars.IMAGE_PROVIDER }}
+          # Multi-page credentials (keys must match prompts.json → pages)
+          # FB_PAGE_IDS:    {"main":"123456789","other":"987654321"}
+          # FB_PAGE_TOKENS: {"main":"EAAxxx","other":"EAAyyy"}
+          FB_PAGE_IDS: ${{ secrets.FB_PAGE_IDS }}
+          FB_PAGE_TOKENS: ${{ secrets.FB_PAGE_TOKENS }}
+          # Legacy single-page fallback
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           FB_PAGE_ACCESS_TOKEN: ${{ secrets.FB_PAGE_ACCESS_TOKEN }}
         run: npm start
 
-      - name: Upload generated image as artifact (for debugging)
+      - name: Upload generated images as artifact (for debugging)
         if: always()
         uses: actions/upload-artifact@v4
         with:
