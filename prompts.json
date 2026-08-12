@@ -135,104 +135,125 @@
         "published": true
       },
       "schedule": {
-        "monday": [
-          {
-            "slot": "6am",
-            "caption": "Kung ikaw ay masusunod, payag ka ba ma-extend si BBM? Comment niyo, mga SOLID."
-          },
-          {
-            "slot": "12pm",
-            "caption": "Bakit mo mahal si BBM? Sabihin sa comment ang rason mo."
-          },
-          {
-            "slot": "6pm",
-            "caption": "Sino pa ang solid kay Bongbong Marcos hanggang ngayon? I-react o comment."
-          }
-        ],
-        "tuesday": [
-          {
-            "slot": "6am",
-            "caption": "Ano ang pinaka-naaalala mo kay BBM bilang Presidente? Sabihin niyo."
-          },
-          {
-            "slot": "12pm",
-            "caption": "Kung may election ulit bukas, iboboto mo pa ba si BBM? Oo o hindi — bakit?"
-          },
-          {
-            "slot": "6pm",
-            "caption": "BBM supporters, anong message mo sa mga bashers? Diretso lang, comment niyo."
-          }
-        ],
-        "wednesday": [
-          {
-            "slot": "6am",
-            "caption": "Mas gusto mo ba si Bongbong Marcos kaysa sa mga kritiko niya? Bakit?"
-          },
-          {
-            "slot": "12pm",
-            "caption": "Anong proyekto o programa ni BBM ang pinaka-appreciate mo? Sabihin niyo."
-          },
-          {
-            "slot": "6pm",
-            "caption": "Solid ka ba kay BBM kapag mainit ang issue, o sa mabuti lang? Honest answer."
-          }
-        ],
-        "thursday": [
-          {
-            "slot": "6am",
-            "caption": "Kung makakausap mo si BBM ng isang minuto, anong sasabihin mo?"
-          },
-          {
-            "slot": "12pm",
-            "caption": "Bakit dapat maniwala ang Pilipino kay Bongbong Marcos? Comment your take."
-          },
-          {
-            "slot": "6pm",
-            "caption": "BBM o walang BBM — sino ang mas panalo para sa bayan? Defend your answer."
-          }
-        ],
-        "friday": [
-          {
-            "slot": "6am",
-            "caption": "Friday na. Sino pa ang proud supporter ni BBM? Mag-comment ng \"SOLID BBM\"."
-          },
-          {
-            "slot": "12pm",
-            "caption": "Ano ang pinakamalaking change na gusto mo makita sa ilalim ni BBM?"
-          },
-          {
-            "slot": "6pm",
-            "caption": "Kung may bash kay Bongbong Marcos sa feed mo, paano ka sumasagot? Share tips."
-          }
-        ],
-        "saturday": [
-          {
-            "slot": "6am",
-            "caption": "Weekend check: nandito pa ba ang mga BBM supporters? Comment \"nandito\"."
-          },
-          {
-            "slot": "12pm",
-            "caption": "Anong trait ni BBM ang pinaka-gusto mo bilang lider? Sabihin niyo."
-          },
-          {
-            "slot": "6pm",
-            "caption": "Isa lang tanong: worth it ba ang tiwala mo kay Bongbong Marcos? Oo/Hindi + bakit."
-          }
-        ],
-        "sunday": [
-          {
-            "slot": "6am",
-            "caption": "Magandang Linggo, mga SOLID. Panatilihin ang panalangin at support kay BBM."
-          },
-          {
-            "slot": "12pm",
-            "caption": "Tag someone na pure BBM supporter. Sabihin bakit sila solid kay Bongbong Marcos."
-          },
-          {
-            "slot": "6pm",
-            "caption": "Huling tanong ngayong linggo: handa ka bang manindigan para kay BBM? Comment \"handa\"."
-          }
-        ]
+  "monday": [
+    {
+      "slot": "6am",
+      "prompt": "Photorealistic wide shot of a large morning crowd of Filipino supporters outdoors under soft sunlight, many wearing red and white shirts, waving Philippine flags. In the center a big white banner held by wooden poles shows a realistic portrait of Bongbong Marcos (early 60s, neat dark hair with gray, confident calm expression looking slightly to the side). Large bold text on the banner: \"BAGONG PILIPINAS PARA SA LAHAT\". Small clean text \"AI Generated\" in the top-right corner. Natural morning light, hopeful atmosphere, ultra detailed, 1:1 square, 8k.",
+      "caption": "Bagong Pilipinas para sa lahat.\nSino pa ang solid kay BBM?\n#BBM #Marcos #BagongPilipinas #viral"
+    },
+    {
+      "slot": "12pm",
+      "prompt": "Photorealistic wide shot of a massive midday crowd under bright sun, people raising hands and holding flags. Center white banner features Bongbong Marcos with a steady determined stare and slight smile. Bold text: \"TULOY ANG PAG-UNLAD\". Small \"AI Generated\" top-right. Harsh noon light, energetic rally feel, sharp 8k, 1:1 square.",
+      "caption": "Tuloy ang pag-unlad.\nYan ang direksyon ni BBM.\n#BBM #Marcos #BagongPilipinas #viral"
+    },
+    {
+      "slot": "6pm",
+      "prompt": "Photorealistic wide shot during golden hour, large crowd holding Philippine flags, warm light. Center banner shows Bongbong Marcos with a calm but strong expression, arms relaxed. Bold text: \"SAMA-SAMA TAYO SA BAGONG PILIPINAS\". Small \"AI Generated\" top-right. Soft evening glow, united mood, ultra detailed 1:1.",
+      "caption": "Sama-sama tayo sa Bagong Pilipinas.\nSino pa ang kasama?\n#BBM #Marcos #BagongPilipinas #viral"
+    }
+  ],
+  "tuesday": [
+    {
+      "slot": "6am",
+      "prompt": "Photorealistic wide morning plaza shot, supporters in red shirts waving flags under clear sky. Large white banner shows Bongbong Marcos with a warm half-smile and open posture. Bold text: \"PARA SA MGA ANAK NG BAYAN\". Small \"AI Generated\" top-right. Fresh morning light, caring atmosphere, 8k 1:1.",
+      "caption": "Para sa mga anak ng bayan.\nYan ang focus ni BBM.\n#BBM #Marcos #BagongPilipinas #viral"
+    },
+    {
+      "slot": "12pm",
+      "prompt": "Photorealistic wide noon shot of loud cheering crowd under strong sun. Center banner features Bongbong Marcos looking forward with firm confident eyes. Large text: \"WALANG IIWANAN SA PAG-UNLAD\". Small \"AI Generated\" top-right. Bright daylight, positive energy, sharp detail, 1:1 square.",
+      "caption": "Walang iiwanan sa pag-unlad.\nSino pa ang naniniwala?\n#BBM #Marcos #BagongPilipinas #viral"
+    },
+    {
+      "slot": "6pm",
+      "prompt": "Photorealistic wide evening shot with soft dusk light, dense crowd holding flags. Center banner shows Bongbong Marcos with a quiet determined expression. Bold text: \"HANDANG MAGSERBISYO\". Small \"AI Generated\" top-right. Warm low light, resolute mood, ultra detailed 1:1.",
+      "caption": "Handang magserbisyo.\nGanyan si BBM.\n#BBM #Marcos #BagongPilipinas #viral"
+    }
+  ],
+  "wednesday": [
+    {
+      "slot": "6am",
+      "prompt": "Photorealistic wide early morning shot, big crowd gathering under soft sun. Large white banner features Bongbong Marcos with a gentle but firm look. Bold text: \"FOOD SECURITY PARA SA LAHAT\". Small \"AI Generated\" top-right. Gentle morning light, hopeful feel, 8k square.",
+      "caption": "Food security para sa lahat.\nYan ang sinasabi ni BBM.\n#BBM #Marcos #BagongPilipinas #viral"
+    },
+    {
+      "slot": "12pm",
+      "prompt": "Photorealistic wide midday shot, massive energetic crowd under bright sun, flags high. Center banner shows Bongbong Marcos with chin slightly raised and confident smile. Large text: \"BUILD BUILD BUILD TULOY\". Small \"AI Generated\" top-right. High contrast light, forward energy, sharp 1:1.",
+      "caption": "Build Build Build tuloy.\nSino pa ang solid?\n#BBM #Marcos #BagongPilipinas #viral"
+    },
+    {
+      "slot": "6pm",
+      "prompt": "Photorealistic wide sunset shot, crowd silhouetted against orange sky. Center banner features Bongbong Marcos with a calm reflective expression. Bold text: \"ISA LANG ANG PILIPINAS\". Small \"AI Generated\" top-right. Golden hour glow, united atmosphere, ultra detailed square.",
+      "caption": "Isa lang ang Pilipinas.\nSama-sama tayo.\n#BBM #Marcos #BagongPilipinas #viral"
+    }
+  ],
+  "thursday": [
+    {
+      "slot": "6am",
+      "prompt": "Photorealistic wide morning shot of smiling supporters in a sunny plaza. Large white banner shows Bongbong Marcos with a soft knowing smile. Bold text: \"MAHAL KO ANG BAYAN KO\". Small \"AI Generated\" top-right. Clear morning light, warm mood, 8k 1:1.",
+      "caption": "Mahal niya ang bayan.\nKaya solid ang tao kay BBM.\n#BBM #Marcos #BagongPilipinas #viral"
+    },
+    {
+      "slot": "12pm",
+      "prompt": "Photorealistic wide noon shot of roaring crowd under direct sun. Center banner features Bongbong Marcos looking straight at viewer with steady eyes. Large text: \"DISIPLINA AT PAG-ASA\". Small \"AI Generated\" top-right. Harsh bright light, strong energy, sharp detail square.",
+      "caption": "Disiplina at pag-asa.\nYan ang dala ni BBM.\n#BBM #Marcos #BagongPilipinas #viral"
+    },
+    {
+      "slot": "6pm",
+      "prompt": "Photorealistic wide evening shot with soft purple-orange sky. Center banner shows Bongbong Marcos with arms slightly open and calm strength. Bold text: \"SOLID HANGGANG DULO\". Small \"AI Generated\" top-right. Warm dusk light, loyal feel, ultra detailed 1:1.",
+      "caption": "Solid hanggang dulo.\nSino pa ang solid kay BBM?\n#BBM #Marcos #BagongPilipinas #viral"
+    }
+  ],
+  "friday": [
+    {
+      "slot": "6am",
+      "prompt": "Photorealistic wide early morning shot, fresh crowd under soft sunlight. Large white banner features Bongbong Marcos with a warm half-smile. Bold text: \"SALAMAT SA MGA NANATILI\". Small \"AI Generated\" top-right. Gentle light, grateful atmosphere, 8k square.",
+      "caption": "Salamat sa mga nanatili.\nSino pa ang nandito pa rin?\n#BBM #Marcos #BagongPilipinas #viral"
+    },
+    {
+      "slot": "12pm",
+      "prompt": "Photorealistic wide midday shot, huge crowd under blazing sun, flags flapping. Center banner shows Bongbong Marcos with firm unflinching stare. Large text: \"WALANG GUTOM SA BAGONG PILIPINAS\". Small \"AI Generated\" top-right. Bright harsh light, determined mood, sharp 1:1.",
+      "caption": "Walang gutom sa Bagong Pilipinas.\nYan ang target ni BBM.\n#BBM #Marcos #BagongPilipinas #viral"
+    },
+    {
+      "slot": "6pm",
+      "prompt": "Photorealistic wide late afternoon shot with long shadows. Center banner features Bongbong Marcos looking forward with quiet pride. Bold text: \"BBM FOREVER\". Small \"AI Generated\" top-right. Warm afternoon light, lasting support feel, ultra detailed square.",
+      "caption": "BBM forever.\nSino pa ang nandito hanggang ngayon?\n#BBM #Marcos #BagongPilipinas #viral"
+    }
+  ],
+  "saturday": [
+    {
+      "slot": "6am",
+      "prompt": "Photorealistic wide Saturday morning shot, relaxed big crowd in sunny open space. Large white banner shows Bongbong Marcos with genuine soft smile. Bold text: \"PARA SA KINABUKASAN\". Small \"AI Generated\" top-right. Bright clean light, hopeful atmosphere, 8k 1:1.",
+      "caption": "Para sa kinabukasan.\nYan ang laban ni BBM.\n#BBM #Marcos #BagongPilipinas #viral"
+    },
+    {
+      "slot": "12pm",
+      "prompt": "Photorealistic wide noon shot of loud cheering supporters under strong sun. Center banner features Bongbong Marcos raising one hand slightly with confident expression. Large text: \"TULOY ANG SERBISYO\". Small \"AI Generated\" top-right. High energy daylight, powerful mood, sharp square.",
+      "caption": "Tuloy ang serbisyo.\nSino pa ang solid?\n#BBM #Marcos #BagongPilipinas #viral"
+    },
+    {
+      "slot": "6pm",
+      "prompt": "Photorealistic wide evening shot under soft fading light. Center banner shows Bongbong Marcos with reflective calm expression. Bold text: \"HUWAG KALIMUTAN ANG PANGAKO\". Small \"AI Generated\" top-right. Warm dusk, thoughtful mood, ultra detailed 1:1.",
+      "caption": "Huwag kalimutan ang pangako.\nAno ang pinaka-naaalala niyo?\n#BBM #Marcos #BagongPilipinas #viral"
+    }
+  ],
+  "sunday": [
+    {
+      "slot": "6am",
+      "prompt": "Photorealistic wide Sunday morning shot, peaceful large crowd under soft sun. Large white banner features Bongbong Marcos with peaceful thankful expression. Bold text: \"SALAMAT SA MGA SOLID\". Small \"AI Generated\" top-right. Gentle light, grateful energy, 8k square.",
+      "caption": "Salamat sa mga solid.\nSino pa ang nandito?\n#BBM #Marcos #BagongPilipinas #viral"
+    },
+    {
+      "slot": "12pm",
+      "prompt": "Photorealistic wide midday shot of united crowd under bright sun, flags high. Center banner shows Bongbong Marcos with open arms and strong calm smile. Large text: \"SAMA-SAMA PARA SA BAYAN\". Small \"AI Generated\" top-right. Bright hopeful light, united feel, sharp 1:1.",
+      "caption": "Sama-sama para sa bayan.\nSino pa ang kasama?\n#BBM #Marcos #BagongPilipinas #viral"
+    },
+    {
+      "slot": "6pm",
+      "prompt": "Photorealistic wide evening shot with soft golden-purple sky. Center banner features Bongbong Marcos looking forward with quiet fire in his eyes. Bold text: \"HANDA PA RIN KAMI\". Small \"AI Generated\" top-right. Warm evening light, resolute mood, ultra detailed square.",
+      "caption": "Handa pa rin kami.\nSino pa ang handa?\n#BBM #Marcos #BagongPilipinas #viral"
+    }
+  ]
       }
     },
     "sarah": {
@@ -241,211 +262,247 @@
         "published": true
       },
       "schedule": {
-        "monday": [
-          {
-            "slot": "6am",
-            "caption": "Sino pa ang solid kay Sarah Duterte hanggang ngayon? Comment \"SOLID SARAH\"."
-          },
-          {
-            "slot": "12pm",
-            "caption": "Bakit mo sinusuportahan si Sarah Duterte? Sabihin ang rason mo sa comment."
-          },
-          {
-            "slot": "6pm",
-            "caption": "Kung ikaw ang masusunod, anong position ang gusto mo para kay Sarah Duterte?"
-          }
-        ],
-        "tuesday": [
-          {
-            "slot": "6am",
-            "caption": "Ano ang pinaka-naaalala mo kay Sarah Duterte bilang Vice President?"
-          },
-          {
-            "slot": "12pm",
-            "caption": "Sarah Duterte supporters, anong message mo sa mga bashers? Diretso lang."
-          },
-          {
-            "slot": "6pm",
-            "caption": "Handa ka bang manindigan para kay Sarah Duterte? Comment \"handa\"."
-          }
-        ],
-        "wednesday": [
-          {
-            "slot": "6am",
-            "caption": "Anong trait ni Sarah Duterte ang pinaka-gusto mo bilang lider?"
-          },
-          {
-            "slot": "12pm",
-            "caption": "Kung may election ulit, iboboto mo ba ulit si Sarah Duterte? Oo/Hindi + bakit."
-          },
-          {
-            "slot": "6pm",
-            "caption": "Solid ka ba kay Sarah Duterte kapag mainit ang issue? Honest answer."
-          }
-        ],
-        "thursday": [
-          {
-            "slot": "6am",
-            "caption": "Kung makakausap mo si Sarah Duterte ng 1 minuto, anong sasabihin mo?"
-          },
-          {
-            "slot": "12pm",
-            "caption": "Bakit importante si Sarah Duterte para sa next generation? Comment niyo."
-          },
-          {
-            "slot": "6pm",
-            "caption": "Sarah Duterte o walang Sarah — sino ang panalo para sa bayan? Defend."
-          }
-        ],
-        "friday": [
-          {
-            "slot": "6am",
-            "caption": "Friday na. Proud supporter ka ba ni Sarah Duterte? Mag-comment ng \"PROUD\"."
-          },
-          {
-            "slot": "12pm",
-            "caption": "Anong change ang gusto mong makita kasama si Sarah Duterte? Sabihin niyo."
-          },
-          {
-            "slot": "6pm",
-            "caption": "Kung may bash kay Sarah Duterte sa feed mo, paano ka sumasagot? Share tips."
-          }
-        ],
-        "saturday": [
-          {
-            "slot": "6am",
-            "caption": "Weekend check: nandito pa ba ang mga Sarah Duterte supporters? \"nandito\"."
-          },
-          {
-            "slot": "12pm",
-            "caption": "Ano ang pinakamalakas na point bakit dapat maniwala kay Sarah Duterte?"
-          },
-          {
-            "slot": "6pm",
-            "caption": "Worth it ba ang tiwala mo kay Sarah Duterte? Oo o Hindi — bakit?"
-          }
-        ],
-        "sunday": [
-          {
-            "slot": "6am",
-            "caption": "Magandang Linggo, mga SOLID. Support at panalangin para kay Sarah Duterte."
-          },
-          {
-            "slot": "12pm",
-            "caption": "Tag a pure Sarah Duterte supporter. Sabihin bakit sila solid hanggang dulo."
-          },
-          {
-            "slot": "6pm",
-            "caption": "Huling tanong: handa ka bang lumaban para kay Sarah Duterte? Comment \"laban\"."
-          }
-        ]
+  "monday": [
+    {
+      "slot": "6am",
+      "prompt": "Photorealistic wide shot of a large morning crowd of Filipino supporters outdoors under soft sunlight, many wearing red and pink shirts, waving Philippine flags. In the center a big white banner held by wooden poles shows a realistic portrait of Sara Duterte (mid-40s, short dark hair, strong confident expression looking slightly to the side). Large bold text on the banner: \"INDAY SARA PARA SA BAYAN\". Small clean text \"AI Generated\" in the top-right corner. Natural morning light, hopeful atmosphere, ultra detailed, 1:1 square, 8k.",
+      "caption": "Inday Sara para sa bayan.\nSino pa ang solid?\n#SaraDuterte #DDS #IndaySara #viral"
+    },
+    {
+      "slot": "12pm",
+      "prompt": "Photorealistic wide shot of a massive midday crowd under bright sun, people raising hands and holding flags. Center white banner features Sara Duterte with a firm determined stare and slight smile. Bold text: \"WALANG IIWANAN SA EDUKASYON\". Small \"AI Generated\" top-right. Harsh noon light, energetic rally feel, sharp 8k, 1:1 square.",
+      "caption": "Walang iiwanan sa edukasyon.\nYan ang laban ni Inday.\n#SaraDuterte #DDS #IndaySara #viral"
+    },
+    {
+      "slot": "6pm",
+      "prompt": "Photorealistic wide shot during golden hour, large crowd holding Philippine flags, warm light. Center banner shows Sara Duterte with a calm but strong expression. Bold text: \"ANAK NI DIGONG, PARA SA TAO\". Small \"AI Generated\" top-right. Soft evening glow, united mood, ultra detailed 1:1.",
+      "caption": "Anak ni Digong, para sa tao.\nSino pa ang solid kay Sara?\n#SaraDuterte #DDS #IndaySara #viral"
+    }
+  ],
+  "tuesday": [
+    {
+      "slot": "6am",
+      "prompt": "Photorealistic wide morning plaza shot, supporters in red shirts waving flags under clear sky. Large white banner shows Sara Duterte with a warm but firm half-smile. Bold text: \"PROTEKTAHAN ANG MGA BATA\". Small \"AI Generated\" top-right. Fresh morning light, caring atmosphere, 8k 1:1.",
+      "caption": "Protektahan ang mga bata.\nYan ang puso ni Inday Sara.\n#SaraDuterte #DDS #IndaySara #viral"
+    },
+    {
+      "slot": "12pm",
+      "prompt": "Photorealistic wide noon shot of loud cheering crowd under strong sun. Center banner features Sara Duterte looking forward with intense confident eyes. Large text: \"HINDI AKO TATANGGI SA MGA MAHIRAP\". Small \"AI Generated\" top-right. Bright daylight, positive energy, sharp detail, 1:1 square.",
+      "caption": "Hindi ako tatanggi sa mga mahirap.\nGanyan si Sara.\n#SaraDuterte #DDS #IndaySara #viral"
+    },
+    {
+      "slot": "6pm",
+      "prompt": "Photorealistic wide evening shot with soft dusk light, dense crowd holding flags. Center banner shows Sara Duterte with a quiet determined expression. Bold text: \"HANDANG LUMABAN\". Small \"AI Generated\" top-right. Warm low light, resolute mood, ultra detailed 1:1.",
+      "caption": "Handang lumaban.\nSino pa ang handa kasama si Inday?\n#SaraDuterte #DDS #IndaySara #viral"
+    }
+  ],
+  "wednesday": [
+    {
+      "slot": "6am",
+      "prompt": "Photorealistic wide early morning shot, big crowd gathering under soft sun. Large white banner features Sara Duterte with a gentle but strong look. Bold text: \"EDUKASYON PARA SA LAHAT\". Small \"AI Generated\" top-right. Gentle morning light, hopeful feel, 8k square.",
+      "caption": "Edukasyon para sa lahat.\nYan ang focus ni Sara.\n#SaraDuterte #DDS #IndaySara #viral"
+    },
+    {
+      "slot": "12pm",
+      "prompt": "Photorealistic wide midday shot, massive energetic crowd under bright sun, flags high. Center banner shows Sara Duterte with chin slightly raised and confident smile. Large text: \"SOLID HANGGANG DULO\". Small \"AI Generated\" top-right. High contrast light, forward energy, sharp 1:1.",
+      "caption": "Solid hanggang dulo.\nSino pa ang solid kay Inday?\n#SaraDuterte #DDS #IndaySara #viral"
+    },
+    {
+      "slot": "6pm",
+      "prompt": "Photorealistic wide sunset shot, crowd silhouetted against orange sky. Center banner features Sara Duterte with a calm reflective expression. Bold text: \"PARA SA SUSUNOD NA HENERASYON\". Small \"AI Generated\" top-right. Golden hour glow, united atmosphere, ultra detailed square.",
+      "caption": "Para sa susunod na henerasyon.\nYan ang laban ni Sara.\n#SaraDuterte #DDS #IndaySara #viral"
+    }
+  ],
+  "thursday": [
+    {
+      "slot": "6am",
+      "prompt": "Photorealistic wide morning shot of smiling supporters in a sunny plaza. Large white banner shows Sara Duterte with a soft knowing smile. Bold text: \"MAHAL KO ANG PILIPINO\". Small \"AI Generated\" top-right. Clear morning light, warm mood, 8k 1:1.",
+      "caption": "Mahal niya ang Pilipino.\nKaya solid ang tao kay Sara.\n#SaraDuterte #DDS #IndaySara #viral"
+    },
+    {
+      "slot": "12pm",
+      "prompt": "Photorealistic wide noon shot of roaring crowd under direct sun. Center banner features Sara Duterte looking straight at viewer with steady eyes. Large text: \"WALANG KORAP, WALANG TAKOT\". Small \"AI Generated\" top-right. Harsh bright light, strong energy, sharp detail square.",
+      "caption": "Walang korap, walang takot.\nGanyan si Inday Sara.\n#SaraDuterte #DDS #IndaySara #viral"
+    },
+    {
+      "slot": "6pm",
+      "prompt": "Photorealistic wide evening shot with soft purple-orange sky. Center banner shows Sara Duterte with arms slightly open and calm strength. Bold text: \"SAMA-SAMA TAYO\". Small \"AI Generated\" top-right. Warm dusk light, loyal feel, ultra detailed 1:1.",
+      "caption": "Sama-sama tayo.\nSino pa ang kasama?\n#SaraDuterte #DDS #IndaySara #viral"
+    }
+  ],
+  "friday": [
+    {
+      "slot": "6am",
+      "prompt": "Photorealistic wide early morning shot, fresh crowd under soft sunlight. Large white banner features Sara Duterte with a warm half-smile. Bold text: \"SALAMAT SA MGA NANATILI\". Small \"AI Generated\" top-right. Gentle light, grateful atmosphere, 8k square.",
+      "caption": "Salamat sa mga nanatili.\nSino pa ang nandito pa rin?\n#SaraDuterte #DDS #IndaySara #viral"
+    },
+    {
+      "slot": "12pm",
+      "prompt": "Photorealistic wide midday shot, huge crowd under blazing sun, flags flapping. Center banner shows Sara Duterte with firm unflinching stare. Large text: \"HINDI AKO AALIS SA TAO\". Small \"AI Generated\" top-right. Bright harsh light, determined mood, sharp 1:1.",
+      "caption": "Hindi ako aalis sa tao.\nYan si Inday Sara.\n#SaraDuterte #DDS #IndaySara #viral"
+    },
+    {
+      "slot": "6pm",
+      "prompt": "Photorealistic wide late afternoon shot with long shadows. Center banner features Sara Duterte looking forward with quiet pride. Bold text: \"INDAY SARA FOREVER\". Small \"AI Generated\" top-right. Warm afternoon light, lasting support feel, ultra detailed square.",
+      "caption": "Inday Sara forever.\nSino pa ang nandito hanggang ngayon?\n#SaraDuterte #DDS #IndaySara #viral"
+    }
+  ],
+  "saturday": [
+    {
+      "slot": "6am",
+      "prompt": "Photorealistic wide Saturday morning shot, relaxed big crowd in sunny open space. Large white banner shows Sara Duterte with genuine soft smile. Bold text: \"PARA SA KINABUKASAN NG MGA BATA\". Small \"AI Generated\" top-right. Bright clean light, hopeful atmosphere, 8k 1:1.",
+      "caption": "Para sa kinabukasan ng mga bata.\nYan ang puso ni Sara.\n#SaraDuterte #DDS #IndaySara #viral"
+    },
+    {
+      "slot": "12pm",
+      "prompt": "Photorealistic wide noon shot of loud cheering supporters under strong sun. Center banner features Sara Duterte raising one hand slightly with confident expression. Large text: \"TULOY ANG LABAN\". Small \"AI Generated\" top-right. High energy daylight, powerful mood, sharp square.",
+      "caption": "Tuloy ang laban.\nSino pa ang solid?\n#SaraDuterte #DDS #IndaySara #viral"
+    },
+    {
+      "slot": "6pm",
+      "prompt": "Photorealistic wide evening shot under soft fading light. Center banner shows Sara Duterte with reflective calm expression. Bold text: \"HUWAG KALIMUTAN ANG PINAGLABAN\". Small \"AI Generated\" top-right. Warm dusk, thoughtful mood, ultra detailed 1:1.",
+      "caption": "Huwag kalimutan ang pinaglaban.\nAno ang pinaka-naaalala niyo?\n#SaraDuterte #DDS #IndaySara #viral"
+    }
+  ],
+  "sunday": [
+    {
+      "slot": "6am",
+      "prompt": "Photorealistic wide Sunday morning shot, peaceful large crowd under soft sun. Large white banner features Sara Duterte with peaceful thankful expression. Bold text: \"SALAMAT SA MGA SOLID\". Small \"AI Generated\" top-right. Gentle light, grateful energy, 8k square.",
+      "caption": "Salamat sa mga solid.\nSino pa ang nandito?\n#SaraDuterte #DDS #IndaySara #viral"
+    },
+    {
+      "slot": "12pm",
+      "prompt": "Photorealistic wide midday shot of united crowd under bright sun, flags high. Center banner shows Sara Duterte with open arms and strong calm smile. Large text: \"SAMA-SAMA PARA SA BAYAN\". Small \"AI Generated\" top-right. Bright hopeful light, united feel, sharp 1:1.",
+      "caption": "Sama-sama para sa bayan.\nSino pa ang kasama?\n#SaraDuterte #DDS #IndaySara #viral"
+    },
+    {
+      "slot": "6pm",
+      "prompt": "Photorealistic wide evening shot with soft golden-purple sky. Center banner features Sara Duterte looking forward with quiet fire in her eyes. Bold text: \"HANDA PA RIN KAMI\". Small \"AI Generated\" top-right. Warm evening light, resolute mood, ultra detailed square.",
+      "caption": "Handa pa rin kami.\nSino pa ang handa kasama si Inday?\n#SaraDuterte #DDS #IndaySara #viral"
+    }
+  ]
       }
     },
     "phnews": {
-      "config": {
-        "postType": "text",
-        "published": true
-      },
-      "schedule": {
-        "monday": [
-          {
-            "slot": "6am",
-            "caption": "DDS check: ilang taon ka nang solid kay Digong? Mag-comment ng number."
-          },
-          {
-            "slot": "12pm",
-            "caption": "Anong Davao habit or style ni Mayor Duterte ang gusto mong makita sa buong Pilipinas?"
-          },
-          {
-            "slot": "6pm",
-            "caption": "Kung may timeline ng buhay ni Digong, anong chapter ang pinaka-proud ka? Sabihin."
-          }
-        ],
-        "tuesday": [
-          {
-            "slot": "6am",
-            "caption": "One word lang: paano mo idedescribe si Rodrigo Duterte bilang lider?"
-          },
-          {
-            "slot": "12pm",
-            "caption": "Sino ang unang nagpakilala sa'yo kay Digong — pamilya, kaibigan, o social media?"
-          },
-          {
-            "slot": "6pm",
-            "caption": "Kung may DDS reunion, anong slogan ang isisigaw mo unang-una?"
-          }
-        ],
-        "wednesday": [
-          {
-            "slot": "6am",
-            "caption": "Disiplina, tapang, o malasakit — alin ang pinaka-Duterte para sa'yo? Pili at bakit."
-          },
-          {
-            "slot": "12pm",
-            "caption": "Anong lugar o project sa Davao ang naiisip mo agad kapag nabanggit si Digong?"
-          },
-          {
-            "slot": "6pm",
-            "caption": "True DDS ka ba kapag tahimik ang balita, o kapag mainit lang? Be honest."
-          }
-        ],
-        "thursday": [
-          {
-            "slot": "6am",
-            "caption": "Kung may podcast si Digong ngayon, anong unang tanong mo sa kanya?"
-          },
-          {
-            "slot": "12pm",
-            "caption": "Ibahagi ang paborito mong \"Digong moment\" na hindi quote poster — kwento mo."
-          },
-          {
-            "slot": "6pm",
-            "caption": "DDS pride: anong sabi ng pamilya mo kapag nalaman nilang solid ka kay Duterte?"
-          }
-        ],
-        "friday": [
-          {
-            "slot": "6am",
-            "caption": "Friday roll call: nandito pa ba ang tunay na DDS? Mag-comment ng \"DDS FOREVER\"."
-          },
-          {
-            "slot": "12pm",
-            "caption": "Anong aral mula kay Digong ang ginagamit mo pa rin sa pang-araw-araw?"
-          },
-          {
-            "slot": "6pm",
-            "caption": "Kung may bagong henerasyon, paano mo ie-explain kung bakit mahalaga si Duterte?"
-          }
-        ],
-        "saturday": [
-          {
-            "slot": "6am",
-            "caption": "Weekend nostalgia: anong campaign o rally ni Digong ang hindi mo makakalimutan?"
-          },
-          {
-            "slot": "12pm",
-            "caption": "Red shirt, blue shirt, o simple lang — anong look ang \"DDS mode\" mo?"
-          },
-          {
-            "slot": "6pm",
-            "caption": "Kung may DDS handbook, anong rule number one ang isusulat mo tungkol kay Digong?"
-          }
-        ],
-        "sunday": [
-          {
-            "slot": "6am",
-            "caption": "Magandang Linggo, DDS family. Anong dasal mo ngayon para kay Digong at sa bayan?"
-          },
-          {
-            "slot": "12pm",
-            "caption": "Tag 2 kaibigan na pure Duterte supporter. Sabihin bakit sila legit DDS."
-          },
-          {
-            "slot": "6pm",
-            "caption": "Closing: kung may message ka kay Digong ngayong gabi, anong 1 sentence mo?"
-          }
-        ]
-      }
+  "monday": [
+    {
+      "slot": "6am",
+      "prompt": "Photorealistic wide shot of a large morning crowd of Filipino DDS supporters outdoors under soft sunlight, many wearing red shirts and waving Philippine flags. In the center a big white banner held by wooden poles shows a realistic side-by-side portrait of Rodrigo Duterte (late 70s) and Sara Duterte (mid-40s) both looking strong and determined. Large bold text on the banner: \"AMA AT ANAK PARA SA BAYAN\". Small clean text \"AI Generated\" in the top-right corner. Natural morning light, united atmosphere, ultra detailed, 1:1 square, 8k.",
+      "caption": "Ama at anak para sa bayan.\nSino pa ang solid?\n#Duterte #SaraDuterte #DDS #viral"
+    },
+    {
+      "slot": "12pm",
+      "prompt": "Photorealistic wide shot of a massive midday crowd under bright sun. Center white banner features only Sara Duterte with a firm stare. Bold text: \"INDAY SARA, ANAK NI DIGONG\". Small \"AI Generated\" top-right. Harsh noon light, energetic feel, sharp 8k, 1:1 square.",
+      "caption": "Inday Sara, anak ni Digong.\nSino pa ang naniniwala?\n#SaraDuterte #DDS #IndaySara #viral"
+    },
+    {
+      "slot": "6pm",
+      "prompt": "Photorealistic wide shot during golden hour. Center banner shows a realistic ordinary middle-aged Filipino DDS supporter (man in red shirt, serious face) holding a small Philippine flag, with text behind him. Bold text: \"SOLID AKO HANGGANG DULO\". Small \"AI Generated\" top-right. Soft evening glow, loyal mood, ultra detailed 1:1.",
+      "caption": "Solid ako hanggang dulo.\nSino pa ang solid?\n#DDS #Duterte #viral"
+    }
+  ],
+  "tuesday": [
+    {
+      "slot": "6am",
+      "prompt": "Photorealistic wide morning plaza shot. Large white banner shows only Rodrigo Duterte with a fierce expression. Bold text: \"DIGONG FOREVER SA PUSO\". Small \"AI Generated\" top-right. Fresh morning light, 8k 1:1.",
+      "caption": "Digong forever sa puso.\nSino pa ang nami-miss?\n#Duterte #DDS #viral"
+    },
+    {
+      "slot": "12pm",
+      "prompt": "Photorealistic wide noon shot of loud crowd. Center banner features Sara Duterte and a young female DDS supporter standing together smiling. Bold text: \"KABATAAN PARA KAY INDAY\". Small \"AI Generated\" top-right. Bright daylight, hopeful energy, sharp 1:1.",
+      "caption": "Kabataan para kay Inday.\nSino pa ang kasama?\n#SaraDuterte #DDS #IndaySara #viral"
+    },
+    {
+      "slot": "6pm",
+      "prompt": "Photorealistic wide evening shot. Center banner shows an ordinary older woman DDS supporter (grandmother type, red shirt) with warm but firm face. Bold text: \"APO NI DIGONG, APO NI SARA\". Small \"AI Generated\" top-right. Warm dusk light, emotional mood, ultra detailed 1:1.",
+      "caption": "Apo ni Digong, apo ni Sara.\nSino pa ang solid hanggang ngayon?\n#DDS #Duterte #SaraDuterte #viral"
+    }
+  ],
+  "wednesday": [
+    {
+      "slot": "6am",
+      "prompt": "Photorealistic wide early morning shot. Large white banner features Digong and Sara side by side again, both looking forward. Bold text: \"MAG-AMA PARA SA MAHIRAP\". Small \"AI Generated\" top-right. Gentle morning light, 8k square.",
+      "caption": "Mag-ama para sa mahirap.\nYan ang totoo.\n#Duterte #SaraDuterte #DDS #viral"
+    },
+    {
+      "slot": "12pm",
+      "prompt": "Photorealistic wide midday shot. Center banner shows only Sara Duterte with determined eyes. Large text: \"HINDI AKO TATANGGI SA TAO\". Small \"AI Generated\" top-right. High contrast light, sharp 1:1.",
+      "caption": "Hindi ako tatanggi sa tao.\nGanyan si Inday.\n#SaraDuterte #DDS #IndaySara #viral"
+    },
+    {
+      "slot": "6pm",
+      "prompt": "Photorealistic wide sunset shot. Center banner features a young male DDS supporter (early 20s, red shirt, raised fist) looking intense. Bold text: \"KAMI ANG SUSUNOD NA HENERASYON\". Small \"AI Generated\" top-right. Golden hour, powerful mood, ultra detailed square.",
+      "caption": "Kami ang susunod na henerasyon.\nSino pa ang handa?\n#DDS #Duterte #SaraDuterte #viral"
+    }
+  ],
+  "thursday": [
+    {
+      "slot": "6am",
+      "prompt": "Photorealistic wide morning shot. Large white banner shows only Digong with calm but strong face. Bold text: \"WALANG KORAP, WALANG TAKOT\". Small \"AI Generated\" top-right. Clear morning light, 8k 1:1.",
+      "caption": "Walang korap, walang takot.\nYan si Digong.\n#Duterte #DDS #viral"
+    },
+    {
+      "slot": "12pm",
+      "prompt": "Photorealistic wide noon shot. Center banner features Sara Duterte looking straight at the viewer. Large text: \"PROTEKTAHAN ANG MGA BATA\". Small \"AI Generated\" top-right. Bright light, caring but strong energy, sharp square.",
+      "caption": "Protektahan ang mga bata.\nYan ang puso ni Sara.\n#SaraDuterte #DDS #IndaySara #viral"
+    },
+    {
+      "slot": "6pm",
+      "prompt": "Photorealistic wide evening shot. Center banner shows a middle-aged couple (DDS supporters) holding Philippine flags, smiling proudly. Bold text: \"MAG-ASAWA SOLID KAY DIGONG AT SARA\". Small \"AI Generated\" top-right. Warm dusk, loyal feel, ultra detailed 1:1.",
+      "caption": "Mag-asawa solid kay Digong at Sara.\nSino pa ang solid?\n#DDS #Duterte #SaraDuterte #viral"
+    }
+  ],
+  "friday": [
+    {
+      "slot": "6am",
+      "prompt": "Photorealistic wide early morning shot. Large white banner features Digong and Sara together once more. Bold text: \"SALAMAT SA MGA NANATILI\". Small \"AI Generated\" top-right. Gentle light, grateful atmosphere, 8k square.",
+      "caption": "Salamat sa mga nanatili.\nSino pa ang nandito pa rin?\n#Duterte #SaraDuterte #DDS #viral"
+    },
+    {
+      "slot": "12pm",
+      "prompt": "Photorealistic wide midday shot. Center banner shows only Sara with unflinching stare. Large text: \"INDAY SARA FOREVER\". Small \"AI Generated\" top-right. Harsh bright light, determined mood, sharp 1:1.",
+      "caption": "Inday Sara forever.\nSino pa ang solid?\n#SaraDuterte #DDS #IndaySara #viral"
+    },
+    {
+      "slot": "6pm",
+      "prompt": "Photorealistic wide late afternoon shot. Center banner features an ordinary tricycle driver type DDS supporter (man in simple clothes, red shirt) looking proud. Bold text: \"MAHIRAP PERO SOLID\". Small \"AI Generated\" top-right. Warm afternoon light, real-people feel, ultra detailed square.",
+      "caption": "Mahirap pero solid.\nSino pa ang ganito?\n#DDS #Duterte #SaraDuterte #viral"
+    }
+  ],
+  "saturday": [
+    {
+      "slot": "6am",
+      "prompt": "Photorealistic wide Saturday morning shot. Large white banner shows Digong with soft but firm smile. Bold text: \"PARA SA KINABUKASAN\". Small \"AI Generated\" top-right. Bright clean light, hopeful atmosphere, 8k 1:1.",
+      "caption": "Para sa kinabukasan.\nYan ang laban ni Digong.\n#Duterte #DDS #viral"
+    },
+    {
+      "slot": "12pm",
+      "prompt": "Photorealistic wide noon shot. Center banner features Sara Duterte raising one hand slightly. Large text: \"TULOY ANG LABAN\". Small \"AI Generated\" top-right. High energy daylight, powerful mood, sharp square.",
+      "caption": "Tuloy ang laban.\nSama-sama kay Digong at Sara.\n#SaraDuterte #DDS #IndaySara #viral"
+    },
+    {
+      "slot": "6pm",
+      "prompt": "Photorealistic wide evening shot. Center banner shows a group of three ordinary DDS supporters (young, middle-aged, old) standing side by side. Bold text: \"TATLONG HENERASYON SOLID\". Small \"AI Generated\" top-right. Warm dusk, multi-generation feel, ultra detailed 1:1.",
+      "caption": "Tatlong henerasyon solid.\nSino pa ang kasama?\n#DDS #Duterte #SaraDuterte #viral"
+    }
+  ],
+  "sunday": [
+    {
+      "slot": "6am",
+      "prompt": "Photorealistic wide Sunday morning shot. Large white banner features Digong and Sara together looking peaceful yet strong. Bold text: \"SALAMAT SA MGA SOLID\". Small \"AI Generated\" top-right. Gentle light, grateful energy, 8k square.",
+      "caption": "Salamat sa mga solid.\nSino pa ang nandito?\n#Duterte #SaraDuterte #DDS #viral"
+    },
+    {
+      "slot": "12pm",
+      "prompt": "Photorealistic wide midday shot. Center banner shows only Sara with open calm smile. Large text: \"SAMA-SAMA PARA SA BAYAN\". Small \"AI Generated\" top-right. Bright hopeful light, united feel, sharp 1:1.",
+      "caption": "Sama-sama para sa bayan.\nDigong at Sara, kami ang sundalo.\n#SaraDuterte #DDS #IndaySara #viral"
+    },
+    {
+      "slot": "6pm",
+      "prompt": "Photorealistic wide evening shot with soft golden-purple sky. Center banner features an ordinary young mother DDS supporter holding her child, both looking forward. Bold text: \"PARA SA ANAK KO, SOLID AKO\". Small \"AI Generated\" top-right. Warm evening light, emotional resolute mood, ultra detailed square.",
+      "caption": "Para sa anak ko, solid ako.\nSino pa ang handa?\n#DDS #Duterte #SaraDuterte #viral"
+    }
+  ]
     }
   },
   "defaults": {
