@@ -509,6 +509,133 @@
         }
       ]
       }
+    },
+    "dnl": {
+      "config": {
+        "postType": "text",
+        "published": true
+      },
+      "schedule": {
+        "monday": [
+          {
+            "slot": "6am",
+            "prompt": "Photorealistic wide shot of a large early morning crowd of Filipino DDS supporters in a public plaza, many wearing faded red shirts, holding small Philippine flags. In the center a white banner on wooden poles shows a realistic portrait of an ordinary middle-aged DDS man (serious face, short hair, red shirt) looking straight ahead. Large bold text: \"SOLID AKO KAY DIGONG\". Small clean text \"AI Generated\" top-right. Soft morning light, real-people atmosphere, ultra detailed, 1:1 square, 8k.",
+            "caption": "Solid ako kay Digong.\nSimula nung una.\n#Duterte #DDS #viral"
+          },
+          {
+            "slot": "12pm",
+            "prompt": "Photorealistic wide shot of a packed midday crowd under strong sun, people raising fists. Center banner features a young female DDS supporter (early 20s, red shirt, determined expression). Bold text: \"KABATAAN SOLID PA RIN\". Small \"AI Generated\" top-right. Harsh noon light, raw energy, sharp 8k, 1:1.",
+            "caption": "Kabataan solid pa rin.\nWala tayong iwanan.\n#DDS #Duterte #viral"
+          },
+          {
+            "slot": "6pm",
+            "prompt": "Photorealistic wide shot during late afternoon golden hour. Center banner shows an elderly DDS couple (both in red, holding hands) with calm proud faces. Bold text: \"HANGGANG TIGANG NA\". Small \"AI Generated\" top-right. Warm evening light, quiet loyalty, ultra detailed 1:1.",
+            "caption": "Hanggang tigang na.\nKami pa rin.\n#Duterte #DDS #viral"
+          }
+        ],
+        "tuesday": [
+          {
+            "slot": "6am",
+            "prompt": "Photorealistic wide morning shot of DDS supporters gathering near a covered court. Large white banner shows a realistic portrait of a tricycle driver type man (simple clothes, red shirt, firm stare). Bold text: \"MAHIRAP PERO DI NAGBAGO\". Small \"AI Generated\" top-right. Natural morning light, grounded feel, 8k 1:1.",
+            "caption": "Mahirap pero di nagbago.\nSolid pa rin.\n#DDS #Duterte #viral"
+          },
+          {
+            "slot": "12pm",
+            "prompt": "Photorealistic wide noon shot of a loud crowd. Center banner features a group of three ordinary DDS men standing shoulder to shoulder. Bold text: \"TATLO PA LANG TO, DAMI PA\". Small \"AI Generated\" top-right. Bright daylight, street energy, sharp square.",
+            "caption": "Tatlo pa lang to, dami pa.\nMarami pa kaming solid.\n#Duterte #DDS #viral"
+          },
+          {
+            "slot": "6pm",
+            "prompt": "Photorealistic wide evening shot. Center banner shows a young mother DDS supporter holding her toddler, both looking forward. Bold text: \"PARA SA ANAK KO TO\". Small \"AI Generated\" top-right. Soft dusk light, emotional, ultra detailed 1:1.",
+            "caption": "Para sa anak ko to.\nKaya solid ako.\n#DDS #Duterte #viral"
+          }
+        ],
+        "wednesday": [
+          {
+            "slot": "6am",
+            "prompt": "Photorealistic wide early morning shot. Large white banner features an ordinary older DDS woman (grandmother type, red blouse, strong eyes). Bold text: \"HINDI AKO NAWAWALA\". Small \"AI Generated\" top-right. Soft morning light, steady presence, 8k square.",
+            "caption": "Hindi ako nawawala.\nNandito pa ako.\n#Duterte #DDS #viral"
+          },
+          {
+            "slot": "12pm",
+            "prompt": "Photorealistic wide midday shot of energetic crowd. Center banner shows a young male DDS supporter with raised fist and intense face. Bold text: \"WALANG ATRASAN\". Small \"AI Generated\" top-right. High noon light, raw power, sharp 1:1.",
+            "caption": "Walang atrasan.\nHanggang dulo.\n#DDS #Duterte #viral"
+          },
+          {
+            "slot": "6pm",
+            "prompt": "Photorealistic wide sunset shot. Center banner features two ordinary DDS friends (one man, one woman) standing side by side smiling slightly. Bold text: \"KASAMA HANGGANG HULI\". Small \"AI Generated\" top-right. Golden hour, simple loyalty, ultra detailed square.",
+            "caption": "Kasama hanggang huli.\nDi kami umaatras.\n#Duterte #DDS #viral"
+          }
+        ],
+        "thursday": [
+          {
+            "slot": "6am",
+            "prompt": "Photorealistic wide morning plaza shot. Large white banner shows a realistic portrait of a construction worker type DDS man (helmet off, red shirt, serious look). Bold text: \"TRABAHO LANG, SOLID PA RIN\". Small \"AI Generated\" top-right. Clear morning light, working-class feel, 8k 1:1.",
+            "caption": "Trabaho lang, solid pa rin.\nGanito kami.\n#DDS #Duterte #viral"
+          },
+          {
+            "slot": "12pm",
+            "prompt": "Photorealistic wide noon shot. Center banner features a young female DDS supporter looking straight at camera with quiet strength. Bold text: \"DI AKO NATAKOT\". Small \"AI Generated\" top-right. Bright light, steady energy, sharp square.",
+            "caption": "Di ako natakot.\nSolid pa rin.\n#Duterte #DDS #viral"
+          },
+          {
+            "slot": "6pm",
+            "prompt": "Photorealistic wide evening shot. Center banner shows an ordinary family of four (parents and two kids) all in red shirts. Bold text: \"BUONG PAMILYA SOLID\". Small \"AI Generated\" top-right. Warm dusk light, family loyalty, ultra detailed 1:1.",
+            "caption": "Buong pamilya solid.\nLahat kami.\n#DDS #Duterte #viral"
+          }
+        ],
+        "friday": [
+          {
+            "slot": "6am",
+            "prompt": "Photorealistic wide early morning shot. Large white banner features an ordinary DDS jeepney driver (man leaning slightly, red shirt, calm but firm face). Bold text: \"ARAW-ARAW SOLID\". Small \"AI Generated\" top-right. Soft light, everyday feel, 8k square.",
+            "caption": "Araw-araw solid.\nWala nang bagong.\n#Duterte #DDS #viral"
+          },
+          {
+            "slot": "12pm",
+            "prompt": "Photorealistic wide midday shot of big crowd. Center banner shows a group of DDS women of different ages standing together. Bold text: \"MGA INA SOLID\". Small \"AI Generated\" top-right. Harsh bright light, strong presence, sharp 1:1.",
+            "caption": "Mga ina solid.\nKami ang backbone.\n#DDS #Duterte #viral"
+          },
+          {
+            "slot": "6pm",
+            "prompt": "Photorealistic wide late afternoon shot. Center banner features a young DDS man with backpack and red shirt looking determined. Bold text: \"ESTUDYANTE PERO SOLID\". Small \"AI Generated\" top-right. Warm afternoon light, youth energy, ultra detailed square.",
+            "caption": "Estudyante pero solid.\nDi kami natutulog.\n#Duterte #DDS #viral"
+          }
+        ],
+        "saturday": [
+          {
+            "slot": "6am",
+            "prompt": "Photorealistic wide Saturday morning shot. Large white banner shows an ordinary older DDS man sitting on a plastic chair but looking proud. Bold text: \"MATANDA NA PERO SOLID PA\". Small \"AI Generated\" top-right. Bright clean light, quiet pride, 8k 1:1.",
+            "caption": "Matanda na pero solid pa.\nHanggang dulo.\n#DDS #Duterte #viral"
+          },
+          {
+            "slot": "12pm",
+            "prompt": "Photorealistic wide noon shot. Center banner features two young DDS brothers standing side by side. Bold text: \"MAGKAPATID SOLID\". Small \"AI Generated\" top-right. High energy daylight, brotherhood feel, sharp square.",
+            "caption": "Magkapatid solid.\nLahat kami.\n#Duterte #DDS #viral"
+          },
+          {
+            "slot": "6pm",
+            "prompt": "Photorealistic wide evening shot. Center banner shows a realistic portrait of a market vendor type DDS woman (apron over red shirt, strong eyes). Bold text: \"NAGTITINDA PERO SOLID\". Small \"AI Generated\" top-right. Soft dusk light, real-life strength, ultra detailed 1:1.",
+            "caption": "Nagtitinda pero solid.\nDi kami umaatras.\n#DDS #Duterte #viral"
+          }
+        ],
+        "sunday": [
+          {
+            "slot": "6am",
+            "prompt": "Photorealistic wide Sunday morning shot. Large white banner features an ordinary DDS family again but different faces, all looking calm and united. Bold text: \"LINGGO MAN SOLID PA RIN\". Small \"AI Generated\" top-right. Gentle light, peaceful loyalty, 8k square.",
+            "caption": "Linggo man solid pa rin.\nWala tayong araw off.\n#Duterte #DDS #viral"
+          },
+          {
+            "slot": "12pm",
+            "prompt": "Photorealistic wide midday shot of united crowd. Center banner shows a young DDS couple holding Philippine flags. Bold text: \"MAG-JOWAN SOLID\". Small \"AI Generated\" top-right. Bright hopeful light, young love + loyalty, sharp 1:1.",
+            "caption": "Mag-jowa solid.\nSama-sama.\n#DDS #Duterte #viral"
+          },
+          {
+            "slot": "6pm",
+            "prompt": "Photorealistic wide evening shot with soft golden-purple sky. Center banner features a large group of ordinary DDS supporters of all ages standing close together, looking forward. Bold text: \"MARAMI KAMI\". Small \"AI Generated\" top-right. Warm evening light, collective strength, ultra detailed square.",
+            "caption": "Marami kami.\nHindi kami nauubos.\n#Duterte #DDS #viral"
+          }
+        ]
+      }
     }
   },
   "defaults": {
