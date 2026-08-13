@@ -384,125 +384,131 @@
       }
     },
     "phnews": {
-  "monday": [
-    {
-      "slot": "6am",
-      "prompt": "Photorealistic wide shot of a large morning crowd of Filipino DDS supporters outdoors under soft sunlight, many wearing red shirts and waving Philippine flags. In the center a big white banner held by wooden poles shows a realistic side-by-side portrait of Rodrigo Duterte (late 70s) and Sara Duterte (mid-40s) both looking strong and determined. Large bold text on the banner: \"AMA AT ANAK PARA SA BAYAN\". Small clean text \"AI Generated\" in the top-right corner. Natural morning light, united atmosphere, ultra detailed, 1:1 square, 8k.",
-      "caption": "Ama at anak para sa bayan.\nSino pa ang solid?\n#Duterte #SaraDuterte #DDS #viral"
-    },
-    {
-      "slot": "12pm",
-      "prompt": "Photorealistic wide shot of a massive midday crowd under bright sun. Center white banner features only Sara Duterte with a firm stare. Bold text: \"INDAY SARA, ANAK NI DIGONG\". Small \"AI Generated\" top-right. Harsh noon light, energetic feel, sharp 8k, 1:1 square.",
-      "caption": "Inday Sara, anak ni Digong.\nSino pa ang naniniwala?\n#SaraDuterte #DDS #IndaySara #viral"
-    },
-    {
-      "slot": "6pm",
-      "prompt": "Photorealistic wide shot during golden hour. Center banner shows a realistic ordinary middle-aged Filipino DDS supporter (man in red shirt, serious face) holding a small Philippine flag, with text behind him. Bold text: \"SOLID AKO HANGGANG DULO\". Small \"AI Generated\" top-right. Soft evening glow, loyal mood, ultra detailed 1:1.",
-      "caption": "Solid ako hanggang dulo.\nSino pa ang solid?\n#DDS #Duterte #viral"
-    }
-  ],
-  "tuesday": [
-    {
-      "slot": "6am",
-      "prompt": "Photorealistic wide morning plaza shot. Large white banner shows only Rodrigo Duterte with a fierce expression. Bold text: \"DIGONG FOREVER SA PUSO\". Small \"AI Generated\" top-right. Fresh morning light, 8k 1:1.",
-      "caption": "Digong forever sa puso.\nSino pa ang nami-miss?\n#Duterte #DDS #viral"
-    },
-    {
-      "slot": "12pm",
-      "prompt": "Photorealistic wide noon shot of loud crowd. Center banner features Sara Duterte and a young female DDS supporter standing together smiling. Bold text: \"KABATAAN PARA KAY INDAY\". Small \"AI Generated\" top-right. Bright daylight, hopeful energy, sharp 1:1.",
-      "caption": "Kabataan para kay Inday.\nSino pa ang kasama?\n#SaraDuterte #DDS #IndaySara #viral"
-    },
-    {
-      "slot": "6pm",
-      "prompt": "Photorealistic wide evening shot. Center banner shows an ordinary older woman DDS supporter (grandmother type, red shirt) with warm but firm face. Bold text: \"APO NI DIGONG, APO NI SARA\". Small \"AI Generated\" top-right. Warm dusk light, emotional mood, ultra detailed 1:1.",
-      "caption": "Apo ni Digong, apo ni Sara.\nSino pa ang solid hanggang ngayon?\n#DDS #Duterte #SaraDuterte #viral"
-    }
-  ],
-  "wednesday": [
-    {
-      "slot": "6am",
-      "prompt": "Photorealistic wide early morning shot. Large white banner features Digong and Sara side by side again, both looking forward. Bold text: \"MAG-AMA PARA SA MAHIRAP\". Small \"AI Generated\" top-right. Gentle morning light, 8k square.",
-      "caption": "Mag-ama para sa mahirap.\nYan ang totoo.\n#Duterte #SaraDuterte #DDS #viral"
-    },
-    {
-      "slot": "12pm",
-      "prompt": "Photorealistic wide midday shot. Center banner shows only Sara Duterte with determined eyes. Large text: \"HINDI AKO TATANGGI SA TAO\". Small \"AI Generated\" top-right. High contrast light, sharp 1:1.",
-      "caption": "Hindi ako tatanggi sa tao.\nGanyan si Inday.\n#SaraDuterte #DDS #IndaySara #viral"
-    },
-    {
-      "slot": "6pm",
-      "prompt": "Photorealistic wide sunset shot. Center banner features a young male DDS supporter (early 20s, red shirt, raised fist) looking intense. Bold text: \"KAMI ANG SUSUNOD NA HENERASYON\". Small \"AI Generated\" top-right. Golden hour, powerful mood, ultra detailed square.",
-      "caption": "Kami ang susunod na henerasyon.\nSino pa ang handa?\n#DDS #Duterte #SaraDuterte #viral"
-    }
-  ],
-  "thursday": [
-    {
-      "slot": "6am",
-      "prompt": "Photorealistic wide morning shot. Large white banner shows only Digong with calm but strong face. Bold text: \"WALANG KORAP, WALANG TAKOT\". Small \"AI Generated\" top-right. Clear morning light, 8k 1:1.",
-      "caption": "Walang korap, walang takot.\nYan si Digong.\n#Duterte #DDS #viral"
-    },
-    {
-      "slot": "12pm",
-      "prompt": "Photorealistic wide noon shot. Center banner features Sara Duterte looking straight at the viewer. Large text: \"PROTEKTAHAN ANG MGA BATA\". Small \"AI Generated\" top-right. Bright light, caring but strong energy, sharp square.",
-      "caption": "Protektahan ang mga bata.\nYan ang puso ni Sara.\n#SaraDuterte #DDS #IndaySara #viral"
-    },
-    {
-      "slot": "6pm",
-      "prompt": "Photorealistic wide evening shot. Center banner shows a middle-aged couple (DDS supporters) holding Philippine flags, smiling proudly. Bold text: \"MAG-ASAWA SOLID KAY DIGONG AT SARA\". Small \"AI Generated\" top-right. Warm dusk, loyal feel, ultra detailed 1:1.",
-      "caption": "Mag-asawa solid kay Digong at Sara.\nSino pa ang solid?\n#DDS #Duterte #SaraDuterte #viral"
-    }
-  ],
-  "friday": [
-    {
-      "slot": "6am",
-      "prompt": "Photorealistic wide early morning shot. Large white banner features Digong and Sara together once more. Bold text: \"SALAMAT SA MGA NANATILI\". Small \"AI Generated\" top-right. Gentle light, grateful atmosphere, 8k square.",
-      "caption": "Salamat sa mga nanatili.\nSino pa ang nandito pa rin?\n#Duterte #SaraDuterte #DDS #viral"
-    },
-    {
-      "slot": "12pm",
-      "prompt": "Photorealistic wide midday shot. Center banner shows only Sara with unflinching stare. Large text: \"INDAY SARA FOREVER\". Small \"AI Generated\" top-right. Harsh bright light, determined mood, sharp 1:1.",
-      "caption": "Inday Sara forever.\nSino pa ang solid?\n#SaraDuterte #DDS #IndaySara #viral"
-    },
-    {
-      "slot": "6pm",
-      "prompt": "Photorealistic wide late afternoon shot. Center banner features an ordinary tricycle driver type DDS supporter (man in simple clothes, red shirt) looking proud. Bold text: \"MAHIRAP PERO SOLID\". Small \"AI Generated\" top-right. Warm afternoon light, real-people feel, ultra detailed square.",
-      "caption": "Mahirap pero solid.\nSino pa ang ganito?\n#DDS #Duterte #SaraDuterte #viral"
-    }
-  ],
-  "saturday": [
-    {
-      "slot": "6am",
-      "prompt": "Photorealistic wide Saturday morning shot. Large white banner shows Digong with soft but firm smile. Bold text: \"PARA SA KINABUKASAN\". Small \"AI Generated\" top-right. Bright clean light, hopeful atmosphere, 8k 1:1.",
-      "caption": "Para sa kinabukasan.\nYan ang laban ni Digong.\n#Duterte #DDS #viral"
-    },
-    {
-      "slot": "12pm",
-      "prompt": "Photorealistic wide noon shot. Center banner features Sara Duterte raising one hand slightly. Large text: \"TULOY ANG LABAN\". Small \"AI Generated\" top-right. High energy daylight, powerful mood, sharp square.",
-      "caption": "Tuloy ang laban.\nSama-sama kay Digong at Sara.\n#SaraDuterte #DDS #IndaySara #viral"
-    },
-    {
-      "slot": "6pm",
-      "prompt": "Photorealistic wide evening shot. Center banner shows a group of three ordinary DDS supporters (young, middle-aged, old) standing side by side. Bold text: \"TATLONG HENERASYON SOLID\". Small \"AI Generated\" top-right. Warm dusk, multi-generation feel, ultra detailed 1:1.",
-      "caption": "Tatlong henerasyon solid.\nSino pa ang kasama?\n#DDS #Duterte #SaraDuterte #viral"
-    }
-  ],
-  "sunday": [
-    {
-      "slot": "6am",
-      "prompt": "Photorealistic wide Sunday morning shot. Large white banner features Digong and Sara together looking peaceful yet strong. Bold text: \"SALAMAT SA MGA SOLID\". Small \"AI Generated\" top-right. Gentle light, grateful energy, 8k square.",
-      "caption": "Salamat sa mga solid.\nSino pa ang nandito?\n#Duterte #SaraDuterte #DDS #viral"
-    },
-    {
-      "slot": "12pm",
-      "prompt": "Photorealistic wide midday shot. Center banner shows only Sara with open calm smile. Large text: \"SAMA-SAMA PARA SA BAYAN\". Small \"AI Generated\" top-right. Bright hopeful light, united feel, sharp 1:1.",
-      "caption": "Sama-sama para sa bayan.\nDigong at Sara, kami ang sundalo.\n#SaraDuterte #DDS #IndaySara #viral"
-    },
-    {
-      "slot": "6pm",
-      "prompt": "Photorealistic wide evening shot with soft golden-purple sky. Center banner features an ordinary young mother DDS supporter holding her child, both looking forward. Bold text: \"PARA SA ANAK KO, SOLID AKO\". Small \"AI Generated\" top-right. Warm evening light, emotional resolute mood, ultra detailed square.",
-      "caption": "Para sa anak ko, solid ako.\nSino pa ang handa?\n#DDS #Duterte #SaraDuterte #viral"
-    }
-  ]
+      "config": {
+        "postType": "text",
+        "published": true
+      },
+      "schedule": {
+      "monday": [
+        {
+          "slot": "6am",
+          "prompt": "Photorealistic wide shot of a large morning crowd of Filipino DDS supporters outdoors under soft sunlight, many wearing red shirts and waving Philippine flags. In the center a big white banner held by wooden poles shows a realistic side-by-side portrait of Rodrigo Duterte (late 70s) and Sara Duterte (mid-40s) both looking strong and determined. Large bold text on the banner: \"AMA AT ANAK PARA SA BAYAN\". Small clean text \"AI Generated\" in the top-right corner. Natural morning light, united atmosphere, ultra detailed, 1:1 square, 8k.",
+          "caption": "Ama at anak para sa bayan.\nSino pa ang solid?\n#Duterte #SaraDuterte #DDS #viral"
+        },
+        {
+          "slot": "12pm",
+          "prompt": "Photorealistic wide shot of a massive midday crowd under bright sun. Center white banner features only Sara Duterte with a firm stare. Bold text: \"INDAY SARA, ANAK NI DIGONG\". Small \"AI Generated\" top-right. Harsh noon light, energetic feel, sharp 8k, 1:1 square.",
+          "caption": "Inday Sara, anak ni Digong.\nSino pa ang naniniwala?\n#SaraDuterte #DDS #IndaySara #viral"
+        },
+        {
+          "slot": "6pm",
+          "prompt": "Photorealistic wide shot during golden hour. Center banner shows a realistic ordinary middle-aged Filipino DDS supporter (man in red shirt, serious face) holding a small Philippine flag, with text behind him. Bold text: \"SOLID AKO HANGGANG DULO\". Small \"AI Generated\" top-right. Soft evening glow, loyal mood, ultra detailed 1:1.",
+          "caption": "Solid ako hanggang dulo.\nSino pa ang solid?\n#DDS #Duterte #viral"
+        }
+      ],
+      "tuesday": [
+        {
+          "slot": "6am",
+          "prompt": "Photorealistic wide morning plaza shot. Large white banner shows only Rodrigo Duterte with a fierce expression. Bold text: \"DIGONG FOREVER SA PUSO\". Small \"AI Generated\" top-right. Fresh morning light, 8k 1:1.",
+          "caption": "Digong forever sa puso.\nSino pa ang nami-miss?\n#Duterte #DDS #viral"
+        },
+        {
+          "slot": "12pm",
+          "prompt": "Photorealistic wide noon shot of loud crowd. Center banner features Sara Duterte and a young female DDS supporter standing together smiling. Bold text: \"KABATAAN PARA KAY INDAY\". Small \"AI Generated\" top-right. Bright daylight, hopeful energy, sharp 1:1.",
+          "caption": "Kabataan para kay Inday.\nSino pa ang kasama?\n#SaraDuterte #DDS #IndaySara #viral"
+        },
+        {
+          "slot": "6pm",
+          "prompt": "Photorealistic wide evening shot. Center banner shows an ordinary older woman DDS supporter (grandmother type, red shirt) with warm but firm face. Bold text: \"APO NI DIGONG, APO NI SARA\". Small \"AI Generated\" top-right. Warm dusk light, emotional mood, ultra detailed 1:1.",
+          "caption": "Apo ni Digong, apo ni Sara.\nSino pa ang solid hanggang ngayon?\n#DDS #Duterte #SaraDuterte #viral"
+        }
+      ],
+      "wednesday": [
+        {
+          "slot": "6am",
+          "prompt": "Photorealistic wide early morning shot. Large white banner features Digong and Sara side by side again, both looking forward. Bold text: \"MAG-AMA PARA SA MAHIRAP\". Small \"AI Generated\" top-right. Gentle morning light, 8k square.",
+          "caption": "Mag-ama para sa mahirap.\nYan ang totoo.\n#Duterte #SaraDuterte #DDS #viral"
+        },
+        {
+          "slot": "12pm",
+          "prompt": "Photorealistic wide midday shot. Center banner shows only Sara Duterte with determined eyes. Large text: \"HINDI AKO TATANGGI SA TAO\". Small \"AI Generated\" top-right. High contrast light, sharp 1:1.",
+          "caption": "Hindi ako tatanggi sa tao.\nGanyan si Inday.\n#SaraDuterte #DDS #IndaySara #viral"
+        },
+        {
+          "slot": "6pm",
+          "prompt": "Photorealistic wide sunset shot. Center banner features a young male DDS supporter (early 20s, red shirt, raised fist) looking intense. Bold text: \"KAMI ANG SUSUNOD NA HENERASYON\". Small \"AI Generated\" top-right. Golden hour, powerful mood, ultra detailed square.",
+          "caption": "Kami ang susunod na henerasyon.\nSino pa ang handa?\n#DDS #Duterte #SaraDuterte #viral"
+        }
+      ],
+      "thursday": [
+        {
+          "slot": "6am",
+          "prompt": "Photorealistic wide morning shot. Large white banner shows only Digong with calm but strong face. Bold text: \"WALANG KORAP, WALANG TAKOT\". Small \"AI Generated\" top-right. Clear morning light, 8k 1:1.",
+          "caption": "Walang korap, walang takot.\nYan si Digong.\n#Duterte #DDS #viral"
+        },
+        {
+          "slot": "12pm",
+          "prompt": "Photorealistic wide noon shot. Center banner features Sara Duterte looking straight at the viewer. Large text: \"PROTEKTAHAN ANG MGA BATA\". Small \"AI Generated\" top-right. Bright light, caring but strong energy, sharp square.",
+          "caption": "Protektahan ang mga bata.\nYan ang puso ni Sara.\n#SaraDuterte #DDS #IndaySara #viral"
+        },
+        {
+          "slot": "6pm",
+          "prompt": "Photorealistic wide evening shot. Center banner shows a middle-aged couple (DDS supporters) holding Philippine flags, smiling proudly. Bold text: \"MAG-ASAWA SOLID KAY DIGONG AT SARA\". Small \"AI Generated\" top-right. Warm dusk, loyal feel, ultra detailed 1:1.",
+          "caption": "Mag-asawa solid kay Digong at Sara.\nSino pa ang solid?\n#DDS #Duterte #SaraDuterte #viral"
+        }
+      ],
+      "friday": [
+        {
+          "slot": "6am",
+          "prompt": "Photorealistic wide early morning shot. Large white banner features Digong and Sara together once more. Bold text: \"SALAMAT SA MGA NANATILI\". Small \"AI Generated\" top-right. Gentle light, grateful atmosphere, 8k square.",
+          "caption": "Salamat sa mga nanatili.\nSino pa ang nandito pa rin?\n#Duterte #SaraDuterte #DDS #viral"
+        },
+        {
+          "slot": "12pm",
+          "prompt": "Photorealistic wide midday shot. Center banner shows only Sara with unflinching stare. Large text: \"INDAY SARA FOREVER\". Small \"AI Generated\" top-right. Harsh bright light, determined mood, sharp 1:1.",
+          "caption": "Inday Sara forever.\nSino pa ang solid?\n#SaraDuterte #DDS #IndaySara #viral"
+        },
+        {
+          "slot": "6pm",
+          "prompt": "Photorealistic wide late afternoon shot. Center banner features an ordinary tricycle driver type DDS supporter (man in simple clothes, red shirt) looking proud. Bold text: \"MAHIRAP PERO SOLID\". Small \"AI Generated\" top-right. Warm afternoon light, real-people feel, ultra detailed square.",
+          "caption": "Mahirap pero solid.\nSino pa ang ganito?\n#DDS #Duterte #SaraDuterte #viral"
+        }
+      ],
+      "saturday": [
+        {
+          "slot": "6am",
+          "prompt": "Photorealistic wide Saturday morning shot. Large white banner shows Digong with soft but firm smile. Bold text: \"PARA SA KINABUKASAN\". Small \"AI Generated\" top-right. Bright clean light, hopeful atmosphere, 8k 1:1.",
+          "caption": "Para sa kinabukasan.\nYan ang laban ni Digong.\n#Duterte #DDS #viral"
+        },
+        {
+          "slot": "12pm",
+          "prompt": "Photorealistic wide noon shot. Center banner features Sara Duterte raising one hand slightly. Large text: \"TULOY ANG LABAN\". Small \"AI Generated\" top-right. High energy daylight, powerful mood, sharp square.",
+          "caption": "Tuloy ang laban.\nSama-sama kay Digong at Sara.\n#SaraDuterte #DDS #IndaySara #viral"
+        },
+        {
+          "slot": "6pm",
+          "prompt": "Photorealistic wide evening shot. Center banner shows a group of three ordinary DDS supporters (young, middle-aged, old) standing side by side. Bold text: \"TATLONG HENERASYON SOLID\". Small \"AI Generated\" top-right. Warm dusk, multi-generation feel, ultra detailed 1:1.",
+          "caption": "Tatlong henerasyon solid.\nSino pa ang kasama?\n#DDS #Duterte #SaraDuterte #viral"
+        }
+      ],
+      "sunday": [
+        {
+          "slot": "6am",
+          "prompt": "Photorealistic wide Sunday morning shot. Large white banner features Digong and Sara together looking peaceful yet strong. Bold text: \"SALAMAT SA MGA SOLID\". Small \"AI Generated\" top-right. Gentle light, grateful energy, 8k square.",
+          "caption": "Salamat sa mga solid.\nSino pa ang nandito?\n#Duterte #SaraDuterte #DDS #viral"
+        },
+        {
+          "slot": "12pm",
+          "prompt": "Photorealistic wide midday shot. Center banner shows only Sara with open calm smile. Large text: \"SAMA-SAMA PARA SA BAYAN\". Small \"AI Generated\" top-right. Bright hopeful light, united feel, sharp 1:1.",
+          "caption": "Sama-sama para sa bayan.\nDigong at Sara, kami ang sundalo.\n#SaraDuterte #DDS #IndaySara #viral"
+        },
+        {
+          "slot": "6pm",
+          "prompt": "Photorealistic wide evening shot with soft golden-purple sky. Center banner features an ordinary young mother DDS supporter holding her child, both looking forward. Bold text: \"PARA SA ANAK KO, SOLID AKO\". Small \"AI Generated\" top-right. Warm evening light, emotional resolute mood, ultra detailed square.",
+          "caption": "Para sa anak ko, solid ako.\nSino pa ang handa?\n#DDS #Duterte #SaraDuterte #viral"
+        }
+      ]
+      }
     }
   },
   "defaults": {
