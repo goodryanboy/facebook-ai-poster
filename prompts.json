@@ -1,104 +1,104 @@
 {
-  "_comment": "Taglish captions. bbm/dds/sarah/dnl/phnews unique. Keys match FB_PAGE_IDS/TOKENS.",
+  "_comment": "Natural Taglish FB captions (less AI). Unique across bbm/dds/sarah/dnl/phnews.",
   "pages": {
     "dds": {
       "schedule": {
         "monday": [
           {
             "slot": "6am",
-            "caption": "Nakaupo si Digong sa The Hague habang may nagdiriwang. Justice ba ’yan, o gantihan?"
+            "caption": "Si Digong nasa Hague, may mga tuwang-tuwa pa. Justice ba talaga ’yan sa mata mo?"
           },
           {
             "slot": "12pm",
-            "caption": "Naka-calendar na ang ICC trial. Handa ka ba sa mahabang laban para kay Digong? Paano?"
+            "caption": "Malapit na ’yung ICC trial. Kaya mo bang sundin ’yung laban ni Digong kahit tumagal?"
           },
           {
             "slot": "6pm",
-            "caption": "“Free Digong” — slogan sa rally, o personal na dasal mo? Pili at ipaliwanag."
+            "caption": "Pag sinabi mong Free Digong, slogan ba ’yon sa’yo… o dasal na talaga?"
           }
         ],
         "tuesday": [
           {
             "slot": "6am",
-            "caption": "Parang normal warrant lang daw ang arrest ni Digong. DDS, anong mas totoo sa feeling mo?"
+            "caption": "Parang normal lang daw ’yung arrest ni Digong. Ikaw DDS, anong feeling mo nun, totoo?"
           },
           {
             "slot": "12pm",
-            "caption": "Disiplina ng Davao vs detention sa Hague — aling imahe ni Digong ang hawak mo ngayon?"
+            "caption": "Naalala mo pa ba si Digong sa Davao? O ’yung nasa detention na ang laging nasa isip mo?"
           },
           {
             "slot": "6pm",
-            "caption": "Kung sabihin ng kaibigan na “deserve ni Digong ang ICC,” ano’ng kalmadong sagot mo?"
+            "caption": "Pag may kaibigang nagsabing deserve ni Digong ang ICC, anong tahimik pero matinding sagot mo?"
           }
         ],
         "wednesday": [
           {
             "slot": "6am",
-            "caption": "Confirmed ang charges ni Digong, tuloy ang detention. Humina ba ang loyalty mo — o tumigas?"
+            "caption": "Confirmed charges, tuloy detention ni Digong. Mas naging solid ka ba, o may pagod na?"
           },
           {
             "slot": "12pm",
-            "caption": "Ano’ng #1 legacy ni Digong sa’yo: katahimikan, disiplina, o malasakit sa mahihirap?"
+            "caption": "Para sa’yo, ano’ng pinaka-iiwan ni Digong: katahimikan, disiplina, o malasakit sa mahihirap?"
           },
           {
             "slot": "6pm",
-            "caption": "Kumpletuhin: “Hindi maintindihan ng mundo si Digong dahil ___.” Ano’ng blanko mo?"
+            "caption": "Bakit kaya hirap maintindihan ng ibang bansa si Digong? Ano’ng theory mo?"
           }
         ],
         "thursday": [
           {
             "slot": "6am",
-            "caption": "Video call, abogado, headline — global na ang laban ni Digong. Nag-iisa ba ang DDS, o mas maingay?"
+            "caption": "Laban ni Digong, international na. Feeling mo ba alone ang DDS… o mas maingay ngayon?"
           },
           {
             "slot": "12pm",
-            "caption": "Mas gusto mo bang umuwi agad si Digong, o manalo sa legal fight kahit tumagal nang years?"
+            "caption": "Mas gusto mo bang umuwi agad si Digong, o tapusin nang tama ’yung kaso kahit matagal?"
           },
           {
             "slot": "6pm",
-            "caption": "Aling line ni Digong ang gabay mo pa rin sa buhay — ’di ’yung sticker sa FB?"
+            "caption": "Anong sinabi ni Digong noon ang ginagamit mo pa rin sa totoong buhay?"
           }
         ],
         "friday": [
           {
             "slot": "6am",
-            "caption": "Poll: si Digong ba’y protector, dictator, o father-figure sa’yo? Depensahan mo ang label."
+            "caption": "Saan mo talaga tinataguri si Digong: protector, bastos na lider, o parang ama? Bakit?"
           },
           {
             "slot": "12pm",
-            "caption": "Hindi matapos ang debate sa war on drugs. Anong katotohanan kay Digong ang gusto mong aminin ng media?"
+            "caption": "Hindi matapos ’yung usapang war on drugs. Anong parte kay Digong ang ’di sinasabi ng media?"
           },
           {
             "slot": "6pm",
-            "caption": "Sino sa pamilya ang nagpa-DDS sa’yo kay Digong — at ano’ng sinabi nila?"
+            "caption": "Sino sa inyo ang unang nagpakilala kay Digong sa’yo? Ano’ng sinabi nila nun?"
           }
         ],
         "saturday": [
           {
             "slot": "6am",
-            "caption": "Isipin mong nagbabasa si Digong ng balita mula sa kulungan. Ano kaya’ng unang bulong niya?"
+            "caption": "Isipin mong nagbabasa si Digong ng balita diyan. Ano kaya’ng unang “hay nako” niya?"
           },
           {
             "slot": "12pm",
-            "caption": "A/B sa DDS: mas nakakatulong ba ang maingay na rally kay Digong, o tahimik pero disiplinadong buhay?"
+            "caption": "Mas nakakatulong ba ang rally… o ’yung tahimik pero hindi kayo umaatras kay Digong?"
           },
           {
             "slot": "6pm",
-            "caption": "Kung susulat ka ng 10-word letter kay Digong mula sa puso, ano’ng sasabihin mo?"
+            "caption": "Kung may letter ka kay Digong, 10 words lang, ano’ng isusulat mo nang totoo?"
           }
         ],
         "sunday": [
           {
             "slot": "6am",
-            "caption": "Kung may bisa ang dasal, ano’ng isang hiling mo para kay Digong ngayong linggo?"
+            "caption": "Kung may dasal ka ngayong Linggo para kay Digong, ano’ng isang bagay ang hinihiling mo?"
           },
           {
             "slot": "12pm",
-            "caption": "Paano mo ie-explain si Digong sa Gen Z na TikTok hate clips lang ang nakita?"
+            "caption": "Paano mo sasabihin kay Gen Z kung sino si Digong, kung hate clips lang ang alam nila?"
           },
           {
             "slot": "6pm",
-            "caption": "Pag bubukas ang trial ni Digong, papanoodin mo ba lahat — o iingatan ang peace of mind mo? Bakit?"
+            "caption": "Pag umpisa na trial ni Digong, live mo ba lahat… o iiwas ka muna para di ma-stress?"
           }
         ]
       },
@@ -116,99 +116,99 @@
         "monday": [
           {
             "slot": "6am",
-            "caption": "Sabi ni BBM: “Mahiya naman kayo!” Leadership ba ’yan, o viral line lang? Depensahan mo."
+            "caption": "Narinig niyo pa ba ’yung “Mahiya naman kayo!” ni BBM? Para sa’yo, totoo bang galit ’yon?"
           },
           {
             "slot": "12pm",
-            "caption": "Ghost projects sa flood control — ninakaw sa binabaha. Real ba ang crackdown ni BBM sa’yo?"
+            "caption": "Ghost project sa flood control tapos binabaha pa rin. Feeling mo ba may ginagawa si BBM?"
           },
           {
             "slot": "6pm",
-            "caption": "Kung kakasuhan ni BBM pati kakampi sa flood-control graft, matutuwa ka o matatakot? Bakit?"
+            "caption": "Kung kakasuhan ni BBM pati kakampi, cheers ka ba o may kaba? Ano’ng take mo?"
           }
         ],
         "tuesday": [
           {
             "slot": "6am",
-            "caption": "Sunod-sunod ang Ombudsman cases sa DPWH. I-rate mo ang laban ni BBM: 1 hanggang 10?"
+            "caption": "Ang daming kaso sa DPWH lately. Confident ka pa ba kay BBM dito, o wait-and-see ka lang?"
           },
           {
             "slot": "12pm",
-            "caption": "Binabash ang Bagong Pilipinas online. Anong move ni BBM ang ipagtatanggol mo pa rin sa hapag?"
+            "caption": "Pag may bash sa Bagong Pilipinas sa group chat, anong una mong sinasagot tungkol kay BBM?"
           },
           {
             "slot": "6pm",
-            "caption": "Tapusin mo: “Sumusuporta ako sa flood-control crackdown ni BBM dahil ___.” Ano’ng blanko mo?"
+            "caption": "Bakit ba important sa’yo ’yung flood-control crackdown ni BBM? Simple lang, ano reason mo?"
           }
         ],
         "wednesday": [
           {
             "slot": "6am",
-            "caption": "Kickbacks, maleta-maleta, resignation — magulo. Nagtitiwala ka pa ba kay BBM na maglilinis?"
+            "caption": "Grabe ’yung mga usapang kickback at maleta. Naniniwala ka pa bang kaya linisin ni BBM ’yan?"
           },
           {
             "slot": "12pm",
-            "caption": "Mas gusto mo ba si BBM na mabagal pero malinis, o mabilis kahit sumigaw ang elite?"
+            "caption": "Mas okay ba sa’yo kung dahan-dahan pero fair si BBM, o hataw agad kahit magulo?"
           },
           {
             "slot": "6pm",
-            "caption": "Hot take: kung walang SONA blast ni BBM, komportable pa rin ang flood-control thieves. Agree?"
+            "caption": "Kung walang sinabi si BBM sa SONA tungkol sa flood control, tahimik pa kaya ang mga magnanakaw?"
           }
         ],
         "thursday": [
           {
             "slot": "6am",
-            "caption": "Sabi ng protesta, korapsyon ang sistema. Bilang BBM supporter, ano’ng pinakamalakas mong sagot?"
+            "caption": "May nagsasabing selective lang si BBM sa anti-corruption. Anong isasagot mo nang diretsahan?"
           },
           {
             "slot": "12pm",
-            "caption": "Sa laban ni BBM sa flood control, ano’ng mas galit ka — ghost project, kickback, o mabagal na kaso?"
+            "caption": "Sa flood control ni BBM, ano’ng mas nakakainis: ghost project, kickback, o walang ending na imbestiga?"
           },
           {
             "slot": "6pm",
-            "caption": "Kung sabihin ng basher na “selective si BBM,” ano’ng 8-word clapback mo?"
+            "caption": "Teka, kung basher sabihin fake lang ang laban ni BBM, anong short reply mo?"
           }
         ],
         "friday": [
           {
             "slot": "6am",
-            "caption": "Poll: legacy ni BBM — infra, anti-corruption, o survival politics? Alin ang pipiliin mo?"
+            "caption": "Kung iisipin mo legacy ni BBM, ano’ng una: kalsada, anti-corruption, o survival lang talaga?"
           },
           {
             "slot": "12pm",
-            "caption": "May kamag-anak na yumaman sa public works. Sabi ni BBM, harapin ang batas. Susuportahan mo pa ba?"
+            "caption": "May kilala kang yumaman sa projects. Susuportahan mo pa ba siya kung haharapin ni BBM ang batas?"
           },
           {
             "slot": "6pm",
-            "caption": "Aling totoong line ni BBM ang tumama sa’yo — ’di ’yung meme edit? I-drop mo."
+            "caption": "Anong line ni BBM ang hindi fake deep, kundi talagang tumama sa’yo? Sabihin niyo."
           }
         ],
         "saturday": [
           {
             "slot": "6am",
-            "caption": "Pagkatapos ng baha, tanong lagi: saan napunta ang pera? Ano’ng honest answer mo bilang BBM fan?"
+            "caption": "Pag baha ulit, tanong ulit: saan ’yung pera? Bilang BBM fan, anong honest sagot mo?"
           },
           {
             "slot": "12pm",
-            "caption": "A/B kay BBM: unahin bang ikulong ang malalaking isda, o ayusin agad ang drainage?"
+            "caption": "Unahin ba ni BBM ikulong ang malalaki, o ayusin muna ’yung baha sa baba? Ano pick mo?"
           },
           {
             "slot": "6pm",
-            "caption": "Kung gagawa ka ng billboard ni BBM tungkol sa accountability, ano’ng 6 words mo?"
+            "caption": "Kung may tarpaulin si BBM tungkol sa accountability, anong konting text ang ilalagay mo?"
           }
         ],
         "sunday": [
           {
             "slot": "6am",
-            "caption": "Tahimik na tanong: mas hirap bang suportahan si BBM ngayong taon — at tumagal ka pa rin?"
+            "caption": "Mas hirap bang maging pro-BBM ngayon kesa dati? Tumagal ka pa rin ba?"
           },
           {
             "slot": "12pm",
-            "caption": "Kaya mo bang i-explain sa skeptic, isang sentence, bakit importante ang laban ni BBM sa mahihirap?"
+            "caption": "Paano mo ie-explain sa skeptic, short lang, bakit may kwenta pa rin ang laban ni BBM sa mahihirap?"
           },
           {
             "slot": "6pm",
-            "caption": "Bago matapos ang linggo: ano’ng susunod na dapat ipakita ni BBM sa flood-control cases?"
+            "caption": "Before mag-Monday: ano’ng next na gusto mong makita kay BBM sa flood-control cases?"
           }
         ]
       }
@@ -222,99 +222,99 @@
         "monday": [
           {
             "slot": "6am",
-            "caption": "Araw-araw pumapasok si Inday Sara sa Senate trial. Lakas ba’ng nakikita mo — o babaeng hinahabol?"
+            "caption": "Araw-araw trial si Inday Sara. Lakas ba’ng nakikita mo… o pagod na babae na hinahabol?"
           },
           {
             "slot": "12pm",
-            "caption": "Confidential funds: usapang accountability, o bombang pulitika laban kay Inday? Saan ka?"
+            "caption": "Pag marinig mo ulit ang “confidential funds,” agad bang galit ka para kay Inday… o naguguluhan ka?"
           },
           {
             "slot": "6pm",
-            "caption": "“Bloodied but unbowed.” Totoo ba ’yan kay Inday sa impeachment — o branding lang?"
+            "caption": "“Bloodied but unbowed” — feeling mo ba totoo ’yan kay Inday, o pampaganda lang ng post?"
           }
         ],
         "tuesday": [
           {
             "slot": "6am",
-            "caption": "Bank records, auditor, subpoena — full blast ang ingay. Ano’ng nagpapatibay sa loyalty mo kay Sara?"
+            "caption": "Bank records, auditor, ingay nang ingay. Ano’ng rason at ’di mo pa rin iniwan si Sara?"
           },
           {
             "slot": "12pm",
-            "caption": "Kung ma-convict si Inday sa Senado, una mong mararamdaman: galit, iyak, o “laban pa rin”?"
+            "caption": "Kung mag-guilty si Inday sa Senado, unang reaction mo: galit, iyak, o “laban pa rin”?"
           },
           {
             "slot": "6pm",
-            "caption": "Tapusin mo: “Sobrang inaataque si Sarah Duterte dahil ___.” Ano’ng blanko mo?"
+            "caption": "Bakit ang agaw-pansin kay Sarah Duterte ngayon? Ano’ng honest theory mo?"
           }
         ],
         "wednesday": [
           {
             "slot": "6am",
-            "caption": "P612.5M paulit-ulit na chant. Bilang supporter ni Inday, ano’ng kulang sa istoryang ’yan?"
+            "caption": "P612.5M paulit-ulit. Bilang supporter ni Inday, ano’ng parte ng kwento ang palaging kinakalimutan?"
           },
           {
             "slot": "12pm",
-            "caption": "Ano’ng pinakamalakas na armor ni Inday — tapang, instinct ng ina, o diskarteng pulitika?"
+            "caption": "Ano’ng mas kitang-kita mo kay Inday ngayon: tapang, pagiging nanay, o diskarte?"
           },
           {
             "slot": "6pm",
-            "caption": "Sasabihin mo ba sa anak mo na hangaan si Inday Sara ngayon? Bakit oo o bakit hindi?"
+            "caption": "Sasabihin mo ba sa anak mo na hangaan si Inday Sara sa sitwasyon niya ngayon?"
           }
         ],
         "thursday": [
           {
             "slot": "6am",
-            "caption": "Second impeachment na naman. Tungkol ba ’to sa pondo — o para pigilan ang 2028 Sara?"
+            "caption": "Impeachment ulit. Pondo ba talaga ang usapan… o takot sa 2028 Sara? Ano tingin mo?"
           },
           {
             "slot": "12pm",
-            "caption": "DepEd years vs OVP years — aling Inday ang mas miss mo sa gitna ng bagyo?"
+            "caption": "Miss mo pa ba ’yung Inday sa DepEd, o ’yung Inday sa OVP ang mas malapit sa’yo ngayon?"
           },
           {
             "slot": "6pm",
-            "caption": "Anong headline tungkol kay Inday ang GUSTO mong mabasa bukas umaga?"
+            "caption": "Kung ikaw ang gagawa ng headline bukas tungkol kay Inday, ano’ng ilalagay mo?"
           }
         ],
         "friday": [
           {
             "slot": "6am",
-            "caption": "Poll: dapat ba’ng manahimik si Inday sa trial, o magsalita nang apoy tuwing may chance?"
+            "caption": "Mas okay ba kung tahimik si Inday sa trial… o magsasalita siya tuwing may chance?"
           },
           {
             "slot": "12pm",
-            "caption": "Usapang “unexplained wealth” vs serbisyo ni Sara — aling narrative ang mas ire-reject mo?"
+            "caption": "Usapang yaman vs serbisyo ni Sara — aling kwento ang pinaka-ayaw mong paniwalaan?"
           },
           {
             "slot": "6pm",
-            "caption": "Sino ang naghatak sa’yong depensahan si Sara online ngayong linggo — troll, kamag-anak, o sarili?"
+            "caption": "Sino ba’ng pinaka-nakakainis depensahan si Sara online: random troll o kamag-anak mismo?"
           }
         ],
         "saturday": [
           {
             "slot": "6am",
-            "caption": "Kung tatawag si Inday tonight, anong totoong encouragement ang sasabihin mo — ’di slogan?"
+            "caption": "Kung biglang tumawag si Inday, anong totoong sasabihin mo — ’wag slogan, totoo lang?"
           },
           {
             "slot": "12pm",
-            "caption": "A/B: mas maganda bang next chapter ni Sara ang manatiling VP, o mas malakas na people’s campaign?"
+            "caption": "Para sa’yo, mas maganda ba’ng manatili si Sara bilang VP… o lumabas nang mas malakas sa tao?"
           },
           {
             "slot": "6pm",
-            "caption": "Para sa’yo, si Inday Sara ay ___ . Anong word ang papasok sa blanko?"
+            "caption": "Pag sinabi mong “si Inday Sara ay ___,” anong word agad ang papasok?"
           }
         ],
         "sunday": [
           {
             "slot": "6am",
-            "caption": "Honest Linggo: nasubok ba ng impeachment ang pananalig mo kay Inday — at pumasa ba?"
+            "caption": "Nasubok ba ng impeachment ’yung paniniwala mo kay Inday? Pasado pa ba?"
           },
           {
             "slot": "12pm",
-            "caption": "Kaya mo bang kumbinsihin ang fence-sitter, isang line, na deserve pa ni Sarah ang benefit of the doubt?"
+            "caption": "Paano mo kumbinsihin ang nag-aalinlangan, isang sentence, na bigyan pa ng duda si Sarah?"
           },
           {
             "slot": "6pm",
-            "caption": "Ano’ng dapat gawin nang mas madalas ng supporters ni Inday: manalangin, mag-organisa, o i-ignore ang ingay?"
+            "caption": "Ano’ng mas kailangan ngayon ng supporters ni Inday: dasal, organisasyon, o less scroll?"
           }
         ]
       }
@@ -328,99 +328,99 @@
         "monday": [
           {
             "slot": "6am",
-            "caption": "Breaking feeling: miss na miss ang Digong na diretso magsalita. Ikaw, anong line niya ang pinaka-miss mo?"
+            "caption": "Miss niyo pa ba ’yung Digong na walang filter magsalita? Anong line niya ang hindi mo makalimutan?"
           },
           {
             "slot": "12pm",
-            "caption": "Habang may hearing si Inday, anong parte ng trial ang pinaka-ayaw mong panoorin — at bakit?"
+            "caption": "Pag may hearing si Inday, anong parte ang pinaka-ayaw mong panoorin? Totoo, bakit?"
           },
           {
             "slot": "6pm",
-            "caption": "News cycle vs puso ng DDS: sino’ng mas pinapaniwalaan mo ngayon, headline o Digong + Inday?"
+            "caption": "Ngayon, sino’ng mas pinapaniwalaan mo: ’yung headline… o sina Digong at Inday?"
           }
         ],
         "tuesday": [
           {
             "slot": "6am",
-            "caption": "Kung may “state of the nation” ang DDS today, anong unang sentence mo tungkol kay Digong?"
+            "caption": "Kung may sarili kang “balita” tungkol kay Digong ngayon, anong unang sentence mo?"
           },
           {
             "slot": "12pm",
-            "caption": "Confidential funds paulit-ulit sa balita. Para sa’yo, usapang papeles ba ’yan o atake kay Inday?"
+            "caption": "Paulit-ulit sa news ang pondo ni Inday. Sinusundan mo ba talaga… o scroll lang tapos init ng ulo?"
           },
           {
             "slot": "6pm",
-            "caption": "Viral chismis vs totoong context: anong fake narrative kay Digong ang gusto mong i-debunk?"
+            "caption": "Anong chismis kay Digong ang gusto mong iwasan na, kasi fake na fake?"
           }
         ],
         "wednesday": [
           {
             "slot": "6am",
-            "caption": "Hague updates bukas-sara. Ano’ng Digong news ang gusto mong marinig bukas — realistic lang?"
+            "caption": "Bukas-sara ang Hague updates. Anong Digong news ang gusto mong marinig — realistic lang ha?"
           },
           {
             "slot": "12pm",
-            "caption": "Kung reporter ka for a day, anong tanong ang itatanong mo kay Inday Sara ngayon?"
+            "caption": "Kung reporter ka ngayon, anong tanong ang itatanong mo talaga kay Inday Sara?"
           },
           {
             "slot": "6pm",
-            "caption": "Trending ba dapat ang Davao wins ni Digong kasama ang trial noise kay Inday? Oo o hindi?"
+            "caption": "Dapat bang i-trend din ang magagandang kwento ni Digong sa Davao, ’di lang trial ni Inday?"
           }
         ],
         "thursday": [
           {
             "slot": "6am",
-            "caption": "Media frame: “fallen strongman.” DDS frame: “inapi.” Aling frame ang hawak mo kay Digong?"
+            "caption": "Sabi ng media “fallen.” Sabi ng DDS “inapi.” Ikaw, anong word ang gamit mo kay Digong?"
           },
           {
             "slot": "12pm",
-            "caption": "May clip ni Inday na pinuputol-putol online. Nakakita ka na ba — at ano’ng naramdaman mo?"
+            "caption": "May cut-cut na video ni Inday na umiikot. Nakita mo ba? Ano’ng naramdaman mo?"
           },
           {
             "slot": "6pm",
-            "caption": "Kung gagawa ka ng 15-second news bumper para kina Digong at Inday, ano’ng script mo?"
+            "caption": "Kung gagawa ka ng short news clip para kina Digong at Inday, anong opening mo?"
           }
         ],
         "friday": [
           {
             "slot": "6am",
-            "caption": "Friday briefing: ICC calendar + Senate grind. Aling update ang unang titingnan mo, Digong or Inday?"
+            "caption": "ICC update o Senate hearing — alin ang unang titingnan mo pagkagising, Digong or Inday?"
           },
           {
             "slot": "12pm",
-            "caption": "Sabi ng iba “tapos na ang Duterte era.” Anong ebidensya sa paligid mo na hindi pa?"
+            "caption": "Sabi nila tapos na ang Duterte era. Sa lugar niyo, may ebidensya pa bang buhay sila sa tao?"
           },
           {
             "slot": "6pm",
-            "caption": "Ano’ng hashtag ang mas deserving ngayon: #FreeDigong, #StandWithInday, o sarili mong gawa?"
+            "caption": "Mas bagay ba ngayon ang #FreeDigong, #StandWithInday, o may sarili kang hashtag?"
           }
         ],
         "saturday": [
           {
             "slot": "6am",
-            "caption": "Weekend roundup sa utak mo: anong Digong moment ang pinaka-na-miss ng barangay niyo?"
+            "caption": "Sa barangay niyo, anong Digong moment ang pinaka-naaalala ng mga tao hanggang ngayon?"
           },
           {
             "slot": "12pm",
-            "caption": "Kung may community board, anong 1 news tungkol kay Inday ang ipapaskil mo nang walang bash?"
+            "caption": "Kung may board sa kanto, anong balita tungkol kay Inday ang ipapaskil mong walang bash?"
           },
           {
             "slot": "6pm",
-            "caption": "DDS news diet: Facebook lang ba source mo, o may radio/TV pa? Ano’ng pinagkakatiwalaan mo?"
+            "caption": "FB lang ba source mo ng DDS news, o may radio/TV ka pa? Ano’ng pinagkakatiwalaan mo?"
           }
         ],
         "sunday": [
           {
             "slot": "6am",
-            "caption": "Linggo op-ed sa isip: kung editor ka, anong front-page line ang ibibigay mo kay Digong?"
+            "caption": "Kung editor ka ngayong Linggo, anong front-page line ang ibibigay mo kay Digong?"
           },
           {
             "slot": "12pm",
-            "caption": "Bago matapos ang linggo: anong tanong tungkol kay Inday ang ’di pa nasasagot ng media?"
+            "caption": "Anong tanong tungkol kay Inday ang ’di pa nasasagot ng media hanggang ngayon?"
           },
           {
             "slot": "6pm",
-            "caption": "Last take: Digong abroad, Inday under fire — anong “breaking news” ang gusto mong mangyari next?"
+            "caption": "Digong nasa labas ng bansa, Inday naka-apoy dito — anong next news ang gusto mong mangyari?"
           }
         ]
       }
@@ -434,99 +434,99 @@
         "monday": [
           {
             "slot": "6am",
-            "caption": "Si Digong sa Hague, si Inday sa Senadong apoy — isang dugo. Aling sakit ang unang tumama sa’yo?"
+            "caption": "Si Digong sa Hague, si Inday sa trial — sabay ang sakit. Alin ang unang tumama sa’yo?"
           },
           {
             "slot": "12pm",
-            "caption": "Si Digong at Inday, dalawang korte, iisang apelyido. Chine-check ba — o kinukulong ng sistema?"
+            "caption": "Dalawang korte, iisang apelyido nila Digong at Inday. Fair ba ’to… o pinagsasama-sama?"
           },
           {
             "slot": "6pm",
-            "caption": "Kung isang emotion lang ang maipapadala mo kina Digong at Sara, ano ’yon?"
+            "caption": "Kung isang feeling lang ang maipadala mo kina Digong at Sara ngayon, ano ’yon?"
           }
         ],
         "tuesday": [
           {
             "slot": "6am",
-            "caption": "Free Digong + Defend Inday: kaya mo bang buhatin ang dalawa nang ’di ma-burnout? Paano?"
+            "caption": "Free Digong tapos Defend Inday pa. Kaya mo pa ba’ng dalhin ’yung dalawa nang ’di maumay?"
           },
           {
             "slot": "12pm",
-            "caption": "Confidential funds kay Sara, ICC counts kay Digong. Coincidence ba — o coordinated pressure?"
+            "caption": "Confidential funds kay Sara, ICC kay Digong. Random ba… o may pattern sa mata mo?"
           },
           {
             "slot": "6pm",
-            "caption": "Kaninong kwento ang mas kailangan ng comment mo ngayon: detention ni Digong, o trial ni Inday?"
+            "caption": "Kanino ka mas naiinis basahin ngayon: balita kay Digong, o hearing ni Inday?"
           }
         ],
         "wednesday": [
           {
             "slot": "6am",
-            "caption": "Si Rodrigo ang nagtayo ng mito. Si Sara ang nasa siege. Aling Duterte story ang 2026 mo?"
+            "caption": "Si Digong ang nagtayo, si Sara ang binabayo ngayon. Aling kwento ang mas hawak mo this year?"
           },
           {
             "slot": "12pm",
-            "caption": "Mahirap na pili: freedom ni Digong o upuan ni Inday — ano’ng #1 laban mo ngayon?"
+            "caption": "Kung pipili ka lang ng isa: uwi ni Digong o upuan ni Inday — ano’ng una mong laban?"
           },
           {
             "slot": "6pm",
-            "caption": "Kumpletuhin: “Sabay-sabay na atake kina Digong at Sara ang patunay na ___.” Ano’ng blanko?"
+            "caption": "Bakit sabay-sabay ang atake kina Digong at Sara? Ano’ng nakikita mo dyan?"
           }
         ],
         "thursday": [
           {
             "slot": "6am",
-            "caption": "Davao nagturo ng tapang; Maynila nagturo ng dayaan. Saan pa nanalo sina Digong + Inday sa puso mo?"
+            "caption": "Davao ang roots, Maynila ang gulo. Saan pa ba nanalo sina Digong at Inday sa’yo?"
           },
           {
             "slot": "12pm",
-            "caption": "Lilipad ka ba papuntang Hague para kay Digong, o magkacamp sa Senado para kay Inday — kung libre?"
+            "caption": "Kung libre lang, punta ka ba Hague para kay Digong… o Senado para kay Inday?"
           },
           {
             "slot": "6pm",
-            "caption": "Ilarawan sina Digong at Inday sa 3 words. Kaya mo bang walang “solid”?"
+            "caption": "Ilarawan sina Digong at Inday nang 3 words. Bawal muna ang “solid,” kaya mo?"
           }
         ],
         "friday": [
           {
             "slot": "6am",
-            "caption": "Poll: endgame laban kina Digong & Sara — batas, gantihan, o pulitika 2028? Alin?"
+            "caption": "Sa tingin mo, ano’ng endgame kina Digong at Sara: batas, ganti, o 2028?"
           },
           {
             "slot": "12pm",
-            "caption": "Anong trait ni Digong ang pinakalinaw mong nakikita kay Inday sa dobleng krisis na ’to?"
+            "caption": "Anong ugali ni Digong ang kitang-kita mo kay Inday habang magulo ang lahat?"
           },
           {
             "slot": "6pm",
-            "caption": "May kamag-anak na Digong lang ang gusto, ’di si Sara (o baligtad). Paano mo i-bridge ’yan sa bahay?"
+            "caption": "May kamag-anak na Digong lang bet, ayaw kay Sara (o baligtad). Paano kayo nagkakasundo?"
           }
         ],
         "saturday": [
           {
             "slot": "6am",
-            "caption": "Anong alaala kay Digong ang dahilan kung bakit ’di mo rin iiwan si Inday Sara?"
+            "caption": "Anong alaala kay Digong ang dahilan kaya ’di mo rin kayang iwan si Inday Sara?"
           },
           {
             "slot": "12pm",
-            "caption": "A/B loyalty test: manahimik para safe, o maingay para kina Digong & Sara?"
+            "caption": "Mas safe bang manahimik… o magsalita para kina Digong at Sara kahit mainit?"
           },
           {
             "slot": "6pm",
-            "caption": "Gumawa ka ng joint chant para kina Digong + Inday — 5 original words. Ano ’yon?"
+            "caption": "Gumawa ka nga ng short chant para kina Digong at Inday — sariling gawa, 5 words?"
           }
         ],
         "sunday": [
           {
             "slot": "6am",
-            "caption": "Kung isang dasal lang ang sasagutin para sa Duterte ngayong buwan: free Digong o acquit Inday?"
+            "caption": "Kung isang dasal lang: palayain si Digong… o palayain si Inday sa trial? Ano’ng una?"
           },
           {
             "slot": "12pm",
-            "caption": "Paano mo ituturo sa teenager kung bakit importante pa rin sina Digong at Sarah bilang pares?"
+            "caption": "Paano mo sasabihin sa teenager kung bakit importante pa rin sina Digong at Sarah magkasama?"
           },
           {
             "slot": "6pm",
-            "caption": "Kapag isinulat ang 2026, ano’ng dapat sabihin tungkol sa tumayo para kina Digong at Sara?"
+            "caption": "Kapag tinanong ang 2026, ano’ng gusto mong maalala tungkol sa tumayo para kina Digong at Sara?"
           }
         ]
       }
