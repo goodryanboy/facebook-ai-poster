@@ -1,131 +1,109 @@
 {
-  "_comment": "Multi-page + per-page config. Keys under \"pages\" are Facebook Pages. Do NOT put pageId/tokens here — use secrets FB_PAGE_IDS and FB_PAGE_TOKENS. pages.dds = Digong image posts; pages.duterte = Digong/DDS text engagement; pages.bbm = BBM text; pages.sarah = Sarah Duterte text. Config keys: postType (image|text), imageProvider, imageModel, imageSize, published, link, slots.",
+  "_comment": "Taglish captions. bbm/dds/sarah/dnl/phnews unique. Keys match FB_PAGE_IDS/TOKENS.",
   "pages": {
     "dds": {
       "schedule": {
         "monday": [
           {
             "slot": "6am",
-            "prompt": "Photorealistic wide shot of a large morning crowd of Filipino DDS supporters outdoors under soft light, many in red shirts holding Philippine flags. Center white banner on wooden poles shows realistic side-by-side portraits of Rodrigo Duterte (late 70s) and Sara Duterte (mid-40s) both looking defiant. Large bold text: \"BLOODIED BUT UNBOWED\". Small clean text \"AI Generated\" top-right. Natural morning light, determined atmosphere, ultra detailed, 1:1 square, 8k.",
-            "caption": "“Bloodied but unbowed.” Yan ang sinabi ni Inday Sara habang tumatakbo ang impeachment trial sa Senado. Kahit anong gawin nila, solid pa rin kami.\n#SaraDuterte #DDS #Duterte #viral"
+            "caption": "Nakaupo si Digong sa The Hague habang may nagdiriwang. Justice ba ’yan, o gantihan?"
           },
           {
             "slot": "12pm",
-            "prompt": "Photorealistic wide shot of a packed midday crowd under bright sun. Center banner features only Sara Duterte with a firm, unyielding stare. Bold text: \"HINDI AKO SUSUKO\". Small \"AI Generated\" top-right. Harsh noon light, raw energy, sharp 8k, 1:1.",
-            "caption": "Hindi susuko si Inday sa impeachment trial. Confidential funds, unexplained wealth, threats — lahat yan ang inaakusa sa kanya. Pero solid ang DDS.\n#SaraDuterte #DDS #IndaySara #viral"
+            "caption": "Naka-calendar na ang ICC trial. Handa ka ba sa mahabang laban para kay Digong? Paano?"
           },
           {
             "slot": "6pm",
-            "prompt": "Photorealistic wide shot during golden hour. Center banner shows an ordinary middle-aged DDS man in red shirt looking serious and loyal. Bold text: \"KAMI ANG SUNDALO NI INDAY\". Small \"AI Generated\" top-right. Soft evening glow, quiet strength, ultra detailed 1:1.",
-            "caption": "Kami ang sundalo ni Inday. Habang nakaupo siya sa trial sa Senado, nandito kami sa labas na solid. Hindi kami mawawala.\n#DDS #SaraDuterte #viral"
+            "caption": "“Free Digong” — slogan sa rally, o personal na dasal mo? Pili at ipaliwanag."
           }
         ],
         "tuesday": [
           {
             "slot": "6am",
-            "prompt": "Photorealistic wide morning plaza shot. Large white banner shows only Rodrigo Duterte with a calm but fierce expression. Bold text: \"AMA KO, LABAN PA RIN\". Small \"AI Generated\" top-right. Fresh morning light, 8k 1:1.",
-            "caption": "Ama ko, laban pa rin. Si Digong nasa ICC, si Inday nasa Senado. Parehong hinaharap ang laban. Solid kami sa dalawa.\n#Duterte #DDS #viral"
+            "caption": "Parang normal warrant lang daw ang arrest ni Digong. DDS, anong mas totoo sa feeling mo?"
           },
           {
             "slot": "12pm",
-            "prompt": "Photorealistic wide noon shot of loud crowd. Center banner features Sara Duterte looking straight ahead with strong eyes. Large text: \"POLITICAL PERSECUTION TO\". Small \"AI Generated\" top-right. Bright daylight, defiant energy, sharp square.",
-            "caption": "Political persecution to. Impeachment trial ni Inday, ICC case ni Digong — sabay-sabay. Pero hindi kami natatakot. Solid pa rin.\n#SaraDuterte #DDS #IndaySara #viral"
+            "caption": "Disiplina ng Davao vs detention sa Hague — aling imahe ni Digong ang hawak mo ngayon?"
           },
           {
             "slot": "6pm",
-            "prompt": "Photorealistic wide evening shot. Center banner shows a young female DDS supporter with raised fist and intense face. Bold text: \"PROTEKTAHAN SI INDAY\". Small \"AI Generated\" top-right. Warm dusk light, protective mood, ultra detailed 1:1.",
-            "caption": "Protektahan si Inday. Habang nasa trial siya, kailangan niya ng solid support. Sino pa ang nandito?\n#SaraDuterte #DDS #viral"
+            "caption": "Kung sabihin ng kaibigan na “deserve ni Digong ang ICC,” ano’ng kalmadong sagot mo?"
           }
         ],
         "wednesday": [
           {
             "slot": "6am",
-            "prompt": "Photorealistic wide early morning shot. Large white banner features Digong and Sara together again, both looking forward. Bold text: \"MAG-AMA LABAN\". Small \"AI Generated\" top-right. Soft morning light, 8k square.",
-            "caption": "Mag-ama laban. Si Digong sa Hague, si Sara sa Senado. Parehong hinahamon. Pero solid ang tao sa kanila.\n#Duterte #SaraDuterte #DDS #viral"
+            "caption": "Confirmed ang charges ni Digong, tuloy ang detention. Humina ba ang loyalty mo — o tumigas?"
           },
           {
             "slot": "12pm",
-            "prompt": "Photorealistic wide midday shot. Center banner shows only Sara with determined jaw. Large text: \"IMPEACHMENT O HINDI, SOLID AKO\". Small \"AI Generated\" top-right. High contrast light, sharp 1:1.",
-            "caption": "Impeachment o hindi, solid ako. Day after day ang trial, pero hindi nagbabago ang suporta ng DDS kay Inday.\n#SaraDuterte #DDS #IndaySara #viral"
+            "caption": "Ano’ng #1 legacy ni Digong sa’yo: katahimikan, disiplina, o malasakit sa mahihirap?"
           },
           {
             "slot": "6pm",
-            "prompt": "Photorealistic wide sunset shot. Center banner features an ordinary older DDS woman in red looking firm. Bold text: \"HINDI KAMI NATATAKOT\". Small \"AI Generated\" top-right. Golden hour, steady presence, ultra detailed square.",
-            "caption": "Hindi kami natatakot. Kahit anong saksak nila kay Inday sa Senado, nandito pa rin kami.\n#DDS #Duterte #SaraDuterte #viral"
+            "caption": "Kumpletuhin: “Hindi maintindihan ng mundo si Digong dahil ___.” Ano’ng blanko mo?"
           }
         ],
         "thursday": [
           {
             "slot": "6am",
-            "prompt": "Photorealistic wide morning shot. Large white banner shows only Digong with strong stare. Bold text: \"DIGONG SA ICC, SARA SA SENADO\". Small \"AI Generated\" top-right. Clear morning light, 8k 1:1.",
-            "caption": "Digong sa ICC, Sara sa Senado. Parehong laban ang hinaharap ng mag-ama. Solid ang DDS sa dalawa.\n#Duterte #SaraDuterte #DDS #viral"
+            "caption": "Video call, abogado, headline — global na ang laban ni Digong. Nag-iisa ba ang DDS, o mas maingay?"
           },
           {
             "slot": "12pm",
-            "prompt": "Photorealistic wide noon shot. Center banner features Sara looking defiant. Large text: \"BLOODIED BUT UNBOWED PA RIN\". Small \"AI Generated\" top-right. Bright light, strong energy, sharp square.",
-            "caption": "“Bloodied but unbowed” pa rin. Yan ang stance ni Inday kahit tumatagal ang impeachment trial. Solid kami.\n#SaraDuterte #DDS #IndaySara #viral"
+            "caption": "Mas gusto mo bang umuwi agad si Digong, o manalo sa legal fight kahit tumagal nang years?"
           },
           {
             "slot": "6pm",
-            "prompt": "Photorealistic wide evening shot. Center banner shows a group of ordinary DDS supporters of mixed ages standing close. Bold text: \"MARAMI KAMI, HINDI KAYO\". Small \"AI Generated\" top-right. Warm dusk, collective strength, ultra detailed 1:1.",
-            "caption": "Marami kami, hindi kayo. Habang may trial, lalong dumadami ang solid support kay Digong at Sara.\n#DDS #Duterte #SaraDuterte #viral"
+            "caption": "Aling line ni Digong ang gabay mo pa rin sa buhay — ’di ’yung sticker sa FB?"
           }
         ],
         "friday": [
           {
             "slot": "6am",
-            "prompt": "Photorealistic wide early morning shot. Large white banner features Digong and Sara side by side. Bold text: \"SALAMAT SA MGA NANATILI SA LABAN\". Small \"AI Generated\" top-right. Gentle light, grateful atmosphere, 8k square.",
-            "caption": "Salamat sa mga nanatili sa laban. Kahit may impeachment at ICC case, solid pa rin ang DDS.\n#Duterte #SaraDuterte #DDS #viral"
+            "caption": "Poll: si Digong ba’y protector, dictator, o father-figure sa’yo? Depensahan mo ang label."
           },
           {
             "slot": "12pm",
-            "prompt": "Photorealistic wide midday shot. Center banner shows only Sara with unflinching eyes. Large text: \"HINDI AKO AALIS\". Small \"AI Generated\" top-right. Harsh bright light, determined mood, sharp 1:1.",
-            "caption": "Hindi aalis si Inday. Kahit anong pressure sa Senado, nananatili siyang matatag. Solid kami.\n#SaraDuterte #DDS #IndaySara #viral"
+            "caption": "Hindi matapos ang debate sa war on drugs. Anong katotohanan kay Digong ang gusto mong aminin ng media?"
           },
           {
             "slot": "6pm",
-            "prompt": "Photorealistic wide late afternoon shot. Center banner features a young DDS man in red shirt looking proud. Bold text: \"KABATAAN PARA KAY INDAY\". Small \"AI Generated\" top-right. Warm afternoon light, youth loyalty, ultra detailed square.",
-            "caption": "Kabataan para kay Inday. Habang nasa trial siya, ang next generation solid pa rin.\n#SaraDuterte #DDS #viral"
+            "caption": "Sino sa pamilya ang nagpa-DDS sa’yo kay Digong — at ano’ng sinabi nila?"
           }
         ],
         "saturday": [
           {
             "slot": "6am",
-            "prompt": "Photorealistic wide Saturday morning shot. Large white banner shows Digong with calm strength. Bold text: \"AMA, HINDI KA NAG-IISA\". Small \"AI Generated\" top-right. Bright clean light, hopeful atmosphere, 8k 1:1.",
-            "caption": "Ama, hindi ka nag-iisa. Kahit nasa ICC ka, nandito ang DDS. Solid hanggang dulo.\n#Duterte #DDS #viral"
+            "caption": "Isipin mong nagbabasa si Digong ng balita mula sa kulungan. Ano kaya’ng unang bulong niya?"
           },
           {
             "slot": "12pm",
-            "prompt": "Photorealistic wide noon shot. Center banner features Sara raising her chin slightly. Large text: \"TULOY ANG LABAN SA SENADO\". Small \"AI Generated\" top-right. High energy daylight, powerful mood, sharp square.",
-            "caption": "Tuloy ang laban sa Senado. Day by day ang trial ni Inday, pero hindi nawawala ang suporta.\n#SaraDuterte #DDS #IndaySara #viral"
+            "caption": "A/B sa DDS: mas nakakatulong ba ang maingay na rally kay Digong, o tahimik pero disiplinadong buhay?"
           },
           {
             "slot": "6pm",
-            "prompt": "Photorealistic wide evening shot. Center banner shows an ordinary DDS mother holding her child. Bold text: \"PARA SA KINABUKASAN, SOLID AKO\". Small \"AI Generated\" top-right. Soft dusk, emotional strength, ultra detailed 1:1.",
-            "caption": "Para sa kinabukasan, solid ako. Kahit may trial at ICC, naniniwala pa rin kami kay Digong at Sara.\n#DDS #Duterte #SaraDuterte #viral"
+            "caption": "Kung susulat ka ng 10-word letter kay Digong mula sa puso, ano’ng sasabihin mo?"
           }
         ],
         "sunday": [
           {
             "slot": "6am",
-            "prompt": "Photorealistic wide Sunday morning shot. Large white banner features Digong and Sara together looking peaceful yet strong. Bold text: \"SALAMAT SA MGA SOLID SA TRIAL\". Small \"AI Generated\" top-right. Gentle light, grateful energy, 8k square.",
-            "caption": "Salamat sa mga solid sa trial. Habang tumatakbo ang impeachment, nandito pa rin ang DDS.\n#Duterte #SaraDuterte #DDS #viral"
+            "caption": "Kung may bisa ang dasal, ano’ng isang hiling mo para kay Digong ngayong linggo?"
           },
           {
             "slot": "12pm",
-            "prompt": "Photorealistic wide midday shot of united crowd. Center banner shows only Sara with open calm but strong smile. Large text: \"SAMA-SAMA LABAN\". Small \"AI Generated\" top-right. Bright hopeful light, united feel, sharp 1:1.",
-            "caption": "Sama-sama laban. Si Digong sa ICC, si Inday sa Senado — kami ang sundalo nila.\n#SaraDuterte #DDS #IndaySara #viral"
+            "caption": "Paano mo ie-explain si Digong sa Gen Z na TikTok hate clips lang ang nakita?"
           },
           {
             "slot": "6pm",
-            "prompt": "Photorealistic wide evening shot with soft golden-purple sky. Center banner features a large mixed group of ordinary DDS supporters looking forward together. Bold text: \"HINDI KAMI NAUUBOS\". Small \"AI Generated\" top-right. Warm evening light, resolute collective mood, ultra detailed square.",
-            "caption": "Hindi kami nauubos. Kahit anong trial, dumarami pa ang solid kay Digong at Sara.\n#DDS #Duterte #SaraDuterte #viral"
+            "caption": "Pag bubukas ang trial ni Digong, papanoodin mo ba lahat — o iingatan ang peace of mind mo? Bakit?"
           }
         ]
       },
       "config": {
         "postType": "text",
-        "imageProvider": "auto",
         "published": true
       }
     },
@@ -135,126 +113,105 @@
         "published": true
       },
       "schedule": {
-  "monday": [
-    {
-      "slot": "6am",
-      "prompt": "Photorealistic wide shot of a large morning crowd of Filipino supporters outdoors under soft sunlight, many wearing red and white shirts, waving Philippine flags. In the center a big white banner held by wooden poles shows a realistic portrait of Bongbong Marcos (early 60s, neat dark hair with gray, calm but resolute expression). Large bold text on the banner: \"I AM THE PRESIDENT OF THE FILIPINO PEOPLE\". Small clean text \"AI Generated\" top-right. Natural morning light, steady atmosphere, ultra detailed, 1:1 square, 8k.",
-      "caption": "“I am not the president of my family. I am the president of the Filipino people.” Yan ang sinabi ni BBM. Kahit sino, walang proteksyon kung may kasalanan. Solid ba kayo dyan?\n#BBM #Marcos #BagongPilipinas #viral"
-    },
-    {
-      "slot": "12pm",
-      "prompt": "Photorealistic wide shot of a massive midday crowd under bright sun. Center white banner features Bongbong Marcos looking forward with firm determination. Bold text: \"ANTI-CORRUPTION TULOY\". Small \"AI Generated\" top-right. Harsh noon light, serious energy, sharp 8k, 1:1.",
-      "caption": "Tuloy ang anti-corruption drive. Kahit kamag-anak, haharapin. Flood control scandal, kaso, accountability — yan ang focus ngayon. Sino pa ang sumasang-ayon?\n#BBM #Marcos #BagongPilipinas #viral"
-    },
-    {
-      "slot": "6pm",
-      "prompt": "Photorealistic wide shot during golden hour. Center banner shows Bongbong Marcos with a calm, steady expression. Bold text: \"BAGONG PILIPINAS PARA SA LAHAT\". Small \"AI Generated\" top-right. Soft evening glow, hopeful mood, ultra detailed 1:1.",
-      "caption": "Bagong Pilipinas para sa lahat. Hindi lang slogan. May tax relief, may flood control interventions, may tuloy-tuloy na serbisyo. Solid kay BBM?\n#BBM #Marcos #BagongPilipinas #viral"
-    }
-  ],
-  "tuesday": [
-    {
-      "slot": "6am",
-      "prompt": "Photorealistic wide morning plaza shot. Large white banner shows Bongbong Marcos with a focused, serious look. Bold text: \"FLOOD CONTROL PARA SA TAO\". Small \"AI Generated\" top-right. Fresh morning light, practical atmosphere, 8k 1:1.",
-      "caption": "Flood control para sa tao. Sabi ni BBM, mas bawas na ang baha sa Metro Manila kumpara dati. May progress, pero may trabaho pa. Agree ba kayo?\n#BBM #Marcos #BagongPilipinas #viral"
-    },
-    {
-      "slot": "12pm",
-      "prompt": "Photorealistic wide noon shot of energetic crowd. Center banner features Bongbong Marcos with chin slightly raised. Large text: \"WALANG IWANAN SA PAGBABAGO\". Small \"AI Generated\" top-right. Bright daylight, forward energy, sharp square.",
-      "caption": "Walang iwanan sa pagbabago. Tax relief para sa middle class, tuloy ang anti-graft, serbisyo sa bayan. Yan ang direksyon ni BBM.\n#BBM #Marcos #BagongPilipinas #viral"
-    },
-    {
-      "slot": "6pm",
-      "prompt": "Photorealistic wide evening shot. Center banner shows Bongbong Marcos looking straight at the viewer with quiet strength. Bold text: \"DUTY TO THE FILIPINO PEOPLE\". Small \"AI Generated\" top-right. Warm dusk light, resolute mood, ultra detailed 1:1.",
-      "caption": "Duty to the Filipino people. Hindi sa pamilya, hindi sa kaibigan. Yan ang paulit-ulit na sinasabi ni BBM. Solid ba kayo dyan?\n#BBM #Marcos #BagongPilipinas #viral"
-    }
-  ],
-  "wednesday": [
-    {
-      "slot": "6am",
-      "prompt": "Photorealistic wide early morning shot. Large white banner features Bongbong Marcos with a calm, confident expression. Bold text: \"TULOY ANG SERBISYO\". Small \"AI Generated\" top-right. Soft morning light, steady feel, 8k square.",
-      "caption": "Tuloy ang serbisyo. Kahit may political noise, may flood control work, may anti-corruption cases na pinapausad. Trabaho muna.\n#BBM #Marcos #BagongPilipinas #viral"
-    },
-    {
-      "slot": "12pm",
-      "prompt": "Photorealistic wide midday shot. Center banner shows Bongbong Marcos with determined eyes. Large text: \"ACCOUNTABILITY FOR ALL\". Small \"AI Generated\" top-right. High contrast light, serious energy, sharp 1:1.",
-      "caption": "Accountability for all. Kahit kamag-anak, haharapin ang kaso. Yan ang ipinangako ni BBM sa SONA. Sino pa ang naniniwala?\n#BBM #Marcos #BagongPilipinas #viral"
-    },
-    {
-      "slot": "6pm",
-      "prompt": "Photorealistic wide sunset shot. Center banner features Bongbong Marcos with a reflective but strong expression. Bold text: \"PARA SA KINABUKASAN\". Small \"AI Generated\" top-right. Golden hour, forward-looking atmosphere, ultra detailed square.",
-      "caption": "Para sa kinabukasan. May 2028 na paparating, pero ang focus ni BBM ngayon ay ituloy ang nasimulan — anti-graft, flood control, serbisyo.\n#BBM #Marcos #BagongPilipinas #viral"
-    }
-  ],
-  "thursday": [
-    {
-      "slot": "6am",
-      "prompt": "Photorealistic wide morning shot. Large white banner shows Bongbong Marcos with a firm, no-nonsense stare. Bold text: \"HINDI AKO PRESIDENTE NG PAMILYA KO\". Small \"AI Generated\" top-right. Clear morning light, strong presence, 8k 1:1.",
-      "caption": "“Hindi ako presidente ng pamilya ko.” Malinaw ang mensahe ni BBM. Trabaho para sa bayan muna. Solid ba kayo?\n#BBM #Marcos #BagongPilipinas #viral"
-    },
-    {
-      "slot": "12pm",
-      "prompt": "Photorealistic wide noon shot. Center banner features Bongbong Marcos looking confident. Large text: \"BAGONG PILIPINAS TULOY\". Small \"AI Generated\" top-right. Bright light, positive energy, sharp square.",
-      "caption": "Bagong Pilipinas tuloy. May interventions sa baha, may tax relief proposals, may tuloy na anti-corruption. Yan ang nangyayari ngayon.\n#BBM #Marcos #BagongPilipinas #viral"
-    },
-    {
-      "slot": "6pm",
-      "prompt": "Photorealistic wide evening shot. Center banner shows Bongbong Marcos with open, steady posture. Bold text: \"SERBISYO SA BAYAN\". Small \"AI Generated\" top-right. Warm dusk, loyal atmosphere, ultra detailed 1:1.",
-      "caption": "Serbisyo sa bayan. Hindi drama, hindi gulo. Trabaho. Yan ang gusto nating makita mula kay BBM. Agree?\n#BBM #Marcos #BagongPilipinas #viral"
-    }
-  ],
-  "friday": [
-    {
-      "slot": "6am",
-      "prompt": "Photorealistic wide early morning shot. Large white banner features Bongbong Marcos with a warm but firm half-smile. Bold text: \"SALAMAT SA MGA NANATILI\". Small \"AI Generated\" top-right. Gentle light, grateful mood, 8k square.",
-      "caption": "Salamat sa mga nanatili. Kahit may political noise at flood issues, may mga solid pa rin kay BBM. Nandito pa kami.\n#BBM #Marcos #BagongPilipinas #viral"
-    },
-    {
-      "slot": "12pm",
-      "prompt": "Photorealistic wide midday shot. Center banner shows Bongbong Marcos with unflinching stare. Large text: \"WALANG PROTEKSYON SA KORAP\". Small \"AI Generated\" top-right. Harsh bright light, determined mood, sharp 1:1.",
-      "caption": "Walang proteksyon sa korap. Kahit sino. Yan ang linya ni BBM sa anti-graft drive. Solid ba kayo dyan?\n#BBM #Marcos #BagongPilipinas #viral"
-    },
-    {
-      "slot": "6pm",
-      "prompt": "Photorealistic wide late afternoon shot. Center banner features Bongbong Marcos looking forward with quiet pride. Bold text: \"BBM PARA SA BAYAN\". Small \"AI Generated\" top-right. Warm afternoon light, lasting support feel, ultra detailed square.",
-      "caption": "BBM para sa bayan. Flood control progress, tax relief, accountability — yan ang pinagtatrabahuhan. Sino pa ang solid?\n#BBM #Marcos #BagongPilipinas #viral"
-    }
-  ],
-  "saturday": [
-    {
-      "slot": "6am",
-      "prompt": "Photorealistic wide Saturday morning shot. Large white banner shows Bongbong Marcos with genuine calm expression. Bold text: \"TRABAHO MUNA\". Small \"AI Generated\" top-right. Bright clean light, practical atmosphere, 8k 1:1.",
-      "caption": "Trabaho muna. Habang may baha, may flood control work. Habang may korapsyon, may kaso. Yan ang focus ni BBM.\n#BBM #Marcos #BagongPilipinas #viral"
-    },
-    {
-      "slot": "12pm",
-      "prompt": "Photorealistic wide noon shot. Center banner features Bongbong Marcos raising one hand slightly in a steady gesture. Large text: \"TULOY ANG PAG-UNLAD\". Small \"AI Generated\" top-right. High energy daylight, powerful mood, sharp square.",
-      "caption": "Tuloy ang pag-unlad. Kahit mahirap, may progress sa flood interventions at anti-corruption. Solid kay BBM?\n#BBM #Marcos #BagongPilipinas #viral"
-    },
-    {
-      "slot": "6pm",
-      "prompt": "Photorealistic wide evening shot. Center banner shows Bongbong Marcos with reflective, determined expression. Bold text: \"PARA SA SUSUNOD NA HENERASYON\". Small \"AI Generated\" top-right. Soft dusk, thoughtful mood, ultra detailed 1:1.",
-      "caption": "Para sa susunod na henerasyon. Ang anti-graft at flood control ngayon ay para sa kanila. Yan ang long-term view ni BBM.\n#BBM #Marcos #BagongPilipinas #viral"
-    }
-  ],
-  "sunday": [
-    {
-      "slot": "6am",
-      "prompt": "Photorealistic wide Sunday morning shot. Large white banner features Bongbong Marcos with peaceful but strong expression. Bold text: \"SALAMAT SA MGA SOLID\". Small \"AI Generated\" top-right. Gentle light, grateful energy, 8k square.",
-      "caption": "Salamat sa mga solid. Kahit may challenges, nandito pa rin ang mga naniniwala sa Bagong Pilipinas.\n#BBM #Marcos #BagongPilipinas #viral"
-    },
-    {
-      "slot": "12pm",
-      "prompt": "Photorealistic wide midday shot of united crowd. Center banner shows Bongbong Marcos with open, calm strength. Large text: \"SAMA-SAMA PARA SA BAYAN\". Small \"AI Generated\" top-right. Bright hopeful light, united feel, sharp 1:1.",
-      "caption": "Sama-sama para sa bayan. Hindi labanan ng pamilya. Trabaho, accountability, serbisyo. Yan ang dapat.\n#BBM #Marcos #BagongPilipinas #viral"
-    },
-    {
-      "slot": "6pm",
-      "prompt": "Photorealistic wide evening shot with soft golden-purple sky. Center banner features Bongbong Marcos looking forward with quiet resolve. Bold text: \"HANDA PA RIN KAMI\". Small \"AI Generated\" top-right. Warm evening light, resolute mood, ultra detailed square.",
-      "caption": "Handa pa rin kami. Kahit anong politikal na ingay, ang focus ay serbisyo at accountability. Solid kay BBM hanggang dulo.\n#BBM #Marcos #BagongPilipinas #viral"
-    }
-  ]
-}
+        "monday": [
+          {
+            "slot": "6am",
+            "caption": "Sabi ni BBM: “Mahiya naman kayo!” Leadership ba ’yan, o viral line lang? Depensahan mo."
+          },
+          {
+            "slot": "12pm",
+            "caption": "Ghost projects sa flood control — ninakaw sa binabaha. Real ba ang crackdown ni BBM sa’yo?"
+          },
+          {
+            "slot": "6pm",
+            "caption": "Kung kakasuhan ni BBM pati kakampi sa flood-control graft, matutuwa ka o matatakot? Bakit?"
+          }
+        ],
+        "tuesday": [
+          {
+            "slot": "6am",
+            "caption": "Sunod-sunod ang Ombudsman cases sa DPWH. I-rate mo ang laban ni BBM: 1 hanggang 10?"
+          },
+          {
+            "slot": "12pm",
+            "caption": "Binabash ang Bagong Pilipinas online. Anong move ni BBM ang ipagtatanggol mo pa rin sa hapag?"
+          },
+          {
+            "slot": "6pm",
+            "caption": "Tapusin mo: “Sumusuporta ako sa flood-control crackdown ni BBM dahil ___.” Ano’ng blanko mo?"
+          }
+        ],
+        "wednesday": [
+          {
+            "slot": "6am",
+            "caption": "Kickbacks, maleta-maleta, resignation — magulo. Nagtitiwala ka pa ba kay BBM na maglilinis?"
+          },
+          {
+            "slot": "12pm",
+            "caption": "Mas gusto mo ba si BBM na mabagal pero malinis, o mabilis kahit sumigaw ang elite?"
+          },
+          {
+            "slot": "6pm",
+            "caption": "Hot take: kung walang SONA blast ni BBM, komportable pa rin ang flood-control thieves. Agree?"
+          }
+        ],
+        "thursday": [
+          {
+            "slot": "6am",
+            "caption": "Sabi ng protesta, korapsyon ang sistema. Bilang BBM supporter, ano’ng pinakamalakas mong sagot?"
+          },
+          {
+            "slot": "12pm",
+            "caption": "Sa laban ni BBM sa flood control, ano’ng mas galit ka — ghost project, kickback, o mabagal na kaso?"
+          },
+          {
+            "slot": "6pm",
+            "caption": "Kung sabihin ng basher na “selective si BBM,” ano’ng 8-word clapback mo?"
+          }
+        ],
+        "friday": [
+          {
+            "slot": "6am",
+            "caption": "Poll: legacy ni BBM — infra, anti-corruption, o survival politics? Alin ang pipiliin mo?"
+          },
+          {
+            "slot": "12pm",
+            "caption": "May kamag-anak na yumaman sa public works. Sabi ni BBM, harapin ang batas. Susuportahan mo pa ba?"
+          },
+          {
+            "slot": "6pm",
+            "caption": "Aling totoong line ni BBM ang tumama sa’yo — ’di ’yung meme edit? I-drop mo."
+          }
+        ],
+        "saturday": [
+          {
+            "slot": "6am",
+            "caption": "Pagkatapos ng baha, tanong lagi: saan napunta ang pera? Ano’ng honest answer mo bilang BBM fan?"
+          },
+          {
+            "slot": "12pm",
+            "caption": "A/B kay BBM: unahin bang ikulong ang malalaking isda, o ayusin agad ang drainage?"
+          },
+          {
+            "slot": "6pm",
+            "caption": "Kung gagawa ka ng billboard ni BBM tungkol sa accountability, ano’ng 6 words mo?"
+          }
+        ],
+        "sunday": [
+          {
+            "slot": "6am",
+            "caption": "Tahimik na tanong: mas hirap bang suportahan si BBM ngayong taon — at tumagal ka pa rin?"
+          },
+          {
+            "slot": "12pm",
+            "caption": "Kaya mo bang i-explain sa skeptic, isang sentence, bakit importante ang laban ni BBM sa mahihirap?"
+          },
+          {
+            "slot": "6pm",
+            "caption": "Bago matapos ang linggo: ano’ng susunod na dapat ipakita ni BBM sa flood-control cases?"
+          }
+        ]
+      }
     },
     "sarah": {
       "config": {
@@ -262,126 +219,105 @@
         "published": true
       },
       "schedule": {
-  "monday": [
-    {
-      "slot": "6am",
-      "prompt": "Photorealistic wide shot of a quiet early morning crowd of Filipino supporters in a public square, many in red shirts holding small flags. Center white banner on wooden poles shows a realistic close-up of Sara Duterte (mid-40s, short dark hair) with a calm, motherly yet unbreakable expression. Large bold text: \"INA NG BAYAN, MATATAG\". Small clean text \"AI Generated\" top-right. Soft golden morning light, gentle but strong atmosphere, ultra detailed, 1:1 square, 8k.",
-      "caption": "Ina ng bayan, matatag. Habang tumatakbo ang impeachment trial, nanatiling kalmado at matatag si Inday. Solid pa rin kami.\n#SaraDuterte #IndaySara #DDS #viral"
-    },
-    {
-      "slot": "12pm",
-      "prompt": "Photorealistic wide shot of a large midday crowd under clear bright sky. Center banner features Sara Duterte looking slightly upward with quiet resolve. Bold text: \"EDUKASYON AT MALASAKIT\". Small \"AI Generated\" top-right. Strong noon light, hopeful energy, sharp 8k, 1:1.",
-      "caption": "Edukasyon at malasakit. Yan ang dala ni Inday mula pa sa DepEd hanggang ngayon. Kahit may trial, hindi niya kinalimutan ang mga bata.\n#SaraDuterte #DDS #IndaySara #viral"
-    },
-    {
-      "slot": "6pm",
-      "prompt": "Photorealistic wide shot during soft late afternoon light. Center banner shows Sara Duterte with arms slightly crossed and steady eyes. Bold text: \"HINDI AKO TATAKBO SA LABAN\". Small \"AI Generated\" top-right. Warm evening tones, determined mood, ultra detailed 1:1.",
-      "caption": "Hindi ako tatakbo sa laban. Yan ang attitude ni Inday sa Senado. Solid ang DDS hanggang dulo.\n#SaraDuterte #DDS #IndaySara #viral"
-    }
-  ],
-  "tuesday": [
-    {
-      "slot": "6am",
-      "prompt": "Photorealistic wide morning shot of supporters gathering near a school gate area. Large white banner shows Sara Duterte with a gentle but firm smile. Bold text: \"PARA SA MGA BATA\". Small \"AI Generated\" top-right. Fresh morning light, caring atmosphere, 8k 1:1.",
-      "caption": "Para sa mga bata. Kahit abala sa trial, ang puso ni Inday ay nasa edukasyon at proteksyon ng kabataan. Sino pa ang solid?\n#SaraDuterte #DDS #IndaySara #viral"
-    },
-    {
-      "slot": "12pm",
-      "prompt": "Photorealistic wide noon shot of an energetic but orderly crowd. Center banner features Sara Duterte staring directly forward with quiet fire. Large text: \"MATATAG SA GITNA NG BAGYO\". Small \"AI Generated\" top-right. Bright daylight, resilient energy, sharp square.",
-      "caption": "Matatag sa gitna ng bagyo. Impeachment trial man o political pressure, hindi nagbabago ang tindig ni Inday. Solid kami.\n#SaraDuterte #DDS #IndaySara #viral"
-    },
-    {
-      "slot": "6pm",
-      "prompt": "Photorealistic wide evening shot. Center banner shows Sara Duterte standing beside a subtle silhouette of Digong in the background design. Bold text: \"ANAK NI DIGONG, INA NG BAYAN\". Small \"AI Generated\" top-right. Soft dusk light, emotional strength, ultra detailed 1:1.",
-      "caption": "Anak ni Digong, ina ng bayan. Dalawang papel, iisang puso para sa tao. Nandito pa rin ang DDS.\n#SaraDuterte #DDS #Duterte #viral"
-    }
-  ],
-  "wednesday": [
-    {
-      "slot": "6am",
-      "prompt": "Photorealistic wide early morning shot. Large white banner features Sara Duterte with soft eyes but strong posture. Bold text: \"MALASAKIT HANGGANG DULO\". Small \"AI Generated\" top-right. Gentle light, warm atmosphere, 8k square.",
-      "caption": "Malasakit hanggang dulo. Hindi lang salita. Habang may trial, patuloy ang pagmamalasakit ni Inday sa mga ordinaryong Pilipino.\n#SaraDuterte #DDS #IndaySara #viral"
-    },
-    {
-      "slot": "12pm",
-      "prompt": "Photorealistic wide midday shot. Center banner shows Sara Duterte with chin up and calm confidence. Large text: \"HINDI AKO NAG-IISA\". Small \"AI Generated\" top-right. High contrast light, united feel, sharp 1:1.",
-      "caption": "Hindi ako nag-iisa. Marami kaming solid sa likod ni Inday. Kahit anong araw ng trial, nandito kami.\n#SaraDuterte #DDS #IndaySara #viral"
-    },
-    {
-      "slot": "6pm",
-      "prompt": "Photorealistic wide sunset shot. Center banner features Sara Duterte looking toward the horizon. Bold text: \"TULOY ANG SERBISYO\". Small \"AI Generated\" top-right. Golden hour glow, steady resolve, ultra detailed square.",
-      "caption": "Tuloy ang serbisyo. Hindi hadlang ang impeachment trial sa pagmamalasakit. Yan si Inday Sara.\n#SaraDuterte #DDS #IndaySara #viral"
-    }
-  ],
-  "thursday": [
-    {
-      "slot": "6am",
-      "prompt": "Photorealistic wide morning plaza shot. Large white banner shows Sara Duterte with a peaceful yet determined face. Bold text: \"KALMADO PERO MATATAG\". Small \"AI Generated\" top-right. Clear morning light, composed strength, 8k 1:1.",
-      "caption": "Kalmado pero matatag. Hindi maingay, hindi dramatic — pero hindi rin susuko. Yan ang Inday na kilala namin.\n#SaraDuterte #DDS #IndaySara #viral"
-    },
-    {
-      "slot": "12pm",
-      "prompt": "Photorealistic wide noon shot. Center banner features Sara Duterte with one hand slightly raised in a steady gesture. Large text: \"PARA SA KINABUKASAN NG MGA ANAK\". Small \"AI Generated\" top-right. Bright light, protective energy, sharp square.",
-      "caption": "Para sa kinabukasan ng mga anak. Edukasyon, proteksyon, malasakit — yan ang laban ni Inday kahit may trial.\n#SaraDuterte #DDS #IndaySara #viral"
-    },
-    {
-      "slot": "6pm",
-      "prompt": "Photorealistic wide evening shot. Center banner shows Sara Duterte surrounded by subtle silhouettes of ordinary people. Bold text: \"KASAMA ANG TAO\". Small \"AI Generated\" top-right. Warm dusk, community feel, ultra detailed 1:1.",
-      "caption": "Kasama ang tao. Hindi siya nag-iisa sa Senado. Marami kaming solid sa labas at sa loob ng puso.\n#SaraDuterte #DDS #IndaySara #viral"
-    }
-  ],
-  "friday": [
-    {
-      "slot": "6am",
-      "prompt": "Photorealistic wide early morning shot. Large white banner features Sara Duterte with a soft, reassuring expression. Bold text: \"NANAY NA MATATAG\". Small \"AI Generated\" top-right. Soft light, maternal strength, 8k square.",
-      "caption": "Nanay na matatag. Yan ang turing ng marami kay Inday. Kahit may pressure sa trial, hindi niya iniwan ang puso ng isang ina.\n#SaraDuterte #DDS #IndaySara #viral"
-    },
-    {
-      "slot": "12pm",
-      "prompt": "Photorealistic wide midday shot. Center banner shows Sara Duterte with firm but compassionate eyes. Large text: \"HINDI SUSUKO SA BAYAN\". Small \"AI Generated\" top-right. Strong daylight, resolute mood, sharp 1:1.",
-      "caption": "Hindi susuko sa bayan. Kahit anong alegasyon, nanatili siyang nakatayo para sa mga taong solid sa kanya.\n#SaraDuterte #DDS #IndaySara #viral"
-    },
-    {
-      "slot": "6pm",
-      "prompt": "Photorealistic wide late afternoon shot. Center banner features Sara Duterte looking forward with quiet pride. Bold text: \"INDAY SARA, PARA SA TAO\". Small \"AI Generated\" top-right. Warm afternoon light, loyal atmosphere, ultra detailed square.",
-      "caption": "Inday Sara, para sa tao. Hindi para sa posisyon lang. Yan ang dahilan kung bakit solid pa rin ang DDS.\n#SaraDuterte #DDS #IndaySara #viral"
-    }
-  ],
-  "saturday": [
-    {
-      "slot": "6am",
-      "prompt": "Photorealistic wide Saturday morning shot. Large white banner shows Sara Duterte with a gentle morning expression. Bold text: \"ARAW-ARAW NA MALASAKIT\". Small \"AI Generated\" top-right. Bright clean light, consistent care, 8k 1:1.",
-      "caption": "Araw-araw na malasakit. Hindi lang kapag may camera. Yan ang Inday na kilala ng mga ordinaryong tao.\n#SaraDuterte #DDS #IndaySara #viral"
-    },
-    {
-      "slot": "12pm",
-      "prompt": "Photorealistic wide noon shot. Center banner features Sara Duterte standing tall with calm confidence. Large text: \"MATATAG HANGGANG HULI\". Small \"AI Generated\" top-right. High energy daylight, enduring strength, sharp square.",
-      "caption": "Matatag hanggang huli. Habang may araw pa ang trial, may araw din ang suporta namin. Solid.\n#SaraDuterte #DDS #IndaySara #viral"
-    },
-    {
-      "slot": "6pm",
-      "prompt": "Photorealistic wide evening shot. Center banner shows Sara Duterte with a reflective yet hopeful expression. Bold text: \"MAY PAG-ASA PA\". Small \"AI Generated\" top-right. Soft dusk light, hopeful mood, ultra detailed 1:1.",
-      "caption": "May pag-asa pa. Kahit mahirap ang sitwasyon sa Senado, naniniwala pa rin kami kay Inday.\n#SaraDuterte #DDS #IndaySara #viral"
-    }
-  ],
-  "sunday": [
-    {
-      "slot": "6am",
-      "prompt": "Photorealistic wide Sunday morning shot. Large white banner features Sara Duterte with a peaceful, grateful expression. Bold text: \"SALAMAT SA MGA SOLID\". Small \"AI Generated\" top-right. Gentle light, thankful atmosphere, 8k square.",
-      "caption": "Salamat sa mga solid. Sa gitna ng trial, naramdaman ni Inday ang suporta. Nandito pa rin kami.\n#SaraDuterte #DDS #IndaySara #viral"
-    },
-    {
-      "slot": "12pm",
-      "prompt": "Photorealistic wide midday shot of a united crowd. Center banner shows Sara Duterte with open, strong posture. Large text: \"SAMA-SAMA KAY INDAY\". Small \"AI Generated\" top-right. Bright hopeful light, collective energy, sharp 1:1.",
-      "caption": "Sama-sama kay Inday. Hindi siya nag-iisa. Marami kaming handang tumayo kasama niya.\n#SaraDuterte #DDS #IndaySara #viral"
-    },
-    {
-      "slot": "6pm",
-      "prompt": "Photorealistic wide evening shot with soft purple-gold sky. Center banner features Sara Duterte looking ahead with quiet fire in her eyes. Bold text: \"HANDA PA RIN\". Small \"AI Generated\" top-right. Warm evening light, lasting resolve, ultra detailed square.",
-      "caption": "Handa pa rin. Kahit anong araw ng trial, handa pa rin ang DDS kay Inday Sara.\n#SaraDuterte #DDS #IndaySara #viral"
-    }
-  ]
-}
+        "monday": [
+          {
+            "slot": "6am",
+            "caption": "Araw-araw pumapasok si Inday Sara sa Senate trial. Lakas ba’ng nakikita mo — o babaeng hinahabol?"
+          },
+          {
+            "slot": "12pm",
+            "caption": "Confidential funds: usapang accountability, o bombang pulitika laban kay Inday? Saan ka?"
+          },
+          {
+            "slot": "6pm",
+            "caption": "“Bloodied but unbowed.” Totoo ba ’yan kay Inday sa impeachment — o branding lang?"
+          }
+        ],
+        "tuesday": [
+          {
+            "slot": "6am",
+            "caption": "Bank records, auditor, subpoena — full blast ang ingay. Ano’ng nagpapatibay sa loyalty mo kay Sara?"
+          },
+          {
+            "slot": "12pm",
+            "caption": "Kung ma-convict si Inday sa Senado, una mong mararamdaman: galit, iyak, o “laban pa rin”?"
+          },
+          {
+            "slot": "6pm",
+            "caption": "Tapusin mo: “Sobrang inaataque si Sarah Duterte dahil ___.” Ano’ng blanko mo?"
+          }
+        ],
+        "wednesday": [
+          {
+            "slot": "6am",
+            "caption": "P612.5M paulit-ulit na chant. Bilang supporter ni Inday, ano’ng kulang sa istoryang ’yan?"
+          },
+          {
+            "slot": "12pm",
+            "caption": "Ano’ng pinakamalakas na armor ni Inday — tapang, instinct ng ina, o diskarteng pulitika?"
+          },
+          {
+            "slot": "6pm",
+            "caption": "Sasabihin mo ba sa anak mo na hangaan si Inday Sara ngayon? Bakit oo o bakit hindi?"
+          }
+        ],
+        "thursday": [
+          {
+            "slot": "6am",
+            "caption": "Second impeachment na naman. Tungkol ba ’to sa pondo — o para pigilan ang 2028 Sara?"
+          },
+          {
+            "slot": "12pm",
+            "caption": "DepEd years vs OVP years — aling Inday ang mas miss mo sa gitna ng bagyo?"
+          },
+          {
+            "slot": "6pm",
+            "caption": "Anong headline tungkol kay Inday ang GUSTO mong mabasa bukas umaga?"
+          }
+        ],
+        "friday": [
+          {
+            "slot": "6am",
+            "caption": "Poll: dapat ba’ng manahimik si Inday sa trial, o magsalita nang apoy tuwing may chance?"
+          },
+          {
+            "slot": "12pm",
+            "caption": "Usapang “unexplained wealth” vs serbisyo ni Sara — aling narrative ang mas ire-reject mo?"
+          },
+          {
+            "slot": "6pm",
+            "caption": "Sino ang naghatak sa’yong depensahan si Sara online ngayong linggo — troll, kamag-anak, o sarili?"
+          }
+        ],
+        "saturday": [
+          {
+            "slot": "6am",
+            "caption": "Kung tatawag si Inday tonight, anong totoong encouragement ang sasabihin mo — ’di slogan?"
+          },
+          {
+            "slot": "12pm",
+            "caption": "A/B: mas maganda bang next chapter ni Sara ang manatiling VP, o mas malakas na people’s campaign?"
+          },
+          {
+            "slot": "6pm",
+            "caption": "Para sa’yo, si Inday Sara ay ___ . Anong word ang papasok sa blanko?"
+          }
+        ],
+        "sunday": [
+          {
+            "slot": "6am",
+            "caption": "Honest Linggo: nasubok ba ng impeachment ang pananalig mo kay Inday — at pumasa ba?"
+          },
+          {
+            "slot": "12pm",
+            "caption": "Kaya mo bang kumbinsihin ang fence-sitter, isang line, na deserve pa ni Sarah ang benefit of the doubt?"
+          },
+          {
+            "slot": "6pm",
+            "caption": "Ano’ng dapat gawin nang mas madalas ng supporters ni Inday: manalangin, mag-organisa, o i-ignore ang ingay?"
+          }
+        ]
+      }
     },
     "phnews": {
       "config": {
@@ -389,126 +325,105 @@
         "published": true
       },
       "schedule": {
-      "monday": [
-        {
-          "slot": "6am",
-          "prompt": "Photorealistic wide shot of a large morning crowd of Filipino DDS supporters in a public plaza, many in red shirts waving flags. Center white banner held by wooden poles shows a realistic portrait of Rodrigo Duterte (late 70s) with a serious but caring expression. Large bold text: \"TANGING PRESIDENTE NA MAY MALASAKIT\". Small clean text \"AI Generated\" top-right. Soft morning light, warm atmosphere, ultra detailed, 1:1 square, 8k.",
-          "caption": "Si Digong lang talaga ang presidente na may malasakit sa mahihirap at hindi kurap.\n#dds #dutertenewslatest #viral"
-        },
-        {
-          "slot": "12pm",
-          "prompt": "Photorealistic wide shot of a packed midday crowd under bright sun. Center banner features Sara Duterte with a firm, loyal expression. Bold text: \"ANAK NI DIGONG, PARA SA TAO\". Small \"AI Generated\" top-right. Harsh noon light, strong energy, sharp 8k, 1:1.",
-          "caption": "Kahit anong gawin nila kay Inday, solid pa rin kami. Anak ni Digong yan.\n#dds #dutertenewslatest #SaraDuterte #viral"
-        },
-        {
-          "slot": "6pm",
-          "prompt": "Photorealistic wide shot during golden hour. Center banner shows an ordinary DDS supporter in red shirt looking proud. Bold text: \"SOLID HANGGANG DULO\". Small \"AI Generated\" top-right. Warm evening light, loyal mood, ultra detailed 1:1.",
-          "caption": "Hindi kami nauubos. Hangga’t may Digong at Inday, solid ang DDS.\n#dds #dutertenewslatest #viral"
-        }
-      ],
-      "tuesday": [
-        {
-          "slot": "6am",
-          "prompt": "Photorealistic wide morning shot. Large white banner shows Rodrigo Duterte looking straight ahead with quiet strength. Bold text: \"HINDI KURAP, MAY MALASAKIT\". Small \"AI Generated\" top-right. Fresh morning light, 8k 1:1.",
-          "caption": "Totoo lang, si Digong lang ang hindi kurap at may totoong malasakit sa mahihirap.\n#dds #dutertenewslatest #viral"
-        },
-        {
-          "slot": "12pm",
-          "prompt": "Photorealistic wide noon shot of loud crowd. Center banner features Sara Duterte with determined eyes. Large text: \"INDAY SARA, SOLID\". Small \"AI Generated\" top-right. Bright daylight, defiant energy, sharp square.",
-          "caption": "Kahit may trial, hindi kami umaatras kay Inday. Solid hanggang dulo.\n#dds #dutertenewslatest #SaraDuterte #viral"
-        },
-        {
-          "slot": "6pm",
-          "prompt": "Photorealistic wide evening shot. Center banner shows Digong and Sara side by side. Bold text: \"MAG-AMA PARA SA BAYAN\". Small \"AI Generated\" top-right. Soft dusk light, united feel, ultra detailed 1:1.",
-          "caption": "Mag-ama silang dalawa ang may totoong malasakit. Kaya solid kami.\n#dds #dutertenewslatest #Duterte #viral"
-        }
-      ],
-      "wednesday": [
-        {
-          "slot": "6am",
-          "prompt": "Photorealistic wide early morning shot. Large white banner features Rodrigo Duterte with a caring expression. Bold text: \"PARA SA MAHIHIRAP\". Small \"AI Generated\" top-right. Gentle light, heartfelt atmosphere, 8k square.",
-          "caption": "Si Digong lang ang naisip talaga ang mga mahihirap. Hindi yung mga kurap.\n#dds #dutertenewslatest #viral"
-        },
-        {
-          "slot": "12pm",
-          "prompt": "Photorealistic wide midday shot. Center banner shows Sara Duterte looking calm but strong. Large text: \"HINDI SUSUKO\". Small \"AI Generated\" top-right. High contrast light, sharp 1:1.",
-          "caption": "Hindi susuko si Inday. At hindi rin kami susuko sa kanya.\n#dds #dutertenewslatest #SaraDuterte #viral"
-        },
-        {
-          "slot": "6pm",
-          "prompt": "Photorealistic wide sunset shot. Center banner features ordinary DDS people of different ages. Bold text: \"MARAMI KAMI\". Small \"AI Generated\" top-right. Golden hour, collective strength, ultra detailed square.",
-          "caption": "Marami kami. Hindi kami natatakot. Solid kay Digong at Inday.\n#dds #dutertenewslatest #viral"
-        }
-      ],
-      "thursday": [
-        {
-          "slot": "6am",
-          "prompt": "Photorealistic wide morning shot. Large white banner shows Rodrigo Duterte with a firm stare. Bold text: \"TANGING PRESIDENTE\". Small \"AI Generated\" top-right. Clear morning light, strong presence, 8k 1:1.",
-          "caption": "Si Digong lang ang tanging presidente na may totoong malasakit at hindi kurap.\n#dds #dutertenewslatest #viral"
-        },
-        {
-          "slot": "12pm",
-          "prompt": "Photorealistic wide noon shot. Center banner features Sara Duterte with protective expression. Large text: \"PROTEKTAHAN SI INDAY\". Small \"AI Generated\" top-right. Bright light, caring energy, sharp square.",
-          "caption": "Protektahan si Inday. Anak ni Digong yan. May malasakit din siya.\n#dds #dutertenewslatest #SaraDuterte #viral"
-        },
-        {
-          "slot": "6pm",
-          "prompt": "Photorealistic wide evening shot. Center banner shows a young DDS supporter looking determined. Bold text: \"KABATAAN SOLID\". Small \"AI Generated\" top-right. Warm dusk, youth loyalty, ultra detailed 1:1.",
-          "caption": "Kabataan solid pa rin kay Digong at Inday. Hindi kami nauto.\n#dds #dutertenewslatest #viral"
-        }
-      ],
-      "friday": [
-        {
-          "slot": "6am",
-          "prompt": "Photorealistic wide early morning shot. Large white banner features Rodrigo Duterte with soft but strong eyes. Bold text: \"MALASAKIT NA TOTOÓ\". Small \"AI Generated\" top-right. Soft light, sincere atmosphere, 8k square.",
-          "caption": "Yung malasakit ni Digong, totoo. Hindi peke. Kaya mahal siya ng mahihirap.\n#dds #dutertenewslatest #viral"
-        },
-        {
-          "slot": "12pm",
-          "prompt": "Photorealistic wide midday shot. Center banner shows Sara Duterte standing tall. Large text: \"INDAY FOREVER\". Small \"AI Generated\" top-right. Strong daylight, loyal mood, sharp 1:1.",
-          "caption": "Inday forever sa amin. Kahit anong trial, solid kami.\n#dds #dutertenewslatest #SaraDuterte #viral"
-        },
-        {
-          "slot": "6pm",
-          "prompt": "Photorealistic wide late afternoon shot. Center banner features Digong and Sara together. Bold text: \"PAMILYA DUTERTE PARA SA TAO\". Small \"AI Generated\" top-right. Warm afternoon light, family loyalty, ultra detailed square.",
-          "caption": "Pamilya Duterte para sa tao. Hindi para sa sarili. Kaya solid ang DDS.\n#dds #dutertenewslatest #Duterte #viral"
-        }
-      ],
-      "saturday": [
-        {
-          "slot": "6am",
-          "prompt": "Photorealistic wide Saturday morning shot. Large white banner shows Rodrigo Duterte with a fatherly expression. Bold text: \"AMA NG MAHIHIRAP\". Small \"AI Generated\" top-right. Bright clean light, warm feel, 8k 1:1.",
-          "caption": "Si Digong ang ama ng mga mahihirap. Hindi kurap, may malasakit.\n#dds #dutertenewslatest #viral"
-        },
-        {
-          "slot": "12pm",
-          "prompt": "Photorealistic wide noon shot. Center banner features Sara Duterte with steady gaze. Large text: \"TULOY ANG LABAN\". Small \"AI Generated\" top-right. High energy light, powerful mood, sharp square.",
-          "caption": "Tuloy ang laban. Kahit may impeachment, solid pa rin ang DDS kay Inday.\n#dds #dutertenewslatest #SaraDuterte #viral"
-        },
-        {
-          "slot": "6pm",
-          "prompt": "Photorealistic wide evening shot. Center banner shows ordinary DDS family. Bold text: \"BUONG PAMILYA SOLID\". Small \"AI Generated\" top-right. Soft dusk, multi-generation loyalty, ultra detailed 1:1.",
-          "caption": "Buong pamilya solid. Lolo, nanay, anak — lahat kay Digong at Inday.\n#dds #dutertenewslatest #viral"
-        }
-      ],
-      "sunday": [
-        {
-          "slot": "6am",
-          "prompt": "Photorealistic wide Sunday morning shot. Large white banner features Rodrigo Duterte with peaceful strength. Bold text: \"SALAMAT DIGONG\". Small \"AI Generated\" top-right. Gentle light, grateful atmosphere, 8k square.",
-          "caption": "Salamat Digong. Ikaw lang ang may totoong malasakit sa mahihirap at hindi kurap.\n#dds #dutertenewslatest #viral"
-        },
-        {
-          "slot": "12pm",
-          "prompt": "Photorealistic wide midday shot of united crowd. Center banner shows Sara Duterte with open strong posture. Large text: \"SAMA-SAMA KAY INDAY\". Small \"AI Generated\" top-right. Bright hopeful light, united energy, sharp 1:1.",
-          "caption": "Sama-sama kay Inday. Hindi siya nag-iisa. Marami kaming solid.\n#dds #dutertenewslatest #SaraDuterte #viral"
-        },
-        {
-          "slot": "6pm",
-          "prompt": "Photorealistic wide evening shot with soft golden-purple sky. Center banner features a large group of DDS supporters looking forward. Bold text: \"HINDI KAMI MAWAWALA\". Small \"AI Generated\" top-right. Warm evening light, lasting resolve, ultra detailed square.",
-          "caption": "Hindi kami mawawala. Hangga’t may Digong at Inday, solid ang DDS.\n#dds #dutertenewslatest #viral"
-        }
-      ]
-    }
+        "monday": [
+          {
+            "slot": "6am",
+            "caption": "Breaking feeling: miss na miss ang Digong na diretso magsalita. Ikaw, anong line niya ang pinaka-miss mo?"
+          },
+          {
+            "slot": "12pm",
+            "caption": "Habang may hearing si Inday, anong parte ng trial ang pinaka-ayaw mong panoorin — at bakit?"
+          },
+          {
+            "slot": "6pm",
+            "caption": "News cycle vs puso ng DDS: sino’ng mas pinapaniwalaan mo ngayon, headline o Digong + Inday?"
+          }
+        ],
+        "tuesday": [
+          {
+            "slot": "6am",
+            "caption": "Kung may “state of the nation” ang DDS today, anong unang sentence mo tungkol kay Digong?"
+          },
+          {
+            "slot": "12pm",
+            "caption": "Confidential funds paulit-ulit sa balita. Para sa’yo, usapang papeles ba ’yan o atake kay Inday?"
+          },
+          {
+            "slot": "6pm",
+            "caption": "Viral chismis vs totoong context: anong fake narrative kay Digong ang gusto mong i-debunk?"
+          }
+        ],
+        "wednesday": [
+          {
+            "slot": "6am",
+            "caption": "Hague updates bukas-sara. Ano’ng Digong news ang gusto mong marinig bukas — realistic lang?"
+          },
+          {
+            "slot": "12pm",
+            "caption": "Kung reporter ka for a day, anong tanong ang itatanong mo kay Inday Sara ngayon?"
+          },
+          {
+            "slot": "6pm",
+            "caption": "Trending ba dapat ang Davao wins ni Digong kasama ang trial noise kay Inday? Oo o hindi?"
+          }
+        ],
+        "thursday": [
+          {
+            "slot": "6am",
+            "caption": "Media frame: “fallen strongman.” DDS frame: “inapi.” Aling frame ang hawak mo kay Digong?"
+          },
+          {
+            "slot": "12pm",
+            "caption": "May clip ni Inday na pinuputol-putol online. Nakakita ka na ba — at ano’ng naramdaman mo?"
+          },
+          {
+            "slot": "6pm",
+            "caption": "Kung gagawa ka ng 15-second news bumper para kina Digong at Inday, ano’ng script mo?"
+          }
+        ],
+        "friday": [
+          {
+            "slot": "6am",
+            "caption": "Friday briefing: ICC calendar + Senate grind. Aling update ang unang titingnan mo, Digong or Inday?"
+          },
+          {
+            "slot": "12pm",
+            "caption": "Sabi ng iba “tapos na ang Duterte era.” Anong ebidensya sa paligid mo na hindi pa?"
+          },
+          {
+            "slot": "6pm",
+            "caption": "Ano’ng hashtag ang mas deserving ngayon: #FreeDigong, #StandWithInday, o sarili mong gawa?"
+          }
+        ],
+        "saturday": [
+          {
+            "slot": "6am",
+            "caption": "Weekend roundup sa utak mo: anong Digong moment ang pinaka-na-miss ng barangay niyo?"
+          },
+          {
+            "slot": "12pm",
+            "caption": "Kung may community board, anong 1 news tungkol kay Inday ang ipapaskil mo nang walang bash?"
+          },
+          {
+            "slot": "6pm",
+            "caption": "DDS news diet: Facebook lang ba source mo, o may radio/TV pa? Ano’ng pinagkakatiwalaan mo?"
+          }
+        ],
+        "sunday": [
+          {
+            "slot": "6am",
+            "caption": "Linggo op-ed sa isip: kung editor ka, anong front-page line ang ibibigay mo kay Digong?"
+          },
+          {
+            "slot": "12pm",
+            "caption": "Bago matapos ang linggo: anong tanong tungkol kay Inday ang ’di pa nasasagot ng media?"
+          },
+          {
+            "slot": "6pm",
+            "caption": "Last take: Digong abroad, Inday under fire — anong “breaking news” ang gusto mong mangyari next?"
+          }
+        ]
+      }
     },
     "dnl": {
       "config": {
@@ -519,120 +434,99 @@
         "monday": [
           {
             "slot": "6am",
-            "prompt": "Photorealistic wide shot of a large morning crowd of Filipino DDS supporters in a public plaza, many in red shirts waving flags. Center white banner held by wooden poles shows a realistic portrait of Rodrigo Duterte (late 70s) with a serious but caring expression. Large bold text: \"TANGING PRESIDENTE NA MAY MALASAKIT\". Small clean text \"AI Generated\" top-right. Soft morning light, warm atmosphere, ultra detailed, 1:1 square, 8k.",
-            "caption": "Si Digong lang talaga ang presidente na may malasakit sa mahihirap at hindi kurap.\nKung solid ka, type SOLID DDS.\n#dds #dutertenewslatest #viral"
+            "caption": "Si Digong sa Hague, si Inday sa Senadong apoy — isang dugo. Aling sakit ang unang tumama sa’yo?"
           },
           {
             "slot": "12pm",
-            "prompt": "Photorealistic wide shot of a packed midday crowd under bright sun. Center banner features Sara Duterte with a firm, loyal expression. Bold text: \"ANAK NI DIGONG, PARA SA TAO\". Small \"AI Generated\" top-right. Harsh noon light, strong energy, sharp 8k, 1:1.",
-            "caption": "Kahit anong gawin nila kay Inday, solid pa rin kami. Anak ni Digong yan.\nShare this if you agree.\n#dds #dutertenewslatest #SaraDuterte #viral"
+            "caption": "Si Digong at Inday, dalawang korte, iisang apelyido. Chine-check ba — o kinukulong ng sistema?"
           },
           {
             "slot": "6pm",
-            "prompt": "Photorealistic wide shot during golden hour. Center banner shows an ordinary DDS supporter in red shirt looking proud. Bold text: \"SOLID HANGGANG DULO\". Small \"AI Generated\" top-right. Warm evening light, loyal mood, ultra detailed 1:1.",
-            "caption": "Hindi kami nauubos. Hangga’t may Digong at Inday, solid ang DDS.\nReact if you’re still here.\n#dds #dutertenewslatest #viral"
+            "caption": "Kung isang emotion lang ang maipapadala mo kina Digong at Sara, ano ’yon?"
           }
         ],
         "tuesday": [
           {
             "slot": "6am",
-            "prompt": "Photorealistic wide morning shot. Large white banner shows Rodrigo Duterte looking straight ahead with quiet strength. Bold text: \"HINDI KURAP, MAY MALASAKIT\". Small \"AI Generated\" top-right. Fresh morning light, 8k 1:1.",
-            "caption": "Totoo lang, si Digong lang ang hindi kurap at may totoong malasakit sa mahihirap.\nComment SOLID if you agree.\n#dds #dutertenewslatest #viral"
+            "caption": "Free Digong + Defend Inday: kaya mo bang buhatin ang dalawa nang ’di ma-burnout? Paano?"
           },
           {
             "slot": "12pm",
-            "prompt": "Photorealistic wide noon shot of loud crowd. Center banner features Sara Duterte with determined eyes. Large text: \"INDAY SARA, SOLID\". Small \"AI Generated\" top-right. Bright daylight, defiant energy, sharp square.",
-            "caption": "Kahit may trial, hindi kami umaatras kay Inday. Solid hanggang dulo.\nTag a fellow DDS.\n#dds #dutertenewslatest #SaraDuterte #viral"
+            "caption": "Confidential funds kay Sara, ICC counts kay Digong. Coincidence ba — o coordinated pressure?"
           },
           {
             "slot": "6pm",
-            "prompt": "Photorealistic wide evening shot. Center banner shows Digong and Sara side by side. Bold text: \"MAG-AMA PARA SA BAYAN\". Small \"AI Generated\" top-right. Soft dusk light, united feel, ultra detailed 1:1.",
-            "caption": "Mag-ama silang dalawa ang may totoong malasakit. Kaya solid kami.\nType DDS if you’re solid.\n#dds #dutertenewslatest #Duterte #viral"
+            "caption": "Kaninong kwento ang mas kailangan ng comment mo ngayon: detention ni Digong, o trial ni Inday?"
           }
         ],
         "wednesday": [
           {
             "slot": "6am",
-            "prompt": "Photorealistic wide early morning shot. Large white banner features Rodrigo Duterte with a caring expression. Bold text: \"PARA SA MAHIHIRAP\". Small \"AI Generated\" top-right. Gentle light, heartfelt atmosphere, 8k square.",
-            "caption": "Si Digong lang ang naisip talaga ang mga mahihirap. Hindi yung mga kurap.\nShare if you miss Digong.\n#dds #dutertenewslatest #viral"
+            "caption": "Si Rodrigo ang nagtayo ng mito. Si Sara ang nasa siege. Aling Duterte story ang 2026 mo?"
           },
           {
             "slot": "12pm",
-            "prompt": "Photorealistic wide midday shot. Center banner shows Sara Duterte looking calm but strong. Large text: \"HINDI SUSUKO\". Small \"AI Generated\" top-right. High contrast light, sharp 1:1.",
-            "caption": "Hindi susuko si Inday. At hindi rin kami susuko sa kanya.\nKung solid ka, comment INDAY.\n#dds #dutertenewslatest #SaraDuterte #viral"
+            "caption": "Mahirap na pili: freedom ni Digong o upuan ni Inday — ano’ng #1 laban mo ngayon?"
           },
           {
             "slot": "6pm",
-            "prompt": "Photorealistic wide sunset shot. Center banner features ordinary DDS people of different ages. Bold text: \"MARAMI KAMI\". Small \"AI Generated\" top-right. Golden hour, collective strength, ultra detailed square.",
-            "caption": "Marami kami. Hindi kami natatakot. Solid kay Digong at Inday.\nReact with ❤️ if you’re one of us.\n#dds #dutertenewslatest #viral"
+            "caption": "Kumpletuhin: “Sabay-sabay na atake kina Digong at Sara ang patunay na ___.” Ano’ng blanko?"
           }
         ],
         "thursday": [
           {
             "slot": "6am",
-            "prompt": "Photorealistic wide morning shot. Large white banner shows Rodrigo Duterte with a firm stare. Bold text: \"TANGING PRESIDENTE\". Small \"AI Generated\" top-right. Clear morning light, strong presence, 8k 1:1.",
-            "caption": "Si Digong lang ang tanging presidente na may totoong malasakit at hindi kurap.\nType SOLID if you still believe.\n#dds #dutertenewslatest #viral"
+            "caption": "Davao nagturo ng tapang; Maynila nagturo ng dayaan. Saan pa nanalo sina Digong + Inday sa puso mo?"
           },
           {
             "slot": "12pm",
-            "prompt": "Photorealistic wide noon shot. Center banner features Sara Duterte with protective expression. Large text: \"PROTEKTAHAN SI INDAY\". Small \"AI Generated\" top-right. Bright light, caring energy, sharp square.",
-            "caption": "Protektahan si Inday. Anak ni Digong yan. May malasakit din siya.\nShare this to spread the truth.\n#dds #dutertenewslatest #SaraDuterte #viral"
+            "caption": "Lilipad ka ba papuntang Hague para kay Digong, o magkacamp sa Senado para kay Inday — kung libre?"
           },
           {
             "slot": "6pm",
-            "prompt": "Photorealistic wide evening shot. Center banner shows a young DDS supporter looking determined. Bold text: \"KABATAAN SOLID\". Small \"AI Generated\" top-right. Warm dusk, youth loyalty, ultra detailed 1:1.",
-            "caption": "Kabataan solid pa rin kay Digong at Inday. Hindi kami nauto.\nComment if you’re part of the next generation.\n#dds #dutertenewslatest #viral"
+            "caption": "Ilarawan sina Digong at Inday sa 3 words. Kaya mo bang walang “solid”?"
           }
         ],
         "friday": [
           {
             "slot": "6am",
-            "prompt": "Photorealistic wide early morning shot. Large white banner features Rodrigo Duterte with soft but strong eyes. Bold text: \"MALASAKIT NA TOTOÓ\". Small \"AI Generated\" top-right. Soft light, sincere atmosphere, 8k square.",
-            "caption": "Yung malasakit ni Digong, totoo. Hindi peke. Kaya mahal siya ng mahihirap.\nKung agree ka, type TOToo.\n#dds #dutertenewslatest #viral"
+            "caption": "Poll: endgame laban kina Digong & Sara — batas, gantihan, o pulitika 2028? Alin?"
           },
           {
             "slot": "12pm",
-            "prompt": "Photorealistic wide midday shot. Center banner shows Sara Duterte standing tall. Large text: \"INDAY FOREVER\". Small \"AI Generated\" top-right. Strong daylight, loyal mood, sharp 1:1.",
-            "caption": "Inday forever sa amin. Kahit anong trial, solid kami.\nTag someone who needs to see this.\n#dds #dutertenewslatest #SaraDuterte #viral"
+            "caption": "Anong trait ni Digong ang pinakalinaw mong nakikita kay Inday sa dobleng krisis na ’to?"
           },
           {
             "slot": "6pm",
-            "prompt": "Photorealistic wide late afternoon shot. Center banner features Digong and Sara together. Bold text: \"PAMILYA DUTERTE PARA SA TAO\". Small \"AI Generated\" top-right. Warm afternoon light, family loyalty, ultra detailed square.",
-            "caption": "Pamilya Duterte para sa tao. Hindi para sa sarili. Kaya solid ang DDS.\nReact if you’re still solid.\n#dds #dutertenewslatest #Duterte #viral"
+            "caption": "May kamag-anak na Digong lang ang gusto, ’di si Sara (o baligtad). Paano mo i-bridge ’yan sa bahay?"
           }
         ],
         "saturday": [
           {
             "slot": "6am",
-            "prompt": "Photorealistic wide Saturday morning shot. Large white banner shows Rodrigo Duterte with a fatherly expression. Bold text: \"AMA NG MAHIHIRAP\". Small \"AI Generated\" top-right. Bright clean light, warm feel, 8k 1:1.",
-            "caption": "Si Digong ang ama ng mga mahihirap. Hindi kurap, may malasakit.\nShare if you agree.\n#dds #dutertenewslatest #viral"
+            "caption": "Anong alaala kay Digong ang dahilan kung bakit ’di mo rin iiwan si Inday Sara?"
           },
           {
             "slot": "12pm",
-            "prompt": "Photorealistic wide noon shot. Center banner features Sara Duterte with steady gaze. Large text: \"TULOY ANG LABAN\". Small \"AI Generated\" top-right. High energy light, powerful mood, sharp square.",
-            "caption": "Tuloy ang laban. Kahit may impeachment, solid pa rin ang DDS kay Inday.\nType LABAN if you’re with us.\n#dds #dutertenewslatest #SaraDuterte #viral"
+            "caption": "A/B loyalty test: manahimik para safe, o maingay para kina Digong & Sara?"
           },
           {
             "slot": "6pm",
-            "prompt": "Photorealistic wide evening shot. Center banner shows ordinary DDS family. Bold text: \"BUONG PAMILYA SOLID\". Small \"AI Generated\" top-right. Soft dusk, multi-generation loyalty, ultra detailed 1:1.",
-            "caption": "Buong pamilya solid. Lolo, nanay, anak — lahat kay Digong at Inday.\nComment your province if you’re solid.\n#dds #dutertenewslatest #viral"
+            "caption": "Gumawa ka ng joint chant para kina Digong + Inday — 5 original words. Ano ’yon?"
           }
         ],
         "sunday": [
           {
             "slot": "6am",
-            "prompt": "Photorealistic wide Sunday morning shot. Large white banner features Rodrigo Duterte with peaceful strength. Bold text: \"SALAMAT DIGONG\". Small \"AI Generated\" top-right. Gentle light, grateful atmosphere, 8k square.",
-            "caption": "Salamat Digong. Ikaw lang ang may totoong malasakit sa mahihirap at hindi kurap.\nKung solid ka, type SALAMAT DIGONG.\n#dds #dutertenewslatest #viral"
+            "caption": "Kung isang dasal lang ang sasagutin para sa Duterte ngayong buwan: free Digong o acquit Inday?"
           },
           {
             "slot": "12pm",
-            "prompt": "Photorealistic wide midday shot of united crowd. Center banner shows Sara Duterte with open strong posture. Large text: \"SAMA-SAMA KAY INDAY\". Small \"AI Generated\" top-right. Bright hopeful light, united energy, sharp 1:1.",
-            "caption": "Sama-sama kay Inday. Hindi siya nag-iisa. Marami kaming solid.\nShare this to show support.\n#dds #dutertenewslatest #SaraDuterte #viral"
+            "caption": "Paano mo ituturo sa teenager kung bakit importante pa rin sina Digong at Sarah bilang pares?"
           },
           {
             "slot": "6pm",
-            "prompt": "Photorealistic wide evening shot with soft golden-purple sky. Center banner features a large group of DDS supporters looking forward. Bold text: \"HINDI KAMI MAWAWALA\". Small \"AI Generated\" top-right. Warm evening light, lasting resolve, ultra detailed square.",
-            "caption": "Hindi kami mawawala. Hangga’t may Digong at Inday, solid ang DDS.\nReact if you’re still here until the end.\n#dds #dutertenewslatest #viral"
+            "caption": "Kapag isinulat ang 2026, ano’ng dapat sabihin tungkol sa tumayo para kina Digong at Sara?"
           }
         ]
       }
