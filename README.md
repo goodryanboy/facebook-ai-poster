@@ -1,6 +1,6 @@
 # fb-ai-poster
 
-Generates AI images (OpenAI or Gemini) and posts them to one or more Facebook Pages on a schedule via GitHub Actions — **3× daily** (about 6am / 12pm / 6pm Philippine Time).
+Generates AI images (OpenAI or Gemini) and posts them to one or more Facebook Pages on a schedule via GitHub Actions — **once daily around 11:30 AM Philippine Time**.
 
 ## How it works
 
@@ -248,7 +248,7 @@ PAGES=main
 
 ## Schedule
 
-Cron in `.github/workflows/daily-image-post.yml`: `0 21,3,9 * * *` (UTC), aimed at ~6am / 12pm / 6pm PH after Actions delay. GitHub may still lag a few minutes under load.
+Cron in `.github/workflows/daily-image-post.yml`: `30 3 * * *` (UTC) = **11:30 AM Philippine Time**. GitHub may still lag a few minutes under load.
 
 Slot selection uses **Asia/Manila** time inside the app (not the runner’s clock):
 
