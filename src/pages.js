@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const { resolvePageConfig, normalizeConfig, configForEntry } = require("./pageConfig");
+const { usesIncomingContent, loadIncomingPost } = require("./incoming");
 
 const PROMPTS_PATH = path.join(__dirname, "..", "prompts.json");
 const PLACEHOLDER_PAGE_ID = "REPLACE_WITH_YOUR_PAGE_ID";
@@ -143,11 +144,21 @@ function loadPages() {
       // Resolve page-level config now; entry-level config is merged later per slot.
       const config = resolvePageConfig({ key, config: page.config }, fileDefaults);
 
+      let incomingPost = null;
+      if (usesIncomingContent(key, page.config || {})) {
+        incomingPost = loadIncomingPost(key);
+        // Incoming media_type wins for this run when present
+        if (incomingPost.mediaType === "text" || incomingPost.mediaType === "image") {
+          config.postType = incomingPost.mediaType;
+        }
+      }
+
       return {
         key,
         pageId: resolvePageId(key, page, pageIds, enabledCount),
         accessToken: tokens[key] || null,
-        schedule: page.schedule || null,
+        schedule: incomingPost ? null : page.schedule || null,
+        incomingPost,
         enabled: page.enabled !== false,
         rawConfig: page.config || {},
         fileDefaults,
@@ -219,9 +230,13 @@ function loadPages() {
         `Page "${page.key}" has no access token. Add it to the FB_PAGE_TOKENS secret/env as {"${page.key}":"EAA..."}.`
       );
     }
-    if (!page.schedule && !(process.env.IMAGE_PROMPT && process.env.IMAGE_PROMPT.trim())) {
+    if (
+      !page.incomingPost &&
+      !page.schedule &&
+      !(process.env.IMAGE_PROMPT && process.env.IMAGE_PROMPT.trim())
+    ) {
       throw new Error(
-        `Page "${page.key}" has no schedule in prompts.json and IMAGE_PROMPT is not set.`
+        `Page "${page.key}" has no content. Add a prompts.json schedule, or incoming/${page.key}.json, or set IMAGE_PROMPT.`
       );
     }
   }

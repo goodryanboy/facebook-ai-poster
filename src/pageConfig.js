@@ -29,6 +29,10 @@ const BUILTIN_DEFAULTS = {
   // Scheduling (optional refinements)
   // If set to a non-empty array, only these slots run for this page, e.g. ["6am","6pm"]
   slots: null,
+
+  // Content source: "schedule" (prompts.json) or "incoming" (incoming/<page>.json)
+  // bbm/sarah default to incoming via code even without this flag.
+  contentSource: null,
 };
 
 /**

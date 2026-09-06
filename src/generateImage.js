@@ -49,6 +49,26 @@ function pickPrompt(page = {}) {
   const envPrompt = process.env.IMAGE_PROMPT && process.env.IMAGE_PROMPT.trim();
   const pageLabel = page.key || "default";
 
+  // Incoming folder content (bbm/sarah): ignore prompts.json schedule
+  if (page.incomingPost && page.incomingPost.caption) {
+    const config = { ...(page.config || configForEntry(page, null)) };
+    if (page.incomingPost.mediaType === "text" || page.incomingPost.mediaType === "image") {
+      config.postType = page.incomingPost.mediaType;
+    }
+    console.log(
+      `[${pageLabel}] Using incoming caption from ${page.incomingPost.sourceKey}`
+    );
+    return {
+      entry: null,
+      prompt: null,
+      caption: page.incomingPost.caption,
+      weekday: null,
+      slot: page.incomingPost.sourceKey,
+      config,
+      incomingPost: page.incomingPost,
+    };
+  }
+
   if (envPrompt) {
     const config = page.config || configForEntry(page, null);
     return {
@@ -65,7 +85,7 @@ function pickPrompt(page = {}) {
   const schedule = page.schedule;
   if (!schedule) {
     throw new Error(
-      `Page "${pageLabel}" has no schedule and IMAGE_PROMPT is not set.`
+      `Page "${pageLabel}" has no schedule/incoming content and IMAGE_PROMPT is not set.`
     );
   }
 
