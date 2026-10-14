@@ -1,8 +1,1 @@
-{
-  "2026-10-14-morning": {
-    "media_url": "",
-    "media_type": "text",
-    "caption": "Ikalawang personal.\n\nDigong, personal na humarap kahapon sa ICC Trial Chamber III sa The Hague para sa ikaapat na status conference. Presiding Judge Joanna Korner, itinakda ang trial schedule: sessions hanggang isang oras lang, may 30-minute breaks, dahil sa age at condition ni PRRD.\n\nNandoon siya sa courtroom habang lead counsel Peter Haynes hiniling ang mga araw para sa family visits bago magsimula ang trial Nov. 30.\n\n81 at naka-detain pa rin sa Scheveningen \u2014 sapat ba ang short sessions para kay Digong?\n\n#SolidDDS #FreeDigong #LabanDuterte #DutertePa",
-    "hashtags": ["SolidDDS", "FreeDigong", "LabanDuterte", "DutertePa"]
-  }
-}
+$(cat /tmp/dds_new.json)
