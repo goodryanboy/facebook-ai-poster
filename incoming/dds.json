@@ -1,1 +1,8 @@
-$(cat /tmp/dds_new.json)
+{
+  "2026-10-15-morning": {
+    "media_url": "",
+    "media_type": "text",
+    "caption": "Digong, nakaupo pa rin.\n\nPersonal na dumalo si PRRD sa ikaapat na status conference ng ICC noong Oct. 13, ayon sa ulat. Planong magharap ang prosecution ng limang testigo bago matapos ang taon, trial simula Nov. 30.\n\nSa The Hague, naka-all black, attentive habang pinag-uusapan ang schedule. Parang yung dating tapang sa Davao, harap-harapan pa rin.\n\nSolid pa rin ba kayo sa laban ni Digong?\n\n#SolidDDS #FreeDigong #DutertePa #LabanDuterte",
+    "hashtags": ["SolidDDS", "FreeDigong", "DutertePa", "LabanDuterte"]
+  }
+}
