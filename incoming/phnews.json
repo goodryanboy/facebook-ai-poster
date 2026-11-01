@@ -1,1 +1,23 @@
-PLACEHOLDER_FULL_JSON_FROM_/tmp/phnews_final.json
+{
+  "2026-09-06-morning": {
+    "media_url": "",
+    "media_type": "text",
+    "caption": "Dalawang kaso. Isang Linggo.\n\nImpeachment ni VP Sara, tumatakbo pa sa Senado. Criminal case sa QC RTC Branch 98 \u2014 kahapon nagpiyansa, P360k, 3 counts grave threats. Hindi tumakas.\n\nSabado siya sa Hall of Justice. Linggo, DILG at PNP ang may sagot sa media.\n\nAlin ang mas sinusundan niyo, Senado o korte?\n\n#PHPolitics #SaraDuterte #SolidDDS",
+    "hashtags": [
+      "PHPolitics",
+      "SaraDuterte",
+      "SolidDDS"
+    ]
+  },
+  "2026-11-02-morning": {
+    "media_url": "",
+    "media_type": "text",
+    "caption": "Signed waiver.\n\nAyon sa filing noong Oct. 30, isinumite ng defense ni Digong ang signed waiver sa ICC Trial Chamber III. Pinayagan ng chamber; abogados ang haharap sa fifth status conference ngayong Nov. 2. Trial, Nov. 30 pa rin.\n\nSa ICC, The Hague \u2014 naka-detain pa rin si PRRD sa Scheveningen. Habang sa Senate session hall, recess ang impeachment ni Inday hanggang Nov. 9, Article II unexplained wealth na lang.\n\nAlin ang unang sinusundan ninyo \u2014 ang agenda sa Hague o ang Nov. 9 sa Senado?\n\n#PHPolitics #FreeDigong #SaraDuterte #SolidDDS",
+    "hashtags": [
+      "PHPolitics",
+      "FreeDigong",
+      "SaraDuterte",
+      "SolidDDS"
+    ]
+  }
+}
